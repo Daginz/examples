@@ -725,7 +725,7 @@ const Szymonholowniaoficjalny = () => {
             </p>
           </div>
           <img 
-            src="/Assets/photo_221.jpg" 
+            src="/Assets/photo_post6.jpg" 
             alt="Hołownia 2025 campaign materials" 
             className="rounded-lg w-full h-full object-cover" 
           />
