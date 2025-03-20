@@ -164,7 +164,7 @@ const MaciejLasekKo = () => {
           <div className="fixed z-40 top-14 left-0 right-0 bg-[#f2f4f7] shadow-sm py-3 px-4 flex items-center justify-between">
             <div className="flex items-center">
               <div className="flex items-center px-3 py-2 rounded-lg transition-colors hover:bg-gray-100 cursor-pointer">
-                <img src="assets/photo_111.jpg" alt="Maciej Lasek" className="w-11 h-11 rounded-full mr-3" />
+                <img src="/assets/photo_111.jpg" alt="Maciej Lasek" className="w-11 h-11 rounded-full mr-3" />
                 <h2 className="font-bold text-xl">Maciej Lasek</h2>
               </div>
             </div>
@@ -182,7 +182,7 @@ const MaciejLasekKo = () => {
           <div className="relative w-full h-80 overflow-hidden" >
   {/* Картинка для больших экранов (>= md) */}
   <img 
-    src="assets/backgroundM.jpg"
+    src="/assets/backgroundM.jpg"
     alt="Cover"
     className="hidden md:block mx-auto max-w-[940px] w-full h-auto object-cover rounded-bl-md rounded-br-md"
   />
@@ -190,7 +190,7 @@ const MaciejLasekKo = () => {
   {/* Блок с фоном для маленьких экранов (< md) */}
   <div
     className="block md:hidden w-full h-full bg-center bg-cover"
-    style={{ backgroundImage: "url('assets/backgroundM.jpg')" }}
+    style={{ backgroundImage: "url('/assets/backgroundM.jpg')" }}
   >
   </div>
 </div>
@@ -201,7 +201,7 @@ const MaciejLasekKo = () => {
             <div className="relative px-8 -mt-16 md:mt-10 flex flex-col md:flex-row md:items-end max-w-5xl mx-auto">
               <div className="z-10 relative -mt-16 flex justify-center md:justify-start w-full md:w-auto">
                 <div className="w-40 h-40 rounded-full border-4 border-white overflow-hidden bg-white">
-                  <img src="assets/photo_111.jpg" alt="Maciej Lasek" className="w-full h-full object-cover" />
+                  <img src="/assets/photo_111.jpg" alt="Maciej Lasek" className="w-full h-full object-cover" />
                 </div>
               </div>
               
@@ -384,36 +384,36 @@ sekretarz stanu w Ministerstwie Infrastruktury
                 <div className="grid grid-cols-3 gap-1">
                   {/* First row */}
                   <div className="aspect-square bg-red-500 text-white rounded-md overflow-hidden relative">
-                  <img src="assets/photo_121.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
+                  <img src="/assets/photo_121.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
 
                   </div>
                   <div className="aspect-square bg-gray-200 rounded-md overflow-hidden">
-                  <img src="assets/photo_122.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
+                  <img src="/assets/photo_122.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
                   </div>
                   <div className="aspect-square bg-gray-200 rounded-md overflow-hidden">
-                  <img src="assets/photo_123.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
+                  <img src="/assets/photo_123.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
                   </div>
                   
                   {/* Second row */}
                   <div className="aspect-square bg-gray-200 rounded-md overflow-hidden">
-                  <img src="assets/photo_124.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
+                  <img src="/assets/photo_124.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
                   </div>
                   <div className="aspect-square bg-gray-200 rounded-md overflow-hidden">
-                  <img src="assets/photo_125.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
+                  <img src="/assets/photo_125.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
                   </div>
                   <div className="aspect-square bg-gray-200 rounded-md overflow-hidden">
-                  <img src="assets/photo_126.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
+                  <img src="/assets/photo_126.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
                   </div>
                   
                   {/* Third row */}
                   <div className="aspect-square bg-blue-600 text-white rounded-md overflow-hidden relative">
-                  <img src="assets/photo_127.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
+                  <img src="/assets/photo_127.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
                   </div>
                   <div className="aspect-square bg-gray-200 rounded-md overflow-hidden">
-                  <img src="assets/photo_128.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
+                  <img src="/assets/photo_128.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
                   </div>
                   <div className="aspect-square bg-gray-200 rounded-md overflow-hidden">
-                  <img src="assets/photo_129.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
+                  <img src="/assets/photo_129.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
                   </div>
                 </div>
               </div>
@@ -466,7 +466,7 @@ sekretarz stanu w Ministerstwie Infrastruktury
               <div className="bg-white rounded-lg shadow mb-4">
                 <div className="p-4">
                   <div className="flex items-start mb-3">
-                    <img src="assets/photo_111.jpg" alt="Maja Ermer" className="w-10 h-10 rounded-full mr-2" />
+                    <img src="/assets/photo_111.jpg" alt="Maja Ermer" className="w-10 h-10 rounded-full mr-2" />
                     <div>
                       <h3 className="font-semibold">Maja Ermer</h3>
                       <p className="text-xs text-gray-500">1 dzień temu ·</p>
@@ -600,7 +600,7 @@ Jestem głęboko przekonany, że separatyzm to destrukcyjna siła, która narusz
               {[1, 2, 3, 4, 5].map((num) => (
                 <div key={num} className="flex items-center p-2 rounded-md hover:bg-gray-100 cursor-pointer">
                   <div className="relative">
-                    <img src="assets/photo_111.jpg" alt={`Contact ${num}`} className="w-10 h-10 rounded-full" />
+                    <img src="/assets/photo_111.jpg" alt={`Contact ${num}`} className="w-10 h-10 rounded-full" />
                     <span className="absolute bottom-0 right-0 w-3 h-3 bg-green-500 rounded-full border-2 border-white"></span>
                   </div>
                   <div className="ml-2">

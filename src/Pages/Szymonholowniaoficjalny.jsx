@@ -492,7 +492,7 @@ const Szymonholowniaoficjalny = () => {
                   </svg>
                 </div>
                 <div className="flex items-center text-xs text-gray-500">
-                  <span>6 godz.</span>
+                  <span>1 godz.</span>
                   <span className="mx-1">·</span>
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
