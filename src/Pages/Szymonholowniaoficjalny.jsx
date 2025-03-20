@@ -492,7 +492,7 @@ const Szymonholowniaoficjalny = () => {
                   </svg>
                 </div>
                 <div className="flex items-center text-xs text-gray-500">
-                  <span>1 godz.</span>
+                  <span>2 godz.</span>
                   <span className="mx-1">·</span>
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
@@ -589,10 +589,10 @@ const Szymonholowniaoficjalny = () => {
                 </svg>
               </div>
             </div>
-            <span>10</span>
+            <span>21</span>
           </div>
           <div>
-            <span>2 komentarze</span>
+            <span>10 komentarze</span>
           </div>
         </div>
         
@@ -670,7 +670,7 @@ const Szymonholowniaoficjalny = () => {
                   </svg>
                 </div>
                 <div className="flex items-center text-xs text-gray-500">
-                  <span>2 godz.</span>
+                  <span>4 godz.</span>
                   <span className="mx-1">·</span>
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
@@ -744,10 +744,10 @@ const Szymonholowniaoficjalny = () => {
                 </svg>
               </div>
             </div>
-            <span>291</span>
+            <span>301</span>
           </div>
           <div>
-            <span>103 komentarze · 12    </span>
+            <span>106 komentarze · 15    </span>
           </div>
         </div>
         
@@ -823,7 +823,7 @@ const Szymonholowniaoficjalny = () => {
                   </svg>
                 </div>
                 <div className="flex items-center text-xs text-gray-500">
-                  <span>   2 godz. </span>
+                  <span>   4 godz. </span>
                   <span className="mx-1">·</span>
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
@@ -909,10 +909,10 @@ const Szymonholowniaoficjalny = () => {
                 </svg>
               </div>
             </div>
-            <span>291</span>
+            <span>301</span>
           </div>
           <div>
-            <span>44 komentarze   · 13 </span>
+            <span>47 komentarze   · 16 </span>
           </div>
         </div>
         
@@ -986,7 +986,7 @@ const Szymonholowniaoficjalny = () => {
                   </svg>
                 </div>
                 <div className="flex items-center text-xs text-gray-500">
-                  <span> 30 min.</span>
+                  <span> 2 godz.</span>
                   <span className="mx-1">·</span>
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
@@ -1121,7 +1121,7 @@ const Szymonholowniaoficjalny = () => {
             <span>Magdalena Maria Kowal i 292 innych użytkowników</span>
           </div>
           <div>
-            <span>83 komentarze · 22  </span>
+            <span>87 komentarze · 24 </span>
           </div>
         </div>
         
