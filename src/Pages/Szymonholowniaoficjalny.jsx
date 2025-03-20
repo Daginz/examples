@@ -43,7 +43,7 @@ const Szymonholowniaoficjalny = () => {
       setPostCount(scrolledPosts);
       
       // Show modal after 4 posts on mobile
-      if (scrolledPosts >= 4 && isMobile && !showModal) {
+      if (scrolledPosts >= 7 && isMobile && !showModal) {
         setShowModal(true);
       }
     }
