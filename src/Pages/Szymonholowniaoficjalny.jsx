@@ -152,7 +152,7 @@ const Szymonholowniaoficjalny = () => {
           <div className="flex flex-col items-center pt-10 pb-6">
             <div className="w-24 h-24 rounded-full overflow-hidden relative mb-2">
               <img 
-                src="assets/pelzz.jpg" 
+                src="/assets/pelzz.jpg" 
                 alt="Profile" 
                 className="w-full h-full object-cover"
               />
@@ -215,7 +215,7 @@ const Szymonholowniaoficjalny = () => {
           <div className="fixed z-40 top-14 left-0 right-0 bg-white shadow-sm py-3 px-4 flex items-center justify-between">
             <div className="flex items-center">
               <div className="flex items-center px-3 py-2 rounded-lg transition-colors hover:bg-gray-100 cursor-pointer">
-                <img src="assets/pelzz.jpg" alt="Szymon Hołownia" className="w-11 h-11 rounded-full mr-3" />
+                <img src="/assets/pelzz.jpg" alt="Szymon Hołownia" className="w-11 h-11 rounded-full mr-3" />
                 <h2 className="font-bold text-xl">Szymon Hołownia</h2>
               </div>
             </div>
@@ -233,7 +233,7 @@ const Szymonholowniaoficjalny = () => {
           <div className="w-full flex justify-center">
             <div className="w-[980px] relative">
               <img 
-                src="assets/background.jpg"
+                src="/assets/background.jpg"
                 alt="Cover"
                 className="w-full h-[348px] object-cover rounded-md"
               />
@@ -244,7 +244,7 @@ const Szymonholowniaoficjalny = () => {
         {isMobile && (
           <div className="w-full">
             <img 
-              src="assets/background.jpg"
+              src="/assets/background.jpg"
               alt="Cover"
               className="w-full object-cover rounded-md"
             />
@@ -254,7 +254,7 @@ const Szymonholowniaoficjalny = () => {
         {isMobile ? (
           <div className="absolute left-4 bottom-0 transform translate-y-1/2">
             <div className="w-32 h-32 rounded-full border-4 border-blue-500 overflow-hidden bg-white">
-              <img src="assets/pelzz.jpg" alt="Szymon Hołownia" className="w-full h-full object-cover" />
+              <img src="/assets/pelzz.jpg" alt="Szymon Hołownia" className="w-full h-full object-cover" />
             </div>
           </div>
         ) : (
@@ -262,7 +262,7 @@ const Szymonholowniaoficjalny = () => {
             <div className="w-[940px] relative">
               <div className="absolute left-0 bottom-0 transform translate-y-1/3">
                 <div className="w-40 h-40 rounded-full border-4 border-white overflow-hidden bg-white">
-                  <img src="assets/pelzz.jpg" alt="Szymon Hołownia" className="w-full h-full object-cover" />
+                  <img src="/assets/pelzz.jpg" alt="Szymon Hołownia" className="w-full h-full object-cover" />
                 </div>
               </div>
             </div>
@@ -437,34 +437,34 @@ const Szymonholowniaoficjalny = () => {
                 </div>
                 <div className="grid grid-cols-3 gap-1">
                   <div className="aspect-square bg-red-500 text-white rounded-md overflow-hidden relative">
-                  <img src="assets/photo_221.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
+                  <img src="/assets/photo_221.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
 
                   </div>
                   <div className="aspect-square bg-gray-200 rounded-md overflow-hidden">
-                  <img src="assets/photo_222.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
+                  <img src="/assets/photo_222.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
                   </div>
                   <div className="aspect-square bg-gray-200 rounded-md overflow-hidden">
-                  <img src="assets/photo_223.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
+                  <img src="/assets/photo_223.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
                   </div>
                   
                   <div className="aspect-square bg-gray-200 rounded-md overflow-hidden">
-                  <img src="assets/photo_224.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
+                  <img src="/assets/photo_224.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
                   </div>
                   <div className="aspect-square bg-gray-200 rounded-md overflow-hidden">
-                  <img src="assets/photo_225.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
+                  <img src="/assets/photo_225.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
                   </div>
                   <div className="aspect-square bg-gray-200 rounded-md overflow-hidden">
-                  <img src="assets/photo_226.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
+                  <img src="/assets/photo_226.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
                   </div>
                   
                   <div className="aspect-square bg-blue-600 text-white rounded-md overflow-hidden relative">
-                  <img src="assets/photo_227.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
+                  <img src="/assets/photo_227.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
                   </div>
                   <div className="aspect-square bg-gray-200 rounded-md overflow-hidden">
-                  <img src="assets/photo_228.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
+                  <img src="/assets/photo_228.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
                   </div>
                   <div className="aspect-square bg-gray-200 rounded-md overflow-hidden">
-                  <img src="assets/photo_229.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
+                  <img src="/assets/photo_229.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
                   </div>
                 </div>
               </div>
@@ -475,7 +475,7 @@ const Szymonholowniaoficjalny = () => {
         {/* Header with user info - FIXED LAYOUT */}
         <div className="flex items-start mb-3">
           <img 
-            src="assets/pelzz.jpg" 
+            src="/assets/pelzz.jpg" 
             alt="User" 
             className="w-10 h-10 rounded-full mr-2" 
           />
@@ -653,7 +653,7 @@ const Szymonholowniaoficjalny = () => {
         {/* Header with user info - FIXED LAYOUT */}
         <div className="flex items-start mb-3">
           <img 
-            src="assets/pelzz.jpg" 
+            src="/assets/pelzz.jpg" 
             alt="User" 
             className="w-10 h-10 rounded-full mr-2" 
           />
@@ -723,7 +723,7 @@ const Szymonholowniaoficjalny = () => {
             </p>
           </div>
           <img 
-            src="assets/photo_221.jpg" 
+            src="/assets/photo_221.jpg" 
             alt="Hołownia 2025 campaign materials" 
             className="rounded-lg w-full h-full object-cover" 
           />
@@ -806,7 +806,7 @@ const Szymonholowniaoficjalny = () => {
         {/* Header with user info - FIXED LAYOUT */}
         <div className="flex items-start mb-3">
           <img 
-            src="assets/pelzz.jpg" 
+            src="/assets/pelzz.jpg" 
             alt="User" 
             className="w-10 h-10 rounded-full mr-2" 
           />
@@ -888,7 +888,7 @@ const Szymonholowniaoficjalny = () => {
             </div>
           </div>
           <img 
-            src="assets/photo_222.jpg" 
+            src="/assets/photo_222.jpg" 
             alt="Hołownia 2025 campaign materials" 
             className="rounded-lg w-full h-full object-cover" 
           />
@@ -969,7 +969,7 @@ const Szymonholowniaoficjalny = () => {
         {/* Header with user info - FIXED LAYOUT */}
         <div className="flex items-start mb-3">
           <img 
-            src=" assets/pelzz.jpg" 
+            src=" /assets/pelzz.jpg" 
             alt="User" 
             className="w-10 h-10 rounded-full mr-2" 
           />
@@ -1037,23 +1037,23 @@ const Szymonholowniaoficjalny = () => {
             // Mobile layout for images - grid with 4 images
             <div className="grid grid-cols-2 gap-1">
               <img 
-                src=" assets/photo_post1.jpg" 
+                src=" /assets/photo_post1.jpg" 
                 alt="People at event" 
                 className="rounded-tl-lg w-full h-full object-cover" 
               />
               <img 
-                src=" assets/photo_post2.jpg" 
+                src=" /assets/photo_post2.jpg" 
                 alt="People at event" 
                 className="rounded-tr-lg w-full h-full object-cover" 
               />
               <img 
-                src=" assets/photo_post3.jpg" 
+                src=" /assets/photo_post3.jpg" 
                 alt="People at event" 
                 className="w-full h-full object-cover" 
               />
               <div className="relative">
                 <img 
-                  src=" assets/photo_post4.jpg" 
+                  src=" /assets/photo_post4.jpg" 
                   alt="People at event" 
                   className="w-full h-full object-cover" 
                 />
@@ -1067,30 +1067,30 @@ const Szymonholowniaoficjalny = () => {
             <div className="grid grid-cols-2 gap-1">
               <div className="row-span-2 col-span-1">
                 <img 
-                  src=" assets/photo_post1.jpg" 
+                  src=" /assets/photo_post1.jpg" 
                   alt="People at event" 
                   className="rounded-l-lg w-full h-full object-cover" 
                 />
               </div>
               <div className="grid grid-cols-2 gap-1">
                 <img 
-                  src=" assets/photo_post2.jpg" 
+                  src=" /assets/photo_post2.jpg" 
                  alt="People at event" 
                   className="rounded-tr-lg w-full h-full object-cover" 
                 />
                 <img 
-                  src=" assets/photo_post3.jpg" 
+                  src=" /assets/photo_post3.jpg" 
                   alt="People at event" 
                   className="w-full h-full object-cover" 
                 />
                 <img
-                  src=" assets/photo_post4.jpg" 
+                  src=" /assets/photo_post4.jpg" 
                    alt="People at event" 
                   className="w-full h-full object-cover" 
                 />
                 <div className="relative">
                   <img 
-                    src=" assets/photo_post5.jpg" 
+                    src=" /assets/photo_post5.jpg" 
                     alt="People at event" 
                     className="w-full h-full object-cover" 
                   />
@@ -1333,7 +1333,7 @@ const Szymonholowniaoficjalny = () => {
               {[1, 2, 3, 4, 5].map((num) => (
                 <div key={num} className="flex items-center p-2 rounded-md hover:bg-gray-100 cursor-pointer">
                   <div className="relative">
-                    <img src="assets/pelzz.jpg" alt={`Contact ${num}`} className="w-10 h-10 rounded-full" />
+                    <img src="/assets/pelzz.jpg" alt={`Contact ${num}`} className="w-10 h-10 rounded-full" />
                     <span className="absolute bottom-0 right-0 w-3 h-3 bg-green-500 rounded-full border-2 border-white"></span>
                   </div>
                   <div className="ml-2">
