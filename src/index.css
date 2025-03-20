@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+:root {
+    --fb-logo: #0866ff; /* Синий цвет Facebook */
+    --shadow-1: rgba(0,0,0,.1);
+    --shadow-2: rgba(0,0,0,.2);
+    --shadow-5: rgba(0,0,0,.5);
+    --shadow-8: rgba(0,0,0,.8);
+    --shadow-base: 0 1px 2px var(--shadow-2);
+    --shadow-elevated: 0 8px 20px 0 rgba(0,0,0,.2), 0 2px 4px 0 rgba(0,0,0,.1);
+    --shadow-emphasis: 0 2px 12px var(--shadow-2);
+    --shadow-inset: rgba(255,255,255,.05);
+    --shadow-on-media: 0px 0px 1px rgba(0,0,0,.62);
+    --shadow-persistent: 0px 0px 12px rgba(28,43,51,.6);
+    --shadow-primary: 0px 0px 12px rgba(28,43,51,.1);
+    --shadow-responsive: 0px 8px 16px 0px rgba(0,0,0,.1);
+  }
+  
