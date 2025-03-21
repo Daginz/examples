@@ -388,9 +388,9 @@ const Szymonholowniaoficjalny = () => {
       
     </div>
 </main>
-        <div className="px-4 md:px-8 mt-4 max-w-5xl mx-auto bg-[#F0F2F5]">
+        <div className="px-4 md:px-8 mt-2 max-w-5xl mx-auto bg-[#F0F2F5]">
           <div className="flex flex-col md:flex-row">
-            <div className="md:w-1/3">
+            <div className="md:w-1/3 m-2">
               <div className="bg-white rounded-lg shadow p-4 mb-4">
                 <h2 className="text-xl font-bold mb-3">Prezentacja</h2>
                 <p className="text-center text-sm mb-6">
@@ -469,7 +469,7 @@ const Szymonholowniaoficjalny = () => {
                 </div>
               </div>
             </div>
-            <div className="md:w-2/3">
+            <div className="md:w-2/3 m-2">
 
 
 
@@ -497,7 +497,7 @@ const Szymonholowniaoficjalny = () => {
                   </svg>
                 </div>
                 <div className="flex items-center text-xs text-gray-500">
-                  <span>20h</span>
+                  <span> 1d </span>
                   <span className="mx-1">·</span>
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
