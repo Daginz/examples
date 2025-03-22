@@ -286,7 +286,7 @@ const Szymonholowniaoficjalny = () => {
               <p onClick='openModal' className="text-gray-600 mt-1 text-sm">1,1 mln obserwujący • 68 obserwowanych</p>
               <p className="mt-2 text-sm">
                 Tata dwóch dziewczynek • Mąż pilotki • Marszałek Sejmu RP • Lider Polska 2050 • Pochłaniacz (i autor ponad 20) książek
-              </p>
+             </p>
               
               <div className="mt-4 flex">
                 <button className="flex-1 py-2 bg-gray-200 rounded-md text-black text-sm font-medium flex items-center justify-center mr-2">
@@ -498,7 +498,7 @@ const Szymonholowniaoficjalny = () => {
                 </div>
                 <div className="font-semibold">Grodzisk Mazowiecki.</div>
                 <div className="flex items-center text-xs text-gray-500">
-                  <span>1 godz.</span>
+                  <span>1d</span>
                   <span className="mx-1">·</span>
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
@@ -657,7 +657,7 @@ const Szymonholowniaoficjalny = () => {
                   </svg>
                 </div>
                 <div className="flex items-center text-xs text-gray-500">
-                  <span>5 godz.</span>
+                  <span>1d</span>
                   <span className="mx-1">·</span>
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
@@ -805,7 +805,7 @@ const Szymonholowniaoficjalny = () => {
                   </svg>
                 </div>
                 <div className="flex items-center text-xs text-gray-500">
-                  <span> 1d </span>
+                  <span> 2d </span>
                   <span className="mx-1">·</span>
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
@@ -954,7 +954,7 @@ const Szymonholowniaoficjalny = () => {
                   </svg>
                 </div>
                 <div className="flex items-center text-xs text-gray-500">
-                  <span>1 d.</span>
+                  <span>2 d.</span>
                   <span className="mx-1">·</span>
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
@@ -1109,7 +1109,7 @@ const Szymonholowniaoficjalny = () => {
                   </svg>
                 </div>
                 <div className="flex items-center text-xs text-gray-500">
-                  <span>1d</span>
+                  <span>2d</span>
                   <span className="mx-1">·</span>
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
@@ -1288,7 +1288,7 @@ const Szymonholowniaoficjalny = () => {
                   </svg>
                 </div>
                 <div className="flex items-center text-xs text-gray-500">
-                  <span>1d</span>
+                  <span>2d</span>
                   <span className="mx-1">·</span>
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
@@ -1441,7 +1441,7 @@ const Szymonholowniaoficjalny = () => {
                   </svg>
                 </div>
                 <div className="flex items-center text-xs text-gray-500">
-                  <span>   1d </span>
+                  <span>   2d </span>
                   <span className="mx-1">·</span>
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
@@ -1604,7 +1604,7 @@ const Szymonholowniaoficjalny = () => {
                   </svg>
                 </div>
                 <div className="flex items-center text-xs text-gray-500">
-                  <span> 1d</span>
+                  <span> 2d</span>
                   <span className="mx-1">·</span>
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>

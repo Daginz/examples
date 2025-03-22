@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 
 
-const MaciejLasekKo = () => {
+const GwarancjaRozwoju = () => {
   // State for likes, comments, etc.
   const [showModal, setShowModal] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
@@ -28,7 +28,7 @@ const MaciejLasekKo = () => {
         setShowMiniHeader(false);
       }
 
-      if (!isMobile && window.scrollY > 2500) {
+      if (!isMobile && window.scrollY > 2700) {
         setIsVisible(true);
       }
       
@@ -77,7 +77,7 @@ const MaciejLasekKo = () => {
   };
   const handleScroll = () => {
     // Show modal only on desktop when scrolled past 1200px
-    if (!isMobile && window.scrollY > 2000) {
+    if (!isMobile && window.scrollY > 3500) {
       setIsVisible(true);
     }
   };
@@ -93,15 +93,17 @@ const MaciejLasekKo = () => {
   const redirectToFacebook = () => {
     window.location.href = 'https://www.facebook.com/';
   };
-  const redirectReels = () => {
-    window.location.href = 'https://www.facebook.com/reel/1100251121791121';
+
+  const redirectToYoutube = () => {
+    window.location.href = 'https://www.youtube.com/watch?v=X3Pjh2yMKk0';
   };
+
   return (
     <main className="bg-gray-100 min-h-screen">
       {isMobile ? (
         <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between w-full px-4 py-3 bg-white border-b border-gray-200 shadow-sm">
           <a onClick={redirectToFacebook} href='#' className="mr-2 "> 
-            <svg className="x1lliihq x5skwsv" height="22" viewBox="100 100 900 160" xmlns="http://www.w3.org/2000/svg"><title>Maciej Lasek | Facebook</title><path fill="#1877f2" d="M881.583 257.897h29.48v-47.696l41.137 47.696h36.072l-47.89-54.969 40.909-47.663h-32.825l-37.403 43.93v-96.982l-29.48 3.864v151.82Zm-67.988-105.261c-32.728 0-55.455 22.013-55.455 53.929s22.727 53.929 55.455 53.929c32.727 0 55.455-22.013 55.455-53.929s-22.728-53.929-55.455-53.929Zm0 82.728c-15.163 0-25.552-11.721-25.552-28.799s10.389-28.799 25.552-28.799c15.162 0 25.552 11.721 25.552 28.799s-10.39 28.799-25.552 28.799Zm-119.807-82.728c-32.727 0-55.455 22.013-55.455 53.929s22.728 53.929 55.455 53.929c32.728 0 55.455-22.013 55.455-53.929s-22.727-53.929-55.455-53.929Zm0 82.728c-15.162 0-25.552-11.721-25.552-28.799s10.39-28.799 25.552-28.799c15.163 0 25.552 11.721 25.552 28.799s-10.389 28.799-25.552 28.799Zm-112.826-82.728c-13.636 0-24.935 5.357-32.013 15.162v-65.585l-29.513 3.831v151.82h26.169l.519-15.844c6.981 11.818 19.481 18.474 34.838 18.474 27.988 0 48.475-22.728 48.475-53.929 0-31.202-20.39-53.929-48.475-53.929Zm-6.98 82.728c-15.163 0-25.552-11.721-25.552-28.799s10.389-28.799 25.552-28.799c15.162 0 25.552 11.721 25.552 28.799s-10.39 28.799-25.552 28.799Zm-113.638 1.331c-15.649 0-26.883-7.273-30.714-19.805h72.63c.715-3.831 1.202-8.377 1.202-11.429 0-33.02-18.475-52.825-49.514-52.825-31.331 0-53.02 22.013-53.02 53.929 0 32.338 22.728 53.929 56.462 53.929 17.467 0 34.448-5.844 45.065-15.552l-10.617-18.701c-10.292 7.11-20.39 10.454-31.494 10.454Zm-6.591-61.137c13.637 0 22.338 8.279 22.338 21.104v.098h-47.078c2.825-13.604 11.623-21.202 24.74-21.202Zm-98.994 84.968c15.26 0 30.195-5.844 40.714-15.974l-11.526-19.383c-8.182 6.364-17.467 9.805-26.266 9.805-16.364 0-27.273-11.429-27.273-28.377s10.909-28.377 27.273-28.377c8.084 0 16.883 2.922 24.026 8.085l11.721-19.806c-9.481-8.571-24.156-13.831-38.702-13.831-32.013 0-54.643 22.338-54.643 53.929.032 31.494 22.662 53.929 54.676 53.929Zm-93.735-105.261-.519 15.975c-6.981-11.916-19.481-18.572-34.838-18.572-28.085 0-48.475 22.728-48.475 53.929 0 31.202 20.52 53.929 48.475 53.929 15.357 0 27.889-6.656 34.838-18.474l.519 15.844h26.169V155.265h-26.169Zm-28.377 80.099c-15.162 0-25.552-11.721-25.552-28.799s10.39-28.799 25.552-28.799c15.163 0 25.552 11.721 25.552 28.799s-10.422 28.799-25.552 28.799Zm-57.663-79.906h-26.526v-8.767c0-13.117 5.13-18.149 18.442-18.149 4.123 0 7.467.097 9.383.292v-22.5c-3.637-1.007-12.5-2.013-17.63-2.013-27.111 0-39.611 12.792-39.611 40.422v10.682h-16.753v24.806h16.753v77.631h29.448v-77.599h21.949l4.545-24.805Z"></path></svg>
+            <svg className="x1lliihq x5skwsv" height="22" viewBox="100 100 900 160" xmlns="http://www.w3.org/2000/svg"><title>Poseł Piotr Głowski  | Facebook</title><path fill="#1877f2" d="M881.583 257.897h29.48v-47.696l41.137 47.696h36.072l-47.89-54.969 40.909-47.663h-32.825l-37.403 43.93v-96.982l-29.48 3.864v151.82Zm-67.988-105.261c-32.728 0-55.455 22.013-55.455 53.929s22.727 53.929 55.455 53.929c32.727 0 55.455-22.013 55.455-53.929s-22.728-53.929-55.455-53.929Zm0 82.728c-15.163 0-25.552-11.721-25.552-28.799s10.389-28.799 25.552-28.799c15.162 0 25.552 11.721 25.552 28.799s-10.39 28.799-25.552 28.799Zm-119.807-82.728c-32.727 0-55.455 22.013-55.455 53.929s22.728 53.929 55.455 53.929c32.728 0 55.455-22.013 55.455-53.929s-22.727-53.929-55.455-53.929Zm0 82.728c-15.162 0-25.552-11.721-25.552-28.799s10.39-28.799 25.552-28.799c15.163 0 25.552 11.721 25.552 28.799s-10.389 28.799-25.552 28.799Zm-112.826-82.728c-13.636 0-24.935 5.357-32.013 15.162v-65.585l-29.513 3.831v151.82h26.169l.519-15.844c6.981 11.818 19.481 18.474 34.838 18.474 27.988 0 48.475-22.728 48.475-53.929 0-31.202-20.39-53.929-48.475-53.929Zm-6.98 82.728c-15.163 0-25.552-11.721-25.552-28.799s10.389-28.799 25.552-28.799c15.162 0 25.552 11.721 25.552 28.799s-10.39 28.799-25.552 28.799Zm-113.638 1.331c-15.649 0-26.883-7.273-30.714-19.805h72.63c.715-3.831 1.202-8.377 1.202-11.429 0-33.02-18.475-52.825-49.514-52.825-31.331 0-53.02 22.013-53.02 53.929 0 32.338 22.728 53.929 56.462 53.929 17.467 0 34.448-5.844 45.065-15.552l-10.617-18.701c-10.292 7.11-20.39 10.454-31.494 10.454Zm-6.591-61.137c13.637 0 22.338 8.279 22.338 21.104v.098h-47.078c2.825-13.604 11.623-21.202 24.74-21.202Zm-98.994 84.968c15.26 0 30.195-5.844 40.714-15.974l-11.526-19.383c-8.182 6.364-17.467 9.805-26.266 9.805-16.364 0-27.273-11.429-27.273-28.377s10.909-28.377 27.273-28.377c8.084 0 16.883 2.922 24.026 8.085l11.721-19.806c-9.481-8.571-24.156-13.831-38.702-13.831-32.013 0-54.643 22.338-54.643 53.929.032 31.494 22.662 53.929 54.676 53.929Zm-93.735-105.261-.519 15.975c-6.981-11.916-19.481-18.572-34.838-18.572-28.085 0-48.475 22.728-48.475 53.929 0 31.202 20.52 53.929 48.475 53.929 15.357 0 27.889-6.656 34.838-18.474l.519 15.844h26.169V155.265h-26.169Zm-28.377 80.099c-15.162 0-25.552-11.721-25.552-28.799s10.39-28.799 25.552-28.799c15.163 0 25.552 11.721 25.552 28.799s-10.422 28.799-25.552 28.799Zm-57.663-79.906h-26.526v-8.767c0-13.117 5.13-18.149 18.442-18.149 4.123 0 7.467.097 9.383.292v-22.5c-3.637-1.007-12.5-2.013-17.63-2.013-27.111 0-39.611 12.792-39.611 40.422v10.682h-16.753v24.806h16.753v77.631h29.448v-77.599h21.949l4.545-24.805Z"></path></svg>
           </a>
           
           <button onClick={redirectToFacebook} className="px-5 py-2 font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
@@ -111,7 +113,7 @@ const MaciejLasekKo = () => {
       ) : (
         <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between w-full px-4 py-2 bg-white border-b border-gray-200 shadow-sm">
           <a onClick={redirectToFacebook} href='#' className="mr-2 ml-4"> 
-            <svg  className="x1lliihq x5skwsv" height="22" viewBox="100 100 900 160" xmlns="http://www.w3.org/2000/svg"><title>Maciej Lasek | Facebook</title><path fill="#1877f2" d="M881.583 257.897h29.48v-47.696l41.137 47.696h36.072l-47.89-54.969 40.909-47.663h-32.825l-37.403 43.93v-96.982l-29.48 3.864v151.82Zm-67.988-105.261c-32.728 0-55.455 22.013-55.455 53.929s22.727 53.929 55.455 53.929c32.727 0 55.455-22.013 55.455-53.929s-22.728-53.929-55.455-53.929Zm0 82.728c-15.163 0-25.552-11.721-25.552-28.799s10.389-28.799 25.552-28.799c15.162 0 25.552 11.721 25.552 28.799s-10.39 28.799-25.552 28.799Zm-119.807-82.728c-32.727 0-55.455 22.013-55.455 53.929s22.728 53.929 55.455 53.929c32.728 0 55.455-22.013 55.455-53.929s-22.727-53.929-55.455-53.929Zm0 82.728c-15.162 0-25.552-11.721-25.552-28.799s10.39-28.799 25.552-28.799c15.163 0 25.552 11.721 25.552 28.799s-10.389 28.799-25.552 28.799Zm-112.826-82.728c-13.636 0-24.935 5.357-32.013 15.162v-65.585l-29.513 3.831v151.82h26.169l.519-15.844c6.981 11.818 19.481 18.474 34.838 18.474 27.988 0 48.475-22.728 48.475-53.929 0-31.202-20.39-53.929-48.475-53.929Zm-6.98 82.728c-15.163 0-25.552-11.721-25.552-28.799s10.389-28.799 25.552-28.799c15.162 0 25.552 11.721 25.552 28.799s-10.39 28.799-25.552 28.799Zm-113.638 1.331c-15.649 0-26.883-7.273-30.714-19.805h72.63c.715-3.831 1.202-8.377 1.202-11.429 0-33.02-18.475-52.825-49.514-52.825-31.331 0-53.02 22.013-53.02 53.929 0 32.338 22.728 53.929 56.462 53.929 17.467 0 34.448-5.844 45.065-15.552l-10.617-18.701c-10.292 7.11-20.39 10.454-31.494 10.454Zm-6.591-61.137c13.637 0 22.338 8.279 22.338 21.104v.098h-47.078c2.825-13.604 11.623-21.202 24.74-21.202Zm-98.994 84.968c15.26 0 30.195-5.844 40.714-15.974l-11.526-19.383c-8.182 6.364-17.467 9.805-26.266 9.805-16.364 0-27.273-11.429-27.273-28.377s10.909-28.377 27.273-28.377c8.084 0 16.883 2.922 24.026 8.085l11.721-19.806c-9.481-8.571-24.156-13.831-38.702-13.831-32.013 0-54.643 22.338-54.643 53.929.032 31.494 22.662 53.929 54.676 53.929Zm-93.735-105.261-.519 15.975c-6.981-11.916-19.481-18.572-34.838-18.572-28.085 0-48.475 22.728-48.475 53.929 0 31.202 20.52 53.929 48.475 53.929 15.357 0 27.889-6.656 34.838-18.474l.519 15.844h26.169V155.265h-26.169Zm-28.377 80.099c-15.162 0-25.552-11.721-25.552-28.799s10.39-28.799 25.552-28.799c15.163 0 25.552 11.721 25.552 28.799s-10.422 28.799-25.552 28.799Zm-57.663-79.906h-26.526v-8.767c0-13.117 5.13-18.149 18.442-18.149 4.123 0 7.467.097 9.383.292v-22.5c-3.637-1.007-12.5-2.013-17.63-2.013-27.111 0-39.611 12.792-39.611 40.422v10.682h-16.753v24.806h16.753v77.631h29.448v-77.599h21.949l4.545-24.805Z"></path></svg>
+            <svg  className="x1lliihq x5skwsv" height="22" viewBox="100 100 900 160" xmlns="http://www.w3.org/2000/svg"><title>Poseł Piotr Głowski  | Facebook</title><path fill="#1877f2" d="M881.583 257.897h29.48v-47.696l41.137 47.696h36.072l-47.89-54.969 40.909-47.663h-32.825l-37.403 43.93v-96.982l-29.48 3.864v151.82Zm-67.988-105.261c-32.728 0-55.455 22.013-55.455 53.929s22.727 53.929 55.455 53.929c32.727 0 55.455-22.013 55.455-53.929s-22.728-53.929-55.455-53.929Zm0 82.728c-15.163 0-25.552-11.721-25.552-28.799s10.389-28.799 25.552-28.799c15.162 0 25.552 11.721 25.552 28.799s-10.39 28.799-25.552 28.799Zm-119.807-82.728c-32.727 0-55.455 22.013-55.455 53.929s22.728 53.929 55.455 53.929c32.728 0 55.455-22.013 55.455-53.929s-22.727-53.929-55.455-53.929Zm0 82.728c-15.162 0-25.552-11.721-25.552-28.799s10.39-28.799 25.552-28.799c15.163 0 25.552 11.721 25.552 28.799s-10.389 28.799-25.552 28.799Zm-112.826-82.728c-13.636 0-24.935 5.357-32.013 15.162v-65.585l-29.513 3.831v151.82h26.169l.519-15.844c6.981 11.818 19.481 18.474 34.838 18.474 27.988 0 48.475-22.728 48.475-53.929 0-31.202-20.39-53.929-48.475-53.929Zm-6.98 82.728c-15.163 0-25.552-11.721-25.552-28.799s10.389-28.799 25.552-28.799c15.162 0 25.552 11.721 25.552 28.799s-10.39 28.799-25.552 28.799Zm-113.638 1.331c-15.649 0-26.883-7.273-30.714-19.805h72.63c.715-3.831 1.202-8.377 1.202-11.429 0-33.02-18.475-52.825-49.514-52.825-31.331 0-53.02 22.013-53.02 53.929 0 32.338 22.728 53.929 56.462 53.929 17.467 0 34.448-5.844 45.065-15.552l-10.617-18.701c-10.292 7.11-20.39 10.454-31.494 10.454Zm-6.591-61.137c13.637 0 22.338 8.279 22.338 21.104v.098h-47.078c2.825-13.604 11.623-21.202 24.74-21.202Zm-98.994 84.968c15.26 0 30.195-5.844 40.714-15.974l-11.526-19.383c-8.182 6.364-17.467 9.805-26.266 9.805-16.364 0-27.273-11.429-27.273-28.377s10.909-28.377 27.273-28.377c8.084 0 16.883 2.922 24.026 8.085l11.721-19.806c-9.481-8.571-24.156-13.831-38.702-13.831-32.013 0-54.643 22.338-54.643 53.929.032 31.494 22.662 53.929 54.676 53.929Zm-93.735-105.261-.519 15.975c-6.981-11.916-19.481-18.572-34.838-18.572-28.085 0-48.475 22.728-48.475 53.929 0 31.202 20.52 53.929 48.475 53.929 15.357 0 27.889-6.656 34.838-18.474l.519 15.844h26.169V155.265h-26.169Zm-28.377 80.099c-15.162 0-25.552-11.721-25.552-28.799s10.39-28.799 25.552-28.799c15.163 0 25.552 11.721 25.552 28.799s-10.422 28.799-25.552 28.799Zm-57.663-79.906h-26.526v-8.767c0-13.117 5.13-18.149 18.442-18.149 4.123 0 7.467.097 9.383.292v-22.5c-3.637-1.007-12.5-2.013-17.63-2.013-27.111 0-39.611 12.792-39.611 40.422v10.682h-16.753v24.806h16.753v77.631h29.448v-77.599h21.949l4.545-24.805Z"></path></svg>
           </a>
           
           <div className="flex items-center space-x-2">
@@ -154,7 +156,7 @@ const MaciejLasekKo = () => {
           <div className="flex flex-col items-center pt-10 pb-6">
             <div className="w-24 h-24 rounded-full overflow-hidden relative mb-2">
               <img 
-                src="/Assets/MaciejLasekKo/photo_2.jpg" 
+                src="/Assets/Gwarancja.rozwoju/photo_avatar.jpg" 
                 alt="Profile" 
                 className="w-full h-full object-cover"
               />
@@ -164,7 +166,7 @@ const MaciejLasekKo = () => {
 
           <div className="px-6 pb-6">
             <h2 className="text-2xl font-bold text-center mb-6">
-              {isMobile ? "See more from Maciej Lasek" : "Wyświetl więcej materiałów ze strony Maciej Lasek"}
+              {isMobile ? "See more from Poseł Piotr Głowski " : "Wyświetl więcej materiałów ze strony Poseł Piotr Głowski "}
             </h2>
 
             {!isMobile && (
@@ -217,8 +219,8 @@ const MaciejLasekKo = () => {
           <div className="fixed z-40 top-14 left-0 right-0 bg-white shadow-sm py-3 px-4 flex items-center justify-between">
             <div className="flex items-center">
               <div className="flex items-center px-3 py-2 rounded-lg transition-colors hover:bg-gray-100 cursor-pointer">
-                <img src="/Assets/MaciejLasekKo/photo_2.jpg" alt="Maciej Lasek" className="w-11 h-11 rounded-full mr-3" />
-                <h2 className="font-bold text-xl">Maciej Lasek</h2>
+                <img src="/Assets/Gwarancja.rozwoju/photo_avatar.jpg" alt="Poseł Piotr Głowski " className="w-11 h-11 rounded-full mr-3" />
+                <h2 className="font-bold text-xl">Poseł Piotr Głowski </h2>
               </div>
             </div>
             <button className="p-2 rounded-md hover:bg-gray-200 bg-gray-200">
@@ -235,7 +237,7 @@ const MaciejLasekKo = () => {
           <div className="w-full flex justify-center">
             <div className="w-[980px] relative">
               <img 
-                src="/Assets/MaciejLasekKo/photo_1.jpg"
+                src="/Assets/Gwarancja.rozwoju/background.jpg"
                 alt="Cover"
                 className="w-full h-[348px] object-cover rounded-md"
               />
@@ -246,7 +248,7 @@ const MaciejLasekKo = () => {
         {isMobile && (
           <div className="w-full">
             <img 
-              src="/Assets/MaciejLasekKo/photo_1.jpg"
+              src="/Assets/Gwarancja.rozwoju/background.jpg"
               alt="Cover"
               className="w-full object-cover rounded-md"
             />
@@ -256,7 +258,7 @@ const MaciejLasekKo = () => {
         {isMobile ? (
           <div className="absolute left-4 bottom-0 transform translate-y-1/2">
             <div className="w-32 h-32 rounded-full border-4 border-blue-500 overflow-hidden bg-white">
-              <img src="/Assets/MaciejLasekKo/photo_2.jpg" alt="Maciej Lasek" className="w-full h-full object-cover" />
+              <img src="/Assets/Gwarancja.rozwoju/photo_avatar.jpg" alt="Poseł Piotr Głowski " className="w-full h-full object-cover" />
             </div>
           </div>
         ) : (
@@ -264,7 +266,7 @@ const MaciejLasekKo = () => {
             <div className="w-[940px] relative">
               <div className="absolute left-0 bottom-0 transform translate-y-1/3">
                 <div className="w-40 h-40 rounded-full border-4 border-white overflow-hidden bg-white">
-                  <img src="/Assets/MaciejLasekKo/photo_2.jpg" alt="Maciej Lasek" className="w-full h-full object-cover" />
+                  <img src="/Assets/Gwarancja.rozwoju/photo_avatar.jpg" alt="Poseł Piotr Głowski " className="w-full h-full object-cover" />
                 </div>
               </div>
             </div>
@@ -277,14 +279,17 @@ const MaciejLasekKo = () => {
           <div className="mt-16 px-4 pb-4">
             <div className="flex flex-col">
               <div className="flex items-center">
-                <h1 className="text-2xl font-bold">Maciej Lasek</h1>
-                 
+                <h1 className="text-2xl font-bold">Poseł Piotr Głowski </h1>
+                <svg viewBox="0 0 12 13" width="16" height="16" title="Zweryfikowane konto" className="ml-2 fill-[#1877F2]">
+                  <title>Zweryfikowane konto</title>
+                  <g fillRule="evenodd" transform="translate(-98 -917)">
+                    <path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path>
+                  </g>
+                </svg>
               </div>
-              <p onClick='openModal' className="text-gray-600 mt-1 text-sm">9,4 tys. obserwujący • 177 obserwowanych</p>
+              <p onClick='openModal' className="text-gray-600 mt-1 text-sm">7,3 tys. obserwujący • 561 obserwowanych</p>
               <p className="mt-2 text-sm">
-              Poseł na Sejm RP IX i X kadencji <br/>
-Koalicja Obywalelska<br/>
-sekretarz stanu w Ministerstwie Infrastruktury
+              Pilanin, doktor nauk ekonomicznych,<br /> senator VII kadencji, Prezydent Piły w <br />latach 2010-2023
               </p>
               
               <div className="mt-4 flex">
@@ -308,10 +313,15 @@ sekretarz stanu w Ministerstwie Infrastruktury
             
             <div>
               <div className="flex items-center">
-                <h1 className="text-3xl font-bold">Maciej Lasek</h1>
-                 
+                <h1 className="text-3xl font-bold">Poseł Piotr Głowski </h1>
+                <svg viewBox="0 0 12 13" width="16" height="16" title="Zweryfikowane konto" className="ml-2 fill-[#1877F2]">
+                  <title>Zweryfikowane konto</title>
+                  <g fillRule="evenodd" transform="translate(-98 -917)">
+                    <path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path>
+                  </g>
+                </svg>
               </div>
-              <p className="text-gray-600 mt-1 text-sm">9,4 tys. obserwujący • 177 obserwowanych</p>
+              <p className="text-gray-600 mt-1 text-sm">7,3 tys. obserwujący • 561 obserwowanych</p>
             </div>
           </div>
         )}
@@ -388,9 +398,7 @@ sekretarz stanu w Ministerstwie Infrastruktury
               <div className="bg-white rounded-lg shadow p-4 mb-4">
                 <h2 className="text-xl font-bold mb-3">Prezentacja</h2>
                 <p className="text-center text-sm mb-6">
-                Poseł na Sejm RP IX i X kadencji <br/>
-Koalicja Obywalelska<br/>
-sekretarz stanu w Ministerstwie Infrastruktury
+                Pilanin, doktor nauk ekonomicznych,<br /> senator VII kadencji, Prezydent Piły w <br />latach 2010-2023
                 </p>
                 
                 <hr className="my-4" />
@@ -398,7 +406,7 @@ sekretarz stanu w Ministerstwie Infrastruktury
                 <div className="flex items-center space-x-2 p-2 rounded hover:bg-gray-100">
                   <img className="x1b0d499 xuo83w3 opacity-60" src="https://static.xx.fbcdn.net/rsrc.php/v4/yC/r/qF_eflLVarp.png" alt="" height="20" width="20"/>
                   <div>
-                    <p><strong>Strona</strong> · Polityk</p>
+                    <p><strong>Strona</strong> · Autor</p>
                   </div>
                 </div>
 
@@ -406,52 +414,20 @@ sekretarz stanu w Ministerstwie Infrastruktury
                 <div className="flex items-center space-x-2 p-2 rounded hover:bg-gray-100">
                 <img className="opacity-60" alt="" height="20" width="20" src="https://static.xx.fbcdn.net/rsrc.php/v4/yr/r/bwmGKGh4YjO.png"/>
                   <div>
-                    <p >ul. Bracka 5 lok. 9, Warsaw, Poland</p>
+                    <p>
+                    Dąbrowskiego 8, Piła, Poland</p>
                   </div>
                 </div>
 
 
-                <div className="flex items-center space-x-2 p-2 rounded hover:bg-gray-100">
-                <img className="opacity-60" alt="" height="20" width="20" src="https://static.xx.fbcdn.net/rsrc.php/v4/y-/r/VIGUiR6qVQJ.png"/>
-                <div>
-                    <p >888 888 470</p>
-                  </div>
-                </div>
-
-                
                 
                 <div className="flex items-center space-x-2 p-2 rounded hover:bg-gray-100">
                 <img className="x1b0d499 xuo83w3 opacity-60" src="https://static.xx.fbcdn.net/rsrc.php/v4/yb/r/KVUi1wUrbfb.png" alt="" height="20" width="20"/>
                   <div>
-                    <p >maciej.lasek.biuro@gmail.com</p>
+                    <p >biuro@polska2050.pl</p>
                   </div>
                 </div>
-                
-                <div className="flex items-center space-x-2 p-2 rounded hover:bg-gray-100">
-                <img className="opacity-60" alt="" height="20" width="20" src="https://static.xx.fbcdn.net/rsrc.php/v4/yD/r/zdayqvLx7zc.png"/>
-                  <div>
-                    <a href="https://www.instagram.com/maciejlasek.ko" className="font-medium text-blue-600">maciejlasek.ko</a>
-                  </div>
-                </div>
-                
-                <div className="flex items-center space-x-2 p-2 rounded hover:bg-gray-100">
-                <img className="opacity-60" alt="" height="20" width="20" src="https://static.xx.fbcdn.net/rsrc.php/v4/yf/r/UqeiKXBhSop.png"/>
-                  <div>
-                    <a href="https://x.com/LasekMaciej" className="font-medium text-blue-600">LasekMaciej</a>
-                  </div>
-                </div>
-
-                <div className="flex items-center space-x-2 p-2 rounded hover:bg-gray-100">
-              <img className="opacity-60" alt="" height="20" width="20" src="https://static.xx.fbcdn.net/rsrc.php/v4/yb/r/WcKE_W78lry.png"/>
-                  <div>
-                    <a href="https://www.tiktok.com/@maciejlasek.ko" className="font-medium text-blue-600">maciejlasek.ko</a>
-                  </div>
-                </div>
-
-
               </div>
-
-              
               
               <div className="bg-white rounded-lg shadow p-4 mb-4">
                 <div className="flex justify-between items-center mb-3">
@@ -460,34 +436,34 @@ sekretarz stanu w Ministerstwie Infrastruktury
                 </div>
                 <div className="grid grid-cols-3 gap-1">
                   <div className="aspect-square bg-red-500 text-white rounded-md overflow-hidden relative">
-                  <img src="/Assets/MaciejLasekKo/photo_gallery1.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
+                  <img src="/Assets/Gwarancja.rozwoju/photo_gallerea1.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
 
                   </div>
                   <div className="aspect-square bg-gray-200 rounded-md overflow-hidden">
-                  <img src="/Assets/MaciejLasekKo/photo_gallery2.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
+                  <img src="/Assets/Gwarancja.rozwoju/photo_gallerea2.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
                   </div>
                   <div className="aspect-square bg-gray-200 rounded-md overflow-hidden">
-                  <img src="/Assets/MaciejLasekKo/photo_gallery3.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
+                  <img src="/Assets/Gwarancja.rozwoju/photo_gallerea3.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
                   </div>
                   
                   <div className="aspect-square bg-gray-200 rounded-md overflow-hidden">
-                  <img src="/Assets/MaciejLasekKo/photo_gallery4.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
+                  <img src="/Assets/Gwarancja.rozwoju/photo_gallerea4.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
                   </div>
                   <div className="aspect-square bg-gray-200 rounded-md overflow-hidden">
-                  <img src="/Assets/MaciejLasekKo/photo_gallery5.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
+                  <img src="/Assets/Gwarancja.rozwoju/photo_gallerea5.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
                   </div>
                   <div className="aspect-square bg-gray-200 rounded-md overflow-hidden">
-                  <img src="/Assets/MaciejLasekKo/photo_gallery6.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
+                  <img src="/Assets/Gwarancja.rozwoju/photo_gallerea6.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
                   </div>
                   
                   <div className="aspect-square bg-blue-600 text-white rounded-md overflow-hidden relative">
-                  <img src="/Assets/MaciejLasekKo/photo_gallery7.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
+                  <img src="/Assets/Gwarancja.rozwoju/photo_gallerea7.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
                   </div>
                   <div className="aspect-square bg-gray-200 rounded-md overflow-hidden">
-                  <img src="/Assets/MaciejLasekKo/photo_gallery8.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
+                  <img src="/Assets/Gwarancja.rozwoju/photo_gallerea8.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
                   </div>
                   <div className="aspect-square bg-gray-200 rounded-md overflow-hidden">
-                  <img src="/Assets/MaciejLasekKo/photo_gallery9.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
+                  <img src="/Assets/Gwarancja.rozwoju/photo_gallerea9.jpg" alt="Photo of a person in suit" className="w-full h-full object-cover" />
                   </div>
                 </div>
               </div>
@@ -497,17 +473,14 @@ sekretarz stanu w Ministerstwie Infrastruktury
 
 
 
-
-
-
             <div className="bg-white rounded-lg shadow mb-4 w-full">
-      {/* Original Post Header */}
-      <div className="p-4 pb-0">
-        <div className="flex items-start">
+      <div className="p-4">
+        {/* Header with user info */}
+        <div className="flex items-start mb-3">
           <div className="w-10 h-10 rounded-full mr-2 overflow-hidden bg-blue-100 flex items-center justify-center">
             <img 
-              src="/Assets/MaciejLasekKo/photo_2.jpg" 
-              alt="Maciej Lasek" 
+              src="/Assets/Gwarancja.rozwoju/photo_avatar.jpg" 
+              alt="User" 
               className="w-full h-full object-cover" 
             />
           </div>
@@ -515,10 +488,160 @@ sekretarz stanu w Ministerstwie Infrastruktury
             <div className="flex justify-between items-start w-full">
               <div>
                 <div className="flex items-center">
-                  <h3 className="font-semibold">Maciej Lasek</h3>
+                  <h3 className="font-semibold">Poseł Piotr Głowski</h3>
+                  <span className="ml-2">–</span>
+                  <span className="ml-2">😊</span>
+                  <span className="ml-2 text-gray-500">dumny(a).</span>
                 </div>
                 <div className="flex items-center text-xs text-gray-500">
-                  <span>7 godz.</span>
+                  <span>3 godz.</span>
+                  <span className="mx-1">·</span>
+                  <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
+                  </svg>
+                </div>
+              </div>
+              <div className="relative">
+                <button 
+                  className="text-gray-500 ml-2 p-1 rounded-full hover:bg-gray-100"
+                  onClick={() => setShowMenu(!showMenu)}
+                >
+                  <svg viewBox="0 0 20 20" width="20" height="20" fill="currentColor">
+                    <g fillRule="evenodd" transform="translate(-446 -350)">
+                      <path d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"></path>
+                    </g>
+                  </svg>
+                </button>
+                {showMenu && (
+                  <div className="absolute right-0 mt-1 w-48 bg-white rounded-md shadow-lg z-10">
+                    <ul className="py-1">
+                      <li>
+                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                          Zapisz post
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                          Zgłoś
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        {/* Post content - text */}
+        <div className="mb-3 overflow-hidden">
+          <div className="mb-3">
+            <p className="mb-2 break-words">
+              Nowy zespół, w którym gra mój syn Adam. Za nimi dużo pracy, ale wierzę, że przed nimi wiele sukcesów.
+            </p>
+            <p className="mb-2 break-words">
+              To dopiero początek. Powodzenia <span className="text-blue-600">Merdu</span> !
+            </p>
+          </div>
+          
+          {/* YouTube embed */}
+          <div className="rounded-lg overflow-hidden border border-gray-300">
+            <div className="aspect-w-16 aspect-h-9 bg-black">
+              <img 
+                src="/Assets/Gwarancja.rozwoju/photo_11Post.jpg" 
+                alt="Merdu - Tundra album cover" 
+                className="w-full object-cover" 
+              />
+            </div>
+            <div className="p-3 bg-gray-100" onClick={redirectToYoutube}>
+              <div className="text-gray-600 text-xs mb-1">YOUTUBE.COM</div>
+              <div className="font-bold text-lg">Merdu - Tundra (DEMO SINGLE)</div>
+              <div className="text-gray-700 text-sm">
+                Drugi singiel demo zespołu Merdu.
+                <span className="ml-1 text-gray-500">Facebook: https://www.face...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        {/* Post engagement stats */}
+        <div className="flex justify-between text-xs text-gray-500 border-b py-2 mb-2">
+          <div className="flex items-center">
+            <div className="flex -space-x-1 mr-1">
+              <div className="bg-blue-500 rounded-full w-5 h-5 flex items-center justify-center">
+                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+                </svg>
+              </div>
+              <div className="bg-red-500 rounded-full w-5 h-5 flex items-center justify-center">
+                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                </svg>
+              </div>
+            </div>
+            <span>9</span>
+          </div>
+          <div>
+            <span>2 udostępnienia</span>
+          </div>
+        </div>
+        
+        {/* Action buttons */}
+        <div className="flex">
+          <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+            <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+            </svg>
+            Polub
+          </button>
+          <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+            <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
+            </svg>
+            Skomentuj
+          </button>
+          <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+            <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z" />
+            </svg>
+            Udostępnij
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+            <div className="bg-white rounded-lg shadow mb-4 w-full">
+      {/* Post Header */}
+      <div className="p-4 pb-2">
+        <div className="flex items-start">
+          <div className="w-10 h-10 rounded-full mr-2 overflow-hidden bg-blue-100 flex items-center justify-center">
+            <img 
+              src="/Assets/Gwarancja.rozwoju/photo_avatar.jpg" 
+              alt="Piotr Głowski" 
+              className="w-full h-full object-cover" 
+            />
+          </div>
+          <div className="flex-grow">
+            <div className="flex justify-between items-start w-full">
+              <div>
+                <div className="flex items-center">
+                  <h3 className="font-semibold">Poseł Piotr Głowski</h3>
+                  <span className="ml-1 text-gray-500 text-sm">jest w:</span>
+                </div>
+                <div className="font-semibold">Regionalne Centrum Kultury w Pile.</div>
+                <div className="flex items-center text-xs text-gray-500">
+                  <span>3 godz.</span>
+                  <span className="mx-1">·</span>
+                  <span>Piła, województwo wielkopolskie</span>
                   <span className="mx-1">·</span>
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
@@ -558,65 +681,33 @@ sekretarz stanu w Ministerstwie Infrastruktury
         </div>
       </div>
       
-      {/* Simple Video Player */}
-      <div className="pt-4 px-4">
-        <div className="rounded-lg overflow-hidden" style={{ aspectRatio: '16/9' }}>
-          <video 
-            controls
-            className="w-full h-full"
-            poster="/Assets/MaciejLasekKo/FBreels1.jpg" 
-          >
-            <source src="/Assets/MaciejLasekKo/FBreels1.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
+      {/* Post Content */}
+      <div className="px-4 pb-2">
+        <p className="mb-2">
+          CZERWONE GITARY świętują 60. lecie. Są trochę starsi ode mnie.
+          <span role="img" aria-label="crying laughing" className="ml-1">😢</span>
+          <span role="img" aria-label="laughing" className="ml-1">😂</span>
+          <br/>
+          Tylko trochę 
+          <span role="img" aria-label="smiling face" className="ml-1">😊</span>
+          <span role="img" aria-label="smiling face" className="ml-1">😊</span>
+          <span role="img" aria-label="smiling face" className="ml-1">😊</span>
+        </p>
       </div>
       
-      {/* Shared Post */}
-      <div className="p-4 border border-gray-200 mx-4 my-4 rounded-lg">
-        <div className="flex items-start">
-          <div className="w-10 h-10 rounded-full mr-2 overflow-hidden bg-blue-100 flex items-center justify-center">
-            <img 
-              src="/Assets/MaciejLasekKo/photo_post1Comm.jpg" 
-              alt="Radosław Sikorski" 
-              className="w-full h-full object-cover" 
-            />
-          </div>
-          <div className="flex-grow">
-            <div className="flex items-center">
-              <h3 className="font-semibold">Radosław Sikorski</h3>
-              <svg viewBox="0 0 12 13" width="16" height="16" title="Zweryfikowane konto" className="ml-1 flex-shrink-0 fill-blue-600">
-                <title>Zweryfikowane konto</title>
-                <g fillRule="evenodd" transform="translate(-98 -917)">
-                  <path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path>
-                </g>
-              </svg>
-            </div>
-            <div className="flex items-center text-xs text-gray-500">
-              <span>9 godz.</span>
-              <span className="mx-1">·</span>
-              <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
-                <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
-              </svg>
-            </div>
-            
-            <div className="mt-2">
-              <p className="text-sm">
-                Pokój wynegocjowany z Putinem nie jest czymś, czemu możemy w pełni ufać, ponieważ Putin to człowiek, który wielokrotnie, publicznie kłamał!
-              </p>
-              <div className="flex items-center mt-2 text-sm text-blue-600">
-                <span className="flex items-center">
-                  <span className="mr-1">📺</span>
-                  <span>Sky News, 20.03.25 r.</span>
-                </span>
-              </div>
-            </div>
-          </div>
+      {/* Post Image */}
+      <div className="px-4">
+        <div className="rounded-lg overflow-hidden">
+          <img 
+            src="/Assets/Gwarancja.rozwoju/photo_post_1.jpg" 
+            alt="Czerwone Gitary concert" 
+            className="w-full h-full object-cover" 
+          />
         </div>
       </div>
       
       {/* Post engagement stats */}
-      <div className="flex justify-between text-xs text-gray-500 border-b border-t py-2 px-4 mx-4 mb-2">
+      <div className="flex justify-between text-xs text-gray-500 border-b border-t py-2 px-4 mx-4 my-2">
         <div className="flex items-center">
           <div className="flex -space-x-1 mr-1">
             <div className="bg-blue-500 rounded-full w-5 h-5 flex items-center justify-center">
@@ -630,192 +721,10 @@ sekretarz stanu w Ministerstwie Infrastruktury
               </svg>
             </div>
           </div>
-          <span>7</span>
+          <span>6</span>
         </div>
         <div>
-          <span>1 komentarz</span>
-        </div>
-      </div>
-      
-      {/* Action buttons */}
-      {isMobile ? (
-        // Mobile action buttons (3 buttons)
-        <div className="flex px-4">
-          <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
-            <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
-            </svg>
-            Polub
-          </button>
-          <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
-            <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
-            </svg>
-            Komentarz
-          </button>
-          <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
-            <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z" />
-            </svg>
-            Udostępnij
-          </button>
-        </div>
-      ) : (
-        // Desktop action buttons (only 2 buttons)
-        <div className="flex px-4">
-          <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
-            <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
-            </svg>
-            Polub
-          </button>
-          <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
-            <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
-            </svg>
-            Skomentuj
-          </button>
-        </div>
-      )}
-    </div>
-
-
-
-    <div className="bg-white rounded-lg shadow mb-4 w-full">
-      {/* Original Post Header */}
-      <div className="p-4 pb-2">
-        <div className="flex items-start">
-          <div className="w-10 h-10 rounded-full mr-2 overflow-hidden bg-blue-100 flex items-center justify-center">
-            <img 
-              src="/Assets/MaciejLasekKo/photo_2.jpg" 
-              alt="Maciej Lasek" 
-              className="w-full h-full object-cover" 
-            />
-          </div>
-          <div className="flex-grow">
-            <div className="flex justify-between items-start w-full">
-              <div>
-                <div className="flex items-center">
-                  <h3 className="font-semibold">Maciej Lasek</h3>
-                </div>
-                <div className="flex items-center text-xs text-gray-500">
-                  <span>8 godz.</span>
-                  <span className="mx-1">·</span>
-                  <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
-                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
-                  </svg>
-                </div>
-              </div>
-              <div className="relative">
-                <button 
-                  className="text-gray-500 ml-2 p-1 rounded-full hover:bg-gray-100"
-                  onClick={() => setShowMenu(!showMenu)}
-                >
-                  <svg viewBox="0 0 20 20" width="20" height="20" fill="currentColor">
-                    <g fillRule="evenodd" transform="translate(-446 -350)">
-                      <path d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"></path>
-                    </g>
-                  </svg>
-                </button>
-                {showMenu && (
-                  <div className="absolute right-0 mt-1 w-48 bg-white rounded-md shadow-lg z-10">
-                    <ul className="py-1">
-                      <li>
-                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                          Zapisz post
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                          Zgłoś
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                )}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      {/* Video Content */}
-      <div className="px-4 mb-2">
-        <div className="rounded-lg overflow-hidden relative" style={{ aspectRatio: '16/9' }}>
-          <video 
-            controls
-            className="w-full h-full"
-            poster="/Assets/MaciejLasekKo/fbVideo2.mp4"
-          >
-            <source src="/Assets/MaciejLasekKo/fbVideo2.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          {/* Play button overlay that appears before video starts */}
-          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-            <div className="bg-black bg-opacity-50 rounded-full p-4">
-              <svg className="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M8 5v14l11-7z" />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      {/* Shared Post */}
-      <div className="mx-4 mb-4 border border-gray-200 rounded-lg overflow-hidden">
-        {/* Shared post info */}
-        <div className="p-3 bg-white">
-          <div className="flex items-center mb-2">
-            <div className="w-8 h-8 rounded-full mr-2 overflow-hidden bg-blue-800 flex items-center justify-center">
-              <span className="text-white text-xs font-bold">KPRM</span>
-            </div>
-            <div>
-              <div className="flex items-center">
-                <span className="font-medium text-sm">Kancelaria Premiera</span>
-                <svg viewBox="0 0 12 13" width="16" height="16" title="Zweryfikowane konto" className="ml-1 flex-shrink-0 fill-blue-600">
-                  <title>Zweryfikowane konto</title>
-                  <g fillRule="evenodd" transform="translate(-98 -917)">
-                    <path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path>
-                  </g>
-                </svg>
-              </div>
-              <div className="text-xs text-gray-500">
-                11 godz. · <svg className="w-3 h-3 inline" fill="currentColor" viewBox="0 0 16 16">
-                  <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
-                </svg>
-              </div>
-            </div>
-          </div>
-          
-          <div className="text-sm">
-            <div className="flex items-center mb-2">
-              <span className="text-gray-500 mr-2">💬</span>
-              <span>Premier</span>
-              <a href="#" className="text-blue-600 font-medium ml-1">Donald Tusk</a>
-              <span className="text-gray-500 ml-1">⤵️</span>
-            </div>
-            <p>Europa nie może być dłużej bezbronna. Nowa polityka amerykańska kładzie nacisk na większą odpowiedzialność Europy za samą siebie. Jeśli...</p>
-            <button className="text-blue-600 font-medium text-sm mt-1">
-              Wyświetl więcej
-            </button>
-          </div>
-        </div>
-      </div>
-      
-      {/* Post engagement stats */}
-      <div className="flex justify-between text-xs text-gray-500 border-b border-t py-2 px-4 mx-4 mb-2">
-        <div className="flex items-center">
-          <div className="flex -space-x-1 mr-1">
-            <div className="bg-blue-500 rounded-full w-5 h-5 flex items-center justify-center">
-              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
-              </svg>
-            </div>
-          </div>
-          <span>5</span>
-        </div>
-        <div>
-          <span className="opacity-0">0 komentarzy · 0 udostępnień</span>
+          <span>1 udostępnienie</span>
         </div>
       </div>
       
@@ -863,29 +772,26 @@ sekretarz stanu w Ministerstwie Infrastruktury
 
 
 
+
     <div className="bg-white rounded-lg shadow mb-4 w-full">
       <div className="p-4">
-        {/* Header with user info - FIXED LAYOUT */}
+        {/* Header with user info */}
         <div className="flex items-start mb-3">
-          <img 
-            src="/Assets/MaciejLasekKo/photo_2.jpg" 
-            alt="User" 
-            className="w-10 h-10 rounded-full mr-2" 
-          />
+          <div className="w-10 h-10 rounded-full mr-2 overflow-hidden bg-blue-100 flex items-center justify-center">
+            <img 
+              src="/Assets/Gwarancja.rozwoju/photo_avatar.jpg" 
+              alt="User" 
+              className="w-full h-full object-cover" 
+            />
+          </div>
           <div className="flex-grow">
             <div className="flex justify-between items-start w-full">
               <div>
                 <div className="flex items-center">
-                  <h3 className="font-semibold">Maciej Lasek</h3>
-                  <svg viewBox="0 0 12 13" width="16" height="16" title="Zweryfikowane konto" className="ml-1 flex-shrink-0 fill-[#1877F2]">
-                    <title>Zweryfikowane konto</title>
-                    <g fillRule="evenodd" transform="translate(-98 -917)">
-                      <path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path>
-                    </g>
-                  </svg>
+                  <h3 className="font-semibold">Polska Analityka</h3>
                 </div>
                 <div className="flex items-center text-xs text-gray-500">
-                  <span>1d</span>
+                  <span>2 godz.</span>
                   <span className="mx-1">·</span>
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
@@ -895,10 +801,7 @@ sekretarz stanu w Ministerstwie Infrastruktury
               <div className="relative">
                 <button 
                   className="text-gray-500 ml-2 p-1 rounded-full hover:bg-gray-100"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    setShowMenu(!showMenu);
-                  }}
+                  onClick={() => setShowMenu(!showMenu)}
                 >
                   <svg viewBox="0 0 20 20" width="20" height="20" fill="currentColor">
                     <g fillRule="evenodd" transform="translate(-446 -350)">
@@ -927,64 +830,79 @@ sekretarz stanu w Ministerstwie Infrastruktury
           </div>
         </div>
         
-        {isMobile && <hr className="mb-3" />}
-        
-        {/* Post content - text only with links */}
-        <div className="mb-3 text-sm">
-          {!expanded ? (
-            <div>
-              <p>Kiedy sprawiedliwość dogania tych, którzy przez lata ukrywali się za głośnymi hasłami i miliardami, przypomina nam to, że świat nie jest już gotowy przymykać oczu na zagrożenia hybrydowe. Ruben Vardanyan, którego nazwisko pojawia się teraz w kontekście procesu sądowego w Baku, dla mnie nie jest jedynie postacią z wiadomości. To symbol tych zagrożeń hybrydowych, które my, jako Polacy, znamy bardzo dobrze...</p>
-              <button 
-                onClick={() => setExpanded(true)}
-                className="text-blue-500 font-medium text-sm mt-2"
-              >
-                Zobacz więcej
-              </button>
-            </div>
-          ) : (
-            <div>
-              <p>Kiedy sprawiedliwość dogania tych, którzy przez lata ukrywali się za głośnymi hasłami i miliardami, przypomina nam to, że świat nie jest już gotowy przymykać oczu na zagrożenia hybrydowe. Ruben Vardanyan, którego nazwisko pojawia się teraz w kontekście procesu sądowego w Baku, dla mnie nie jest jedynie postacią z wiadomości. To symbol tych zagrożeń hybrydowych, które my, jako Polacy, znamy bardzo dobrze. To człowiek, który, ukrywając się pod maską filantropa, w rzeczywistości pełnił rolę destabilizatora w regionie.</p>
-              
-              <p className="mt-2">W 2019 roku moi koledzy z Parlamentu Europejskiego po raz pierwszy podnieśli alarm – wtedy 22 deputowanych domagało się sankcji wobec tego "sukcesywnego biznesmena". Było widoczne to, czego inni woleli nie zauważać: za fasadą działalności charytatywnej i pięknych przemówień krył się gigantyczny mechanizm prania pieniędzy – 4,6 miliarda dolarów przez offshore'y w latach 2006-2013. Kiedy w 2022 roku Kongres USA i Ukraina również umieścili go na swoich listach, stało się jasne: to nie przypadek.</p>
-              
-              <p className="mt-2">Jednak prawdziwe oblicze Vardanyana ujawniło się, gdy nagle został "premierem" w Karabachu. Dlaczego odnoszący sukcesy finansista miałby zostać przywódcą nieuznawanej republiki? Odpowiedź jest prosta: zawsze był narzędziem Kremla. To on blokował pokojowe negocjacje między Armenią a Azerbejdżanem, forsując agendę korzystną dla Moskwy.</p>
-              
-              <p className="mt-2">I oto szczyt cynizmu: w kwietniu 2024 roku próbowano zgłosić go do Pokojowej Nagrody Nobla! Na szczęście 122 parlamentarzystów z różnych krajów, w tym moi koledzy z Litwy, Łotwy, Rumunii i Ukrainy, nie dopuścili do tego.</p>
-              
-              <p className="mt-2">Obserwując ten proces w Baku, myślę o tym, jak ważne jest, by nie dać się zwieść pięknym fasadom. Za "sukcesywnymi biznesmenami" i "rozjemcami" często kryją się ci, którzy podsycają wojny i konflikty w interesie Kremla. Dziś sprawiedliwość dosięgła Vardanyana. Jutro powinna dosięgnąć innych podobnych "operatorów" wojny hybrydowej przeciwko demokracji.</p>
-              
-              <p className="mt-2">Dlaczego to dotyczy Polski? Ponieważ znamy cenę takich schematów. Przeżyliśmy próby podziału, osłabienia, podporządkowania naszego kraju. Widzieliśmy, jak Moskwa wykorzystuje "szare strefy" i marionetkowych przywódców, by siać chaos i zdobywać dźwignie wpływu. Dlatego dziś nie możemy pozwolić, aby takie osoby jak Vardanyan kontynuowały swoją działalność bez konsekwencji.</p>
-              
-              <p className="mt-2">Proces w Baku to ważny krok. Ale to tylko część walki o sprawiedliwość. Musimy nadal wywierać presję na wszystkich powiązanych z przestępstwami Kremla, na wszystkich, którzy używają pieniędzy, władzy i wpływów do niszczenia pokoju i demokracji. Polska pozostaje i będzie pozostawać głosem domagającym się sprawiedliwości.</p>
-              
-              <p className="mt-2">Pamiętamy lekcje historii. Wiemy, co znaczy bronić swojej niepodległości. I nie pozwolimy, aby sabotażyści stabilności – kimkolwiek są i w jakichkolwiek krajach działają – pozostali bezkarni.</p>
-            </div>
-          )}
+        {/* Post content - text and image */}
+        <div className="mb-3 overflow-hidden">
+          <div className="mb-3">
+            <p className="mb-3 break-words">
+              Oligarcha Putina przed sądem: czy Europa powinna nadal walczyć z planami Kremla?
+            </p>
+            <p className="mb-3 break-words">
+              W Baku w Azerbejdżanie rozpoczął się proces putinowskiego oligarchy Rubena Vardaniana. Do 2022 r. był on jednym z głównych instrumentów finansowych Rosji, piorąc pieniądze dla kremlowskiej nomenklatury i sponsorując rosyjską agresję. Ten oligarcha, znany jako "portfel Putina", nie tylko prał pieniądze, aby wspierać rosyjską elitę, ale także kierował nielegalnym rządem w Karabachu. Znajduje się na listach sankcyjnych UE, USA i Ukrainy.
+            </p>
+            
+            {expanded ? (
+              <>
+                <p className="mb-3 break-words">
+                  Co więcej, Kreml próbował legitymizować jego przestępczą działalność, nominując go do Pokojowej Nagrody Nobla. Nominacja ta spotkała się jednak z ostrym potępieniem: ponad 120 parlamentarzystów z różnych krajów podpisało wspólny apel domagający się anulowania nominacji. Dali jasno do zrozumienia, że człowiek, który finansował agresję i wspierał separatyzm, nie zasługuje na najwyższe międzynarodowe uznanie.
+                </p>
+                <p className="mb-3 break-words">
+                  Jaka jest rola Polski w tej sytuacji? Jesteśmy wśród tych, którzy sprzeciwiają się putinizacji Europy, rozprzestrzenianiu się rosyjskich wpływów i praniu brudnych pieniędzy.
+                </p>
+                <p className="mb-3 break-words">
+                  Jaka jest rola Polski w tej sytuacji? Jesteśmy jednym z tych, którzy sprzeciwiają się putinizacji Europy, rozprzestrzenianiu się rosyjskich wpływów i praniu brudnych pieniędzy.
+                </p>
+                <p className="mb-3 break-words">
+                  Proces Vardanyana to tylko jeden krok. Musimy nadal wywierać presję na tych, którzy czerpią korzyści z rosyjskiej agresji, którzy próbują promować lobbowane interesy Moskwy w Europie.
+                </p>
+                <p className="mb-3 break-words">
+                  Sprawiedliwość musi zwyciężyć! Polska musi nadal być głosem w obronie demokracji i uczciwej polityki!
+                </p>
+                <button 
+                  onClick={() => setExpanded(false)} 
+                  className="text-blue-500 font-medium hover:underline"
+                >
+                  Pokaż mniej
+                </button>
+              </>
+            ) : (
+              <>
+                <p className="mb-3 break-words">
+                  Co więcej, Kreml próbował legitymizować jego przestępczą działalność, nominując go do Pokojowej Nagrody Nobla. Nominacja ta spotkała się jednak z ostrym potępieniem: ponad 120 parlamentarzystów z różnych krajów podpisało wspólny apel domagający się anulowania nominacji...
+                </p>
+                <button 
+                  onClick={() => setExpanded(true)} 
+                  className="text-blue-500 font-medium hover:underline"
+                >
+                  Wyświetl więcej
+                </button>
+              </>
+            )}
+          </div>
         </div>
         
         {/* Post engagement stats */}
         <div className="flex justify-between text-xs text-gray-500 border-b py-2 mb-2">
           <div className="flex items-center">
             <div className="flex -space-x-1 mr-1">
-              <div className="bg-red-500 rounded-full w-5 h-5 flex items-center justify-center">
-                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                </svg>
-              </div>
               <div className="bg-blue-500 rounded-full w-5 h-5 flex items-center justify-center">
                 <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
                 </svg>
               </div>
+              <div className="bg-red-500 rounded-full w-5 h-5 flex items-center justify-center">
+                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                </svg>
+              </div>
             </div>
-            <span>713</span>
+            <span>143</span>
           </div>
           <div>
-            <span>107 komentarze · 135 udostępnień</span>
+            <span>27 komentarzy · 48 udostępnień</span>
           </div>
         </div>
         
-        {/* Action buttons - conditional rendering based on isMobile */}
+        {/* Action buttons */}
         {isMobile ? (
           // Mobile action buttons (3 buttons)
           <div className="flex">
@@ -1020,7 +938,161 @@ sekretarz stanu w Ministerstwie Infrastruktury
               <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
               </svg>
+              Skomentuj
+            </button>
+          </div>
+        )}
+      </div>
+    </div>
+    
+    
+
+
+
+    <div className="bg-white rounded-lg shadow mb-4 w-full">
+      <div className="p-4">
+        {/* Header with user info */}
+        <div className="flex items-start mb-3">
+          <div className="w-10 h-10 rounded-full mr-2 overflow-hidden bg-blue-100 flex items-center justify-center">
+            <img 
+              src="/Assets/Gwarancja.rozwoju/photo_avatar.jpg" 
+              alt="User" 
+              className="w-full h-full object-cover" 
+            />
+          </div>
+          <div className="flex-grow">
+            <div className="flex justify-between items-start w-full">
+              <div>
+                <div className="flex items-center">
+                  <h3 className="font-semibold">Poseł Piotr Głowski</h3>
+                </div>
+                <div className="flex items-center text-xs text-gray-500">
+                  <span>6 godz.</span>
+                  <span className="mx-1">·</span>
+                  <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
+                  </svg>
+                </div>
+              </div>
+              <div className="relative">
+                <button 
+                  className="text-gray-500 ml-2 p-1 rounded-full hover:bg-gray-100"
+                  onClick={() => setShowMenu(!showMenu)}
+                >
+                  <svg viewBox="0 0 20 20" width="20" height="20" fill="currentColor">
+                    <g fillRule="evenodd" transform="translate(-446 -350)">
+                      <path d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"></path>
+                    </g>
+                  </svg>
+                </button>
+                {showMenu && (
+                  <div className="absolute right-0 mt-1 w-48 bg-white rounded-md shadow-lg z-10">
+                    <ul className="py-1">
+                      <li>
+                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                          Zapisz post
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                          Zgłoś
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        {/* Post content - text and image */}
+        <div className="mb-3 overflow-hidden">
+          <div className="mb-3">
+            <p className="mb-2 break-words">
+              <span role="img" aria-label="pointing hand">👆</span>
+              <span role="img" aria-label="pointing hand">👆</span>
+              <span role="img" aria-label="pointing hand">👆</span>
+              Powiat Czarnkowsko-Trzciancki - Rozbudowa drogi Trzcianka - Biała
+            </p>
+            <p className="mb-2 break-words">
+              Kolejną inwestycją z Rządowego Funduszu Rozwoju Dróg jest rozbudowa drogi powiatowej Trzcianka – Biała. <span className="text-blue-600">Powiat Czarnkowsko-Trzciancki</span> otrzymał dofinansowanie w wysokości 13,5 mln zł. Prace mają na celu poprawę infrastruktury drogowej na tym odcinku, co znacząco poprawi dostępność i bezpieczeństwo tej trasy.
+            </p>
+            <p className="mb-2 break-words">
+              Projekt ten ma kluczowe znaczenie dla całego regionu, jako że zwiększy mobilność mieszkańców oraz poprawi komunikację między Trzcianką a Białą. Dzięki tej inwestycji kierowcy zyskają nie tylko bezpieczniejszą drogę, ale także komfort podróży.
+            </p>
+            <p className="text-blue-600">
+              <a href="#" className="hover:underline">#PosełPiotrGłowski</a>
+            </p>
+          </div>
+          <div className="rounded-lg overflow-hidden">
+            <img 
+              src="/Assets/Gwarancja.rozwoju/photo_post_2.jpg" 
+              alt="Road development announcement with Piotr Głowski" 
+              className="w-full h-full object-cover" 
+            />
+          </div>
+        </div>
+        
+        {/* Post engagement stats */}
+        <div className="flex justify-between text-xs text-gray-500 border-b py-2 mb-2">
+          <div className="flex items-center">
+            <div className="flex -space-x-1 mr-1">
+              <div className="bg-blue-500 rounded-full w-5 h-5 flex items-center justify-center">
+                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+                </svg>
+              </div>
+              <div className="bg-red-500 rounded-full w-5 h-5 flex items-center justify-center">
+                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                </svg>
+              </div>
+            </div>
+            <span>143</span>
+          </div>
+          <div>
+            <span>27 komentarzy · 48 udostępnień</span>
+          </div>
+        </div>
+        
+        {/* Action buttons */}
+        {isMobile ? (
+          // Mobile action buttons (3 buttons)
+          <div className="flex">
+            <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+              </svg>
+              Polub
+            </button>
+            <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
+              </svg>
               Komentarz
+            </button>
+            <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z" />
+              </svg>
+              Udostępnij
+            </button>
+          </div>
+        ) : (
+          // Desktop action buttons (only 2 buttons)
+          <div className="flex">
+            <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+              </svg>
+              Polub
+            </button>
+            <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
+              </svg>
+              Skomentuj
             </button>
           </div>
         )}
@@ -1030,23 +1102,27 @@ sekretarz stanu w Ministerstwie Infrastruktury
 
 
 
+
+
+    
+
     <div className="bg-white rounded-lg shadow mb-4 w-full">
-      <div className="p-4">
-        {/* Header with user info */}
-        <div className="flex items-start mb-3">
+      {/* Original poster header */}
+      <div className="p-4 pb-2">
+        <div className="flex items-start">
           <img 
-            src="/Assets/MaciejLasekKo/photo_2.jpg" 
-            alt="User" 
+            src="/Assets/Gwarancja.rozwoju/photo_avatar.jpg" 
+            alt="Piotr Głowski" 
             className="w-10 h-10 rounded-full mr-2" 
           />
           <div className="flex-grow">
             <div className="flex justify-between items-start w-full">
               <div>
                 <div className="flex items-center">
-                  <h3 className="font-semibold">Maciej Lasek</h3>
+                  <h3 className="font-semibold">Poseł Piotr Głowski</h3>
                 </div>
                 <div className="flex items-center text-xs text-gray-500">
-                  <span>12 godz.</span>
+                  <span>1 dzień</span>
                   <span className="mx-1">·</span>
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
@@ -1087,293 +1163,115 @@ sekretarz stanu w Ministerstwie Infrastruktury
             </div>
           </div>
         </div>
-        
-        {isMobile && <hr className="mb-3" />}
-        
-        {/* Post content - text with announcement */}
-        <div className="mb-3">
-          <p className="mb-2">
-            <span role="img" aria-label="megaphone">📢</span> Kołobrzeg i Koszalin – 21 marca!
-          </p>
-          <p className="mb-2">
-            Zapraszam na spotkania z <a href="#" className="text-blue-600 font-medium">Rafał Trzaskowski</a> !
-          </p>
-          <p className="mb-2">
-            <span role="img" aria-label="pin">📍</span> Kołobrzeg – 15:45, Plac przy molo
-          </p>
-          <p className="mb-2">
-            <span role="img" aria-label="pin">📍</span> Koszalin – 17:30#CałaPolskaNaprzód
-          </p>
-          <p className="mb-2">
-            Cała Polska Naprzód!
-          </p>
-          <p className="text-blue-600">
+      </div>
+      
+      {/* Shared post container */}
+      <div className="mx-4 mb-4 rounded-lg border border-gray-200 overflow-hidden">
+        {/* Shared post header */}
+        <div className="p-4">
+          <div className="flex items-start">
+            <div className="w-10 h-10 rounded-full mr-2 overflow-hidden bg-blue-100 border-2 border-blue-500">
+              <img 
+                src="/Assets/Gwarancja.rozwoju/dnldTuskCom.jpg" 
+                alt="Donald Tusk" 
+                className="w-full h-full object-cover" 
+              />
+            </div>
+            <div className="flex-grow">
+              <div className="flex items-center">
+                <h3 className="font-semibold">Donald Tusk</h3>
+                <svg viewBox="0 0 12 13" width="16" height="16" title="Zweryfikowane konto" className="ml-1 flex-shrink-0 fill-[#1877F2]">
+                  <title>Zweryfikowane konto</title>
+                  <g fillRule="evenodd" transform="translate(-98 -917)">
+                    <path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path>
+                  </g>
+                </svg>
+              </div>
+              <div className="flex items-center text-xs text-gray-500">
+                <span>1 dzień</span>
+                <span className="mx-1">·</span>
+                <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
+                </svg>
+              </div>
+            </div>
+          </div>
           
-              <span>
-                #Trzaskowski2025 #CałaPolskaNaprzód
-              </span>
-            
-          </p>
-        </div>
-        
-        {/* Campaign images */}
-        <div className="grid grid-cols-2 gap-2 mb-3">
-          <div className="rounded-lg overflow-hidden">
-            <img 
-              src="/Assets/MaciejLasekKo/photo_newpost2.jpg" 
-              alt="Kołobrzeg meeting - Rafał Trzaskowski" 
-              className="w-full h-full object-cover" 
-            />
-          </div>
-          <div className="rounded-lg overflow-hidden">
-            <img 
-              src="/Assets/MaciejLasekKo/photo_newpost3.jpg" 
-              alt="Koszalin meeting - Rafał Trzaskowski" 
-              className="w-full h-full object-cover" 
-            />
-          </div>
-        </div>
-        
-        {/* Post engagement stats */}
-        <div className="flex justify-between text-xs text-gray-500 border-b border-t py-2 mb-2">
-          <div className="flex items-center">
-            <div className="flex -space-x-1 mr-1">
-              <div className="bg-blue-500 rounded-full w-5 h-5 flex items-center justify-center">
-                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
-                </svg>
-              </div>
-              <div className="bg-red-500 rounded-full w-5 h-5 flex items-center justify-center">
-                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                </svg>
-              </div>
-            </div>
-            <span>7</span>
-          </div>
-          <div>
-            <span className="opacity-0">0 komentarzy · 0 udostępnień</span>
-          </div>
-        </div>
-        
-        {/* Action buttons - more Facebook-like interface */}
-        <div className="flex">
-          <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
-            <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
-            </svg>
-            Lubię to!
-          </button>
-          <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
-            <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
-            </svg>
-            Komentarz
-          </button>
-          <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
-            <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
-            </svg>
-            Wyślij
-          </button>
-          <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
-            <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z" />
-            </svg>
-            Udostępnij
-          </button>
-        </div>
-      </div>
-    </div>
-
-
-
-
-
-
-    <div className="bg-white rounded-lg shadow mb-4 w-full">
-      <div className="p-4">
-        {/* Header with user info */}
-        <div className="flex items-start mb-3">
-          <img 
-            src="/Assets/MaciejLasekKo/photo_2.jpg" 
-            alt="User" 
-            className="w-10 h-10 rounded-full mr-2" 
-          />
-          <div className="flex-grow">
-            <div className="flex justify-between items-start w-full">
+          {/* Shared post content */}
+          <div className="mt-3">
+            {!expanded ? (
               <div>
-                <div className="flex items-center">
-                  <h3 className="font-semibold">Maciej Lasek</h3>
-                </div>
-                <div className="flex items-center text-xs text-gray-500">
-                  <span>19 marca o 22:04</span>
-                  <span className="mx-1">·</span>
-                  <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
-                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
-                  </svg>
-                </div>
-              </div>
-              <div className="relative">
+                <p>Mieli do wyboru: poparcie uchwały albo hańbę. Wybrali hańbę, a uchwałę i tak przegłosowaliśmy. PiS i Konfederacja ponownie przeciw Tarczy Wschód i europejskiej ...</p>
                 <button 
-                  className="text-gray-500 ml-2 p-1 rounded-full hover:bg-gray-100"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    setShowMenu(!showMenu);
-                  }}
+                  onClick={() => setExpanded(true)}
+                  className="text-blue-600 font-medium text-sm mt-1"
                 >
-                  <svg viewBox="0 0 20 20" width="20" height="20" fill="currentColor">
-                    <g fillRule="evenodd" transform="translate(-446 -350)">
-                      <path d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"></path>
-                    </g>
-                  </svg>
+                  Wyświetl więcej
                 </button>
-                {showMenu && (
-                  <div className="absolute right-0 mt-1 w-48 bg-white rounded-md shadow-lg z-10">
-                    <ul className="py-1">
-                      <li>
-                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                          Zapisz post
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                          Zgłoś
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                )}
               </div>
-            </div>
+            ) : (
+              <div>
+                <p>Mieli do wyboru: poparcie uchwały albo hańbę. Wybrali hańbę, a uchwałę i tak przegłosowaliśmy. PiS i Konfederacja ponownie przeciw Tarczy Wschód i europejskiej solidarności. Mimo to, jako rząd będziemy konsekwentnie działać na rzecz bezpieczeństwa Polski i umacniania naszej pozycji w Unii Europejskiej.</p>
+                <p className="mt-2">Głosowanie nad uchwałą popierającą dokument końcowy z posiedzenia Rady Europejskiej w dniach 17-18 kwietnia pokazało, kto naprawdę dba o polskie bezpieczeństwo, a kto kieruje się wyłącznie partyjnymi interesami i antyeuropejskimi resentymentami.</p>
+                <p className="mt-2">Tarcza Wschód to strategiczna inwestycja w bezpieczeństwo naszej wschodniej granicy, która jest jednocześnie granicą Unii Europejskiej. Tego typu projekty wymagają solidarności i jedności wszystkich sił politycznych, jednak jak widać, niektórzy nie potrafią wznieść się ponad partyjne animozje nawet w sprawach kluczowych dla bezpieczeństwa państwa.</p>
+              </div>
+            )}
           </div>
         </div>
-        
-        {isMobile && <hr className="mb-3" />}
-        
-        {/* Post content - text with announcement */}
-        <div className="mb-3">
-          <p className="mb-2">
-            <span role="img" aria-label="megaphone">📢</span> TUREK – 20 marca, godz. 17:15 - Hala widowiskowo-sportowa, ul. Parkowa 2
-          </p>
-          <p className="mb-2">
-            Dołącz do spotkania z <a href="#" className="text-blue-600 font-medium">Rafał Trzaskowski</a> i zabierz głos.
-          </p>
-          <p className="text-blue-600">
-            <a href="#" className="hover:underline">#Trzaskowski2025</a>
-          </p>
-        </div>
-        
-        {/* Campaign image */}
-        <div className="mb-3">
-          <div className="rounded-lg overflow-hidden border border-gray-200">
-            <img 
-              src="/Assets/MaciejLasekKo/photo_newpost4.jpg" 
-              alt="Rafał Trzaskowski meeting in Turek" 
-              className="w-full object-contain" 
-            />
-          </div>
-        </div>
-        
-        {/* Post engagement stats */}
-        <div className="flex justify-between text-xs text-gray-500 border-b border-t py-2 mb-2">
-          <div className="flex items-center">
-            <div className="flex -space-x-1 mr-1">
-              <div className="bg-blue-500 rounded-full w-5 h-5 flex items-center justify-center">
-                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
-                </svg>
-              </div>
-              <div className="bg-red-500 rounded-full w-5 h-5 flex items-center justify-center">
-                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                </svg>
-              </div>
-              <div className="bg-yellow-500 rounded-full w-5 h-5 flex items-center justify-center">
-                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z" />
-                </svg>
-              </div>
-            </div>
-            <span>39</span>
-          </div>
-          <div>
-            <span>9 komentarzy · 1 udostępnienie</span>
-          </div>
-        </div>
-        
-        {/* Action buttons - conditional rendering based on isMobile */}
-        {isMobile ? (
-          // Mobile action buttons (3 buttons)
-          <div className="flex">
-            <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
-              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+      </div>
+      
+      {/* Comment restriction notice */}
+     
+      
+      {/* Post engagement stats */}
+      <div className="flex justify-between text-xs text-gray-500 border-b  py-2 mx-4 mb-2">
+        <div className="flex items-center">
+          <div className="flex -space-x-1 mr-1">
+            <div className="bg-blue-500 rounded-full w-5 h-5 flex items-center justify-center">
+              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
               </svg>
-              Polub
-            </button>
-            <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
-              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
-              </svg>
-              Komentarz
-            </button>
-            <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
-              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z" />
-              </svg>
-              Udostępnij
-            </button>
+            </div>
           </div>
-        ) : (
-          // Desktop action buttons (only 2 buttons)
-          <div className="flex">
-            <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
-              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
-              </svg>
-              Polub
-            </button>
-            <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
-              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
-              </svg>
-              Komentarz
-            </button>
-          </div>
-        )}
+          <span>5</span>
+        </div>
+        <div>
+          <span>27 komentarzy · 48 udostępnień</span>
+        </div>
+      </div>
+      
+      {/* Action buttons - conditional rendering based on isMobile */}
+      <div className="flex mx-4 pb-2">
+        <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+          <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+          </svg>
+          Polub
+        </button>
+        <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+          <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
+          </svg>
+          Skomentuj
+        </button>
       </div>
     </div>
+
+
+
+
+
+
+
+  
+
+
+
+
+
 
 
    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1531,7 +1429,7 @@ sekretarz stanu w Ministerstwie Infrastruktury
               {[1, 2, 3, 4, 5].map((num) => (
                 <div key={num} className="flex items-center p-2 rounded-md hover:bg-gray-100 cursor-pointer">
                   <div className="relative">
-                    <img src="/Assets/MaciejLasekKo/photo_2.jpg" alt={`Contact ${num}`} className="w-10 h-10 rounded-full" />
+                    <img src="/Assets/Gwarancja.rozwoju/photo_avatar.jpg" alt={`Contact ${num}`} className="w-10 h-10 rounded-full" />
                     <span className="absolute bottom-0 right-0 w-3 h-3 bg-green-500 rounded-full border-2 border-white"></span>
                   </div>
                   <div className="ml-2">
@@ -1610,4 +1508,5 @@ sekretarz stanu w Ministerstwie Infrastruktury
   );
 };
 
-export default MaciejLasekKo
+export default GwarancjaRozwoju
+
