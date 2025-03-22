@@ -977,10 +977,10 @@ sekretarz stanu w Ministerstwie Infrastruktury
                 </svg>
               </div>
             </div>
-            <span>713</span>
+            <span>19</span>
           </div>
           <div>
-            <span>107 komentarze · 135 udostępnień</span>
+            <span>11 komentarze · 4 udostępnień</span>
           </div>
         </div>
         
