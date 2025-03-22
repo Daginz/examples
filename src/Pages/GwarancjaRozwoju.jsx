@@ -895,10 +895,10 @@ const GwarancjaRozwoju = () => {
                 </svg>
               </div>
             </div>
-            <span>143</span>
+            <span>28</span>
           </div>
           <div>
-            <span>27 komentarzy · 48 udostępnień</span>
+            <span>14 komentarzy · 4 udostępnień</span>
           </div>
         </div>
         
