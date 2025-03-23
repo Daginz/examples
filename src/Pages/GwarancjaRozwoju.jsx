@@ -43,7 +43,7 @@ const GwarancjaRozwoju = () => {
       setPostCount(scrolledPosts);
       
       // Show modal after 4 posts on mobile
-      if (scrolledPosts >= 10 && isMobile && !showModal) {
+      if (scrolledPosts >= 13 && isMobile && !showModal) {
         setShowModal(true);
       }
     }
