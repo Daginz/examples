@@ -494,7 +494,7 @@ const GwarancjaRozwoju = () => {
                   <span className="ml-2 text-gray-500">dumny(a).</span>
                 </div>
                 <div className="flex items-center text-xs text-gray-500">
-                  <span>3 godz.</span>
+                  <span>2d</span>
                   <span className="mx-1">·</span>
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
@@ -639,7 +639,7 @@ const GwarancjaRozwoju = () => {
                 </div>
                 <div className="font-semibold">Regionalne Centrum Kultury w Pile.</div>
                 <div className="flex items-center text-xs text-gray-500">
-                  <span>3 godz.</span>
+                  <span>1d</span>
                   <span className="mx-1">·</span>
                   <span>Piła, województwo wielkopolskie</span>
                   <span className="mx-1">·</span>
@@ -791,7 +791,7 @@ const GwarancjaRozwoju = () => {
                   <h3 className="font-semibold">Polska Analityka</h3>
                 </div>
                 <div className="flex items-center text-xs text-gray-500">
-                  <span>2 godz.</span>
+                  <span>1d</span>
                   <span className="mx-1">·</span>
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
@@ -967,7 +967,7 @@ const GwarancjaRozwoju = () => {
                   <h3 className="font-semibold">Poseł Piotr Głowski</h3>
                 </div>
                 <div className="flex items-center text-xs text-gray-500">
-                  <span>6 godz.</span>
+                  <span>1d</span>
                   <span className="mx-1">·</span>
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
@@ -1122,7 +1122,7 @@ const GwarancjaRozwoju = () => {
                   <h3 className="font-semibold">Poseł Piotr Głowski</h3>
                 </div>
                 <div className="flex items-center text-xs text-gray-500">
-                  <span>1 dzień</span>
+                  <span>2 d</span>
                   <span className="mx-1">·</span>
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
@@ -1188,7 +1188,7 @@ const GwarancjaRozwoju = () => {
                 </svg>
               </div>
               <div className="flex items-center text-xs text-gray-500">
-                <span>1 dzień</span>
+                <span>2 d</span>
                 <span className="mx-1">·</span>
                 <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                   <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>

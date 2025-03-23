@@ -518,7 +518,7 @@ sekretarz stanu w Ministerstwie Infrastruktury
                   <h3 className="font-semibold">Maciej Lasek</h3>
                 </div>
                 <div className="flex items-center text-xs text-gray-500">
-                  <span>7 godz.</span>
+                  <span>1d</span>
                   <span className="mx-1">·</span>
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
@@ -593,7 +593,7 @@ sekretarz stanu w Ministerstwie Infrastruktury
               </svg>
             </div>
             <div className="flex items-center text-xs text-gray-500">
-              <span>9 godz.</span>
+              <span>1d</span>
               <span className="mx-1">·</span>
               <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                 <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
@@ -699,7 +699,7 @@ sekretarz stanu w Ministerstwie Infrastruktury
                   <h3 className="font-semibold">Maciej Lasek</h3>
                 </div>
                 <div className="flex items-center text-xs text-gray-500">
-                  <span>8 godz.</span>
+                  <span>1d</span>
                   <span className="mx-1">·</span>
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
@@ -780,7 +780,7 @@ sekretarz stanu w Ministerstwie Infrastruktury
                 </svg>
               </div>
               <div className="text-xs text-gray-500">
-                11 godz. · <svg className="w-3 h-3 inline" fill="currentColor" viewBox="0 0 16 16">
+                1d · <svg className="w-3 h-3 inline" fill="currentColor" viewBox="0 0 16 16">
                   <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
                 </svg>
               </div>
@@ -1046,7 +1046,7 @@ sekretarz stanu w Ministerstwie Infrastruktury
                   <h3 className="font-semibold">Maciej Lasek</h3>
                 </div>
                 <div className="flex items-center text-xs text-gray-500">
-                  <span>12 godz.</span>
+                  <span>1d</span>
                   <span className="mx-1">·</span>
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
