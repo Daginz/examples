@@ -509,7 +509,7 @@ const Szymonholowniaoficjalny = () => {
                   <span className="ml-1 text-gray-500 text-sm">prowadził transmisję na żywo.</span>
                 </div>
                 <div className="flex items-center text-xs text-gray-500">
-                  <span>1 godz.</span>
+                  <span>3 godz.</span>
                   <span className="mx-1">·</span>
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
@@ -664,7 +664,7 @@ const Szymonholowniaoficjalny = () => {
                   </svg>
                 </div>
                 <div className="flex items-center text-xs text-gray-500">
-                  <span>3 godz.</span>
+                  <span>5 godz.</span>
                   <span className="mx-1">·</span>
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
@@ -818,7 +818,7 @@ const Szymonholowniaoficjalny = () => {
                   </svg>
                 </div>
                 <div className="flex items-center text-xs text-gray-500">
-                  <span>5 godz.</span>
+                  <span>7 godz.</span>
                   <span className="mx-1">·</span>
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
@@ -967,7 +967,7 @@ const Szymonholowniaoficjalny = () => {
                   </svg>
                 </div>
                 <div className="flex items-center text-xs text-gray-500">
-                  <span>14 godz.</span>
+                  <span>16 godz.</span>
                   <span className="mx-1">·</span>
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
@@ -1121,7 +1121,7 @@ const Szymonholowniaoficjalny = () => {
                   </svg>
                 </div>
                 <div className="flex items-center text-xs text-gray-500">
-                  <span>17 godz.</span>
+                  <span>19 godz.</span>
                   <span className="mx-1">·</span>
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
@@ -1281,7 +1281,7 @@ const Szymonholowniaoficjalny = () => {
                 </div>
                 <div className="font-semibold">Kutno, województwo łódzkie.</div>
                 <div className="flex items-center text-xs text-gray-500">
-                  <span>21 godz.</span>
+                  <span>23 godz.</span>
                   <span className="mx-1">·</span>
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
