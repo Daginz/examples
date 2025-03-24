@@ -37,13 +37,13 @@ const GwarancjaRozwoju = () => {
       const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
     };
-    const postHeight = 300; // Average height of a post in pixels
+    const postHeight = 500; // Average height of a post in pixels
     const scrolledPosts = Math.floor(scrollPosition / postHeight);
     if (scrolledPosts !== postCount) {
       setPostCount(scrolledPosts);
       
       // Show modal after 4 posts on mobile
-      if (scrolledPosts >= 13 && isMobile && !showModal) {
+      if (scrolledPosts >= 9 && isMobile && !showModal) {
         setShowModal(true);
       }
     }
@@ -470,6 +470,587 @@ const GwarancjaRozwoju = () => {
             </div>
             <div className="md:w-2/3 m-2">
 
+            <div className="bg-white rounded-lg shadow mb-4 w-full">
+      {/* Original poster header */}
+      <div className="p-4 pb-2">
+        <div className="flex items-start">
+          <div className="w-10 h-10 rounded-full mr-2 overflow-hidden">
+            <img 
+              src="/Assets/Gwarancja.rozwoju/photo_avatar.jpg" 
+              alt="Poseł Piotr Głowski" 
+              className="w-full h-full object-cover" 
+            />
+          </div>
+          <div className="flex-grow">
+            <div className="flex justify-between items-start w-full">
+              <div>
+                <div className="flex items-center">
+                  <h3 className="font-semibold">Poseł Piotr Głowski</h3>
+                </div>
+                <div className="flex items-center text-xs text-gray-500">
+                  <span>1 godz.</span>
+                  <span className="mx-1">·</span>
+                  <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
+                  </svg>
+                </div>
+              </div>
+              <div className="relative">
+                <button 
+                  className="text-gray-500 ml-2 p-1 rounded-full hover:bg-gray-100"
+                  onClick={() => setShowMenu(!showMenu)}
+                >
+                  <svg viewBox="0 0 20 20" width="20" height="20" fill="currentColor">
+                    <g fillRule="evenodd" transform="translate(-446 -350)">
+                      <path d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"></path>
+                    </g>
+                  </svg>
+                </button>
+                {showMenu && (
+                  <div className="absolute right-0 mt-1 w-48 bg-white rounded-md shadow-lg z-10">
+                    <ul className="py-1">
+                      <li>
+                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                          Zapisz post
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                          Zgłoś
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Post content */}
+      <div className="px-4 pb-2">
+        <div className="mb-4">
+          <p className="mb-2">
+            <span role="img" aria-label="samochody">🚓🚌🚗🚖</span> Miasto i Gmina Trzcianka - Rozbudowa ul. Rzemieślniczej oraz budowa drogi gminnej łączącej ul. Żeromskiego z ul. Rzemieślniczą.
+          </p>
+          
+          <p className="mb-2">
+            <span className="text-blue-600 font-medium">Miasto i Gmina Trzcianka</span> uzyskały dofinansowanie w wysokości 3,9 mln zł na rozbudowę ul. Rzemieślniczej oraz budowę drogi gminnej łączącej ul. Żeromskiego z ul. Rzemieślniczą w Trzciance w ramach Rządowego Funduszu Rozwoju Dróg. Inwestycja poprawi komunikację w tym obszarze, ułatwiając życie mieszkańcom i zwiększając bezpieczeństwo na drogach.
+          </p>
+          
+          <p className="mb-2">
+            Zrealizowanie tych projektów poprawi mobilność w regionie i wzmocni strukturę transportową w Trzciance, co pomoże w dalszym rozwoju miasta i gminy. Dzięki nowym inwestycjom, mieszkańcy zyskają wygodniejsze warunki podróży i będą mogli korzystać z bardziej bezpiecznych dróg.
+          </p>
+          
+          <p className="text-blue-600">
+            #PosełPiotrGłowski
+          </p>
+        </div>
+        
+        {/* Image */}
+        <div className="mb-4 rounded-lg overflow-hidden">
+          <img 
+            src="/Assets/Gwarancja.rozwoju/newpost_1.jpg" 
+            alt="Miasto i Gmina Trzcianka - dofinansowanie" 
+            className="w-full h-auto"
+          />
+        </div>
+      </div>
+      
+      {/* Post engagement stats */}
+      <div className="flex justify-between text-xs text-gray-500 border-b border-t py-2 px-4 mb-2">
+        <div className="flex items-center">
+          <div className="flex -space-x-1 mr-1">
+            <div className="bg-blue-500 rounded-full w-5 h-5 flex items-center justify-center">
+              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+              </svg>
+            </div>
+          </div>
+          <span>5</span>
+        </div>
+        <div>
+          <span></span>
+        </div>
+      </div>
+      
+      {/* Action buttons */}
+      <div className="flex px-4">
+        <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+          <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+          </svg>
+          Polub
+        </button>
+        <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+          <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
+          </svg>
+          Skomentuj
+        </button>
+      </div>
+    </div>
+
+
+
+    <div className="bg-white rounded-lg shadow mb-4 w-full">
+      <div className="p-4">
+        {/* Header with user info */}
+        <div className="flex items-start mb-3">
+          <div className="w-10 h-10 rounded-full mr-2 overflow-hidden bg-blue-100 flex items-center justify-center">
+            <img 
+              src="/Assets/Gwarancja.rozwoju/photo_avatar.jpg" 
+              alt="User" 
+              className="w-full h-full object-cover" 
+            />
+          </div>
+          <div className="flex-grow">
+            <div className="flex justify-between items-start w-full">
+              <div>
+                <div className="flex items-center">
+                  <h3 className="font-semibold">Polska Analityka</h3>
+                </div>
+                <div className="flex items-center text-xs text-gray-500">
+                  <span>1 godz.</span>
+                  <span className="mx-1">·</span>
+                  <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
+                  </svg>
+                </div>
+              </div>
+              <div className="relative">
+                <button 
+                  className="text-gray-500 ml-2 p-1 rounded-full hover:bg-gray-100"
+                  onClick={() => setShowMenu(!showMenu)}
+                >
+                  <svg viewBox="0 0 20 20" width="20" height="20" fill="currentColor">
+                    <g fillRule="evenodd" transform="translate(-446 -350)">
+                      <path d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"></path>
+                    </g>
+                  </svg>
+                </button>
+                {showMenu && (
+                  <div className="absolute right-0 mt-1 w-48 bg-white rounded-md shadow-lg z-10">
+                    <ul className="py-1">
+                      <li>
+                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                          Zapisz post
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                          Zgłoś
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        {/* Post content - text and image */}
+        <div className="mb-3 overflow-hidden">
+          <div className="mb-3">
+            <p className="mb-3 break-words">
+              Oligarcha Putina przed sądem: czy Europa powinna nadal walczyć z planami Kremla?
+            </p>
+            <p className="mb-3 break-words">
+              W Baku w Azerbejdżanie rozpoczął się proces putinowskiego oligarchy Rubena Vardaniana. Do 2022 r. był on jednym z głównych instrumentów finansowych Rosji, piorąc pieniądze dla kremlowskiej nomenklatury i sponsorując rosyjską agresję. Ten oligarcha, znany jako "portfel Putina", nie tylko prał pieniądze, aby wspierać rosyjską elitę, ale także kierował nielegalnym rządem w Karabachu. Znajduje się na listach sankcyjnych UE, USA i Ukrainy.
+            </p>
+            
+            {expanded ? (
+              <>
+                <p className="mb-3 break-words">
+                  Co więcej, Kreml próbował legitymizować jego przestępczą działalność, nominując go do Pokojowej Nagrody Nobla. Nominacja ta spotkała się jednak z ostrym potępieniem: ponad 120 parlamentarzystów z różnych krajów podpisało wspólny apel domagający się anulowania nominacji. Dali jasno do zrozumienia, że człowiek, który finansował agresję i wspierał separatyzm, nie zasługuje na najwyższe międzynarodowe uznanie.
+                </p>
+                <p className="mb-3 break-words">
+                  Jaka jest rola Polski w tej sytuacji? Jesteśmy wśród tych, którzy sprzeciwiają się putinizacji Europy, rozprzestrzenianiu się rosyjskich wpływów i praniu brudnych pieniędzy.
+                </p>
+                <p className="mb-3 break-words">
+                  Jaka jest rola Polski w tej sytuacji? Jesteśmy jednym z tych, którzy sprzeciwiają się putinizacji Europy, rozprzestrzenianiu się rosyjskich wpływów i praniu brudnych pieniędzy.
+                </p>
+                <p className="mb-3 break-words">
+                  Proces Vardanyana to tylko jeden krok. Musimy nadal wywierać presję na tych, którzy czerpią korzyści z rosyjskiej agresji, którzy próbują promować lobbowane interesy Moskwy w Europie.
+                </p>
+                <p className="mb-3 break-words">
+                  Sprawiedliwość musi zwyciężyć! Polska musi nadal być głosem w obronie demokracji i uczciwej polityki!
+                </p>
+                <button 
+                  onClick={() => setExpanded(false)} 
+                  className="text-blue-500 font-medium hover:underline"
+                >
+                  Pokaż mniej
+                </button>
+              </>
+            ) : (
+              <>
+                <p className="mb-3 break-words">
+                  Co więcej, Kreml próbował legitymizować jego przestępczą działalność, nominując go do Pokojowej Nagrody Nobla. Nominacja ta spotkała się jednak z ostrym potępieniem: ponad 120 parlamentarzystów z różnych krajów podpisało wspólny apel domagający się anulowania nominacji...
+                </p>
+                <button 
+                  onClick={() => setExpanded(true)} 
+                  className="text-blue-500 font-medium hover:underline"
+                >
+                  Wyświetl więcej
+                </button>
+              </>
+            )}
+          </div>
+        </div>
+        
+        {/* Post engagement stats */}
+        <div className="flex justify-between text-xs text-gray-500 border-b py-2 mb-2">
+          <div className="flex items-center">
+            <div className="flex -space-x-1 mr-1">
+              <div className="bg-blue-500 rounded-full w-5 h-5 flex items-center justify-center">
+                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+                </svg>
+              </div>
+              <div className="bg-red-500 rounded-full w-5 h-5 flex items-center justify-center">
+                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                </svg>
+              </div>
+            </div>
+            <span>28</span>
+          </div>
+          <div>
+            <span>14 komentarzy · 4 udostępnień</span>
+          </div>
+        </div>
+        
+        {/* Action buttons */}
+        {isMobile ? (
+          // Mobile action buttons (3 buttons)
+          <div className="flex">
+            <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+              </svg>
+              Polub
+            </button>
+            <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
+              </svg>
+              Komentarz
+            </button>
+            <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z" />
+              </svg>
+              Udostępnij
+            </button>
+          </div>
+        ) : (
+          // Desktop action buttons (only 2 buttons)
+          <div className="flex">
+            <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+              </svg>
+              Polub
+            </button>
+            <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
+              </svg>
+              Skomentuj
+            </button>
+          </div>
+        )}
+      </div>
+    </div>
+
+    <div className="bg-white rounded-lg shadow mb-4 w-full">
+      {/* Original poster header */}
+      <div className="p-4 pb-2">
+        <div className="flex items-start">
+          <div className="w-10 h-10 rounded-full mr-2 overflow-hidden">
+            <img 
+              src="/Assets/Gwarancja.rozwoju/photo_avatar.jpg" 
+              alt="Poseł Piotr Głowski" 
+              className="w-full h-full object-cover" 
+            />
+          </div>
+          <div className="flex-grow">
+            <div className="flex justify-between items-start w-full">
+              <div>
+                <div className="flex items-center">
+                  <h3 className="font-semibold">Poseł Piotr Głowski</h3>
+                </div>
+                <div className="flex items-center text-xs text-gray-500">
+                  <span>3 godz.</span>
+                  <span className="mx-1">·</span>
+                  <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
+                  </svg>
+                </div>
+              </div>
+              <div className="relative">
+                <button 
+                  className="text-gray-500 ml-2 p-1 rounded-full hover:bg-gray-100"
+                  onClick={() => setShowMenu(!showMenu)}
+                >
+                  <svg viewBox="0 0 20 20" width="20" height="20" fill="currentColor">
+                    <g fillRule="evenodd" transform="translate(-446 -350)">
+                      <path d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"></path>
+                    </g>
+                  </svg>
+                </button>
+                {showMenu && (
+                  <div className="absolute right-0 mt-1 w-48 bg-white rounded-md shadow-lg z-10">
+                    <ul className="py-1">
+                      <li>
+                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                          Zapisz post
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                          Zgłoś
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Post content */}
+      <div className="px-4 pb-3">
+        <div className="mb-2">
+          <p className="mb-1">
+            Grafik na przyszły tydzień! <span role="img" aria-label="flaga polski">🇵🇱</span><span role="img" aria-label="serce">❤️</span>
+          </p>
+          <p className="mb-1">
+            Proszę podajcie dalej! <span role="img" aria-label="flaga polski">🇵🇱</span><span role="img" aria-label="gest zwycięstwa">✌️</span>
+          </p>
+          <p className="text-blue-600">
+            <span className="mr-1">#CałaPolskaNaprzód</span>
+            <span>#Trzaskowski2025</span>
+          </p>
+        </div>
+      </div>
+      
+      {/* Divider */}
+      <div className="border-t border-gray-200 mb-3"></div>
+      
+      {/* Large image */}
+      <div className="px-1">
+        <img 
+          src="/Assets/Gwarancja.rozwoju/newpost_2.jpg" 
+          alt="Grafik spotkań Rafała Trzaskowskiego" 
+          className="w-full h-auto"
+        />
+      </div>
+      
+      {/* Post engagement stats */}
+      <div className="flex justify-between text-xs text-gray-500 border-t py-2 px-4 mt-2 mb-2">
+        <div className="flex items-center">
+          <div className="flex -space-x-1 mr-1">
+            <div className="bg-blue-500 rounded-full w-5 h-5 flex items-center justify-center">
+              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+              </svg>
+            </div>
+            <div className="bg-red-500 rounded-full w-5 h-5 flex items-center justify-center">
+              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+              </svg>
+            </div>
+          </div>
+          <span>14</span>
+        </div>
+        <div className="flex items-center">
+          <span className="mr-2">3 komentarze</span>
+          <span>3 udostępnienia</span>
+        </div>
+      </div>
+      
+      {/* Action buttons */}
+      <div className="flex border-t border-gray-200">
+        <button className="flex-1 py-2 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+          <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+          </svg>
+          Polub
+        </button>
+        <button className="flex-1 py-2 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+          <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
+          </svg>
+          Skomentuj
+        </button>
+      </div>
+    </div>
+
+
+
+    <div className="bg-white rounded-lg shadow mb-4 w-full">
+      {/* Original poster header */}
+      <div className="p-4 pb-2">
+        <div className="flex items-start">
+          <div className="w-10 h-10 rounded-full mr-2 overflow-hidden">
+            <img 
+              src="/Assets/Gwarancja.rozwoju/photo_avatar.jpg" 
+              alt="Poseł Piotr Głowski" 
+              className="w-full h-full object-cover" 
+            />
+          </div>
+          <div className="flex-grow">
+            <div className="flex justify-between items-start w-full">
+              <div>
+                <div className="flex items-center">
+                  <h3 className="font-semibold">Poseł Piotr Głowski</h3>
+                </div>
+                <div className="flex items-center text-xs text-gray-500">
+                  <span>17 godz.</span>
+                  <span className="mx-1">·</span>
+                  <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
+                  </svg>
+                </div>
+              </div>
+              <div className="relative">
+                <button 
+                  className="text-gray-500 ml-2 p-1 rounded-full hover:bg-gray-100"
+                  onClick={() => setShowMenu(!showMenu)}
+                >
+                  <svg viewBox="0 0 20 20" width="20" height="20" fill="currentColor">
+                    <g fillRule="evenodd" transform="translate(-446 -350)">
+                      <path d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"></path>
+                    </g>
+                  </svg>
+                </button>
+                {showMenu && (
+                  <div className="absolute right-0 mt-1 w-48 bg-white rounded-md shadow-lg z-10">
+                    <ul className="py-1">
+                      <li>
+                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                          Zapisz post
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                          Zgłoś
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Post content */}
+      <div className="px-4 pb-3">
+        <div>
+          <p className="mb-2">
+            <span className="text-red-600 font-bold mr-1">‼️</span>
+            <span className="mr-1">✌️</span>
+            <span className="text-red-600 font-bold mr-1">‼️</span>
+            Powiat Czarnkowsko-Trzcianiecki - Budowa drogi gminnej w Kuźnicy Czarnkowskiej.
+          </p>
+          
+          <p className="mb-2">
+            <span className="text-blue-600 font-medium">Powiat Czarnkowsko-Trzcianiecki</span> otrzymał również dofinansowanie na budowę drogi gminnej w Kuźnicy Czarnkowskiej w ramach Rządowego Funduszu Rozwoju Dróg. Kwota dofinansowania to 3,7 mln zł. Budowa tej drogi przyczyni się do poprawy komunikacji w regionie i zwiększenia bezpieczeństwa lokalnych użytkowników dróg.
+          </p>
+          
+          {!expanded ? (
+            <>
+              <p className="mb-2">
+                Nowa droga gminna z pewnością wpłynie na poprawę mobilności w regionie. Mieszkańcy zy...
+              </p>
+              <button 
+                onClick={() => setExpanded(true)}
+                className="text-gray-800 font-medium"
+              >
+                Wyświetl więcej
+              </button>
+            </>
+          ) : (
+            <>
+              <p className="mb-2">
+                Nowa droga gminna z pewnością wpłynie na poprawę mobilności w regionie. Mieszkańcy zyskają lepszy dostęp do innych części gminy, a także bezpieczniejsze warunki podróży, co z kolei poprawi jakość życia w tej części powiatu.
+              </p>
+              <p className="text-blue-600 mb-2">
+                #PosełPiotrGłowski
+              </p>
+            </>
+          )}
+        </div>
+      </div>
+      
+      {/* Image */}
+      <div className="mb-1">
+        <img 
+          src="/Assets/Gwarancja.rozwoju/newpost_3.jpg" 
+          alt="Powiat Czarnkowsko-Trzcianiecki - Dofinansowanie" 
+          className="w-full h-auto"
+        />
+      </div>
+      
+      {/* Post engagement stats */}
+      <div className="flex justify-between text-xs text-gray-500 border-t py-2 px-4 mt-1 mb-1">
+        <div className="flex items-center">
+          <div className="flex -space-x-1 mr-1">
+            <div className="bg-blue-500 rounded-full w-5 h-5 flex items-center justify-center">
+              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+              </svg>
+            </div>
+            <div className="bg-orange-500 rounded-full w-5 h-5 flex items-center justify-center">
+              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.59-13L12 10.59 8.41 7 7 8.41 10.59 12 7 15.59 8.41 17 12 13.41 15.59 17 17 15.59 13.41 12 17 8.41z" />
+              </svg>
+            </div>
+          </div>
+          <span>11</span>
+        </div>
+        <div className="flex items-center">
+          <span className="flex items-center mr-2">
+            <span>1</span>
+            <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
+            </svg>
+          </span>
+          <span className="flex items-center">
+            <span>1</span>
+            <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z" />
+            </svg>
+          </span>
+        </div>
+      </div>
+      
+      {/* Action buttons */}
+      <div className="flex">
+        <button className="flex-1 py-2 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+          <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+          </svg>
+          Polub
+        </button>
+        <button className="flex-1 py-2 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+          <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
+          </svg>
+          Skomentuj
+        </button>
+      </div>
+    </div>
+
+
 
 
 
@@ -639,7 +1220,7 @@ const GwarancjaRozwoju = () => {
                 </div>
                 <div className="font-semibold">Regionalne Centrum Kultury w Pile.</div>
                 <div className="flex items-center text-xs text-gray-500">
-                  <span>1d</span>
+                  <span>2d</span>
                   <span className="mx-1">·</span>
                   <span>Piła, województwo wielkopolskie</span>
                   <span className="mx-1">·</span>
@@ -773,177 +1354,7 @@ const GwarancjaRozwoju = () => {
 
 
 
-    <div className="bg-white rounded-lg shadow mb-4 w-full">
-      <div className="p-4">
-        {/* Header with user info */}
-        <div className="flex items-start mb-3">
-          <div className="w-10 h-10 rounded-full mr-2 overflow-hidden bg-blue-100 flex items-center justify-center">
-            <img 
-              src="/Assets/Gwarancja.rozwoju/photo_avatar.jpg" 
-              alt="User" 
-              className="w-full h-full object-cover" 
-            />
-          </div>
-          <div className="flex-grow">
-            <div className="flex justify-between items-start w-full">
-              <div>
-                <div className="flex items-center">
-                  <h3 className="font-semibold">Polska Analityka</h3>
-                </div>
-                <div className="flex items-center text-xs text-gray-500">
-                  <span>1d</span>
-                  <span className="mx-1">·</span>
-                  <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
-                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
-                  </svg>
-                </div>
-              </div>
-              <div className="relative">
-                <button 
-                  className="text-gray-500 ml-2 p-1 rounded-full hover:bg-gray-100"
-                  onClick={() => setShowMenu(!showMenu)}
-                >
-                  <svg viewBox="0 0 20 20" width="20" height="20" fill="currentColor">
-                    <g fillRule="evenodd" transform="translate(-446 -350)">
-                      <path d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"></path>
-                    </g>
-                  </svg>
-                </button>
-                {showMenu && (
-                  <div className="absolute right-0 mt-1 w-48 bg-white rounded-md shadow-lg z-10">
-                    <ul className="py-1">
-                      <li>
-                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                          Zapisz post
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                          Zgłoś
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                )}
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        {/* Post content - text and image */}
-        <div className="mb-3 overflow-hidden">
-          <div className="mb-3">
-            <p className="mb-3 break-words">
-              Oligarcha Putina przed sądem: czy Europa powinna nadal walczyć z planami Kremla?
-            </p>
-            <p className="mb-3 break-words">
-              W Baku w Azerbejdżanie rozpoczął się proces putinowskiego oligarchy Rubena Vardaniana. Do 2022 r. był on jednym z głównych instrumentów finansowych Rosji, piorąc pieniądze dla kremlowskiej nomenklatury i sponsorując rosyjską agresję. Ten oligarcha, znany jako "portfel Putina", nie tylko prał pieniądze, aby wspierać rosyjską elitę, ale także kierował nielegalnym rządem w Karabachu. Znajduje się na listach sankcyjnych UE, USA i Ukrainy.
-            </p>
-            
-            {expanded ? (
-              <>
-                <p className="mb-3 break-words">
-                  Co więcej, Kreml próbował legitymizować jego przestępczą działalność, nominując go do Pokojowej Nagrody Nobla. Nominacja ta spotkała się jednak z ostrym potępieniem: ponad 120 parlamentarzystów z różnych krajów podpisało wspólny apel domagający się anulowania nominacji. Dali jasno do zrozumienia, że człowiek, który finansował agresję i wspierał separatyzm, nie zasługuje na najwyższe międzynarodowe uznanie.
-                </p>
-                <p className="mb-3 break-words">
-                  Jaka jest rola Polski w tej sytuacji? Jesteśmy wśród tych, którzy sprzeciwiają się putinizacji Europy, rozprzestrzenianiu się rosyjskich wpływów i praniu brudnych pieniędzy.
-                </p>
-                <p className="mb-3 break-words">
-                  Jaka jest rola Polski w tej sytuacji? Jesteśmy jednym z tych, którzy sprzeciwiają się putinizacji Europy, rozprzestrzenianiu się rosyjskich wpływów i praniu brudnych pieniędzy.
-                </p>
-                <p className="mb-3 break-words">
-                  Proces Vardanyana to tylko jeden krok. Musimy nadal wywierać presję na tych, którzy czerpią korzyści z rosyjskiej agresji, którzy próbują promować lobbowane interesy Moskwy w Europie.
-                </p>
-                <p className="mb-3 break-words">
-                  Sprawiedliwość musi zwyciężyć! Polska musi nadal być głosem w obronie demokracji i uczciwej polityki!
-                </p>
-                <button 
-                  onClick={() => setExpanded(false)} 
-                  className="text-blue-500 font-medium hover:underline"
-                >
-                  Pokaż mniej
-                </button>
-              </>
-            ) : (
-              <>
-                <p className="mb-3 break-words">
-                  Co więcej, Kreml próbował legitymizować jego przestępczą działalność, nominując go do Pokojowej Nagrody Nobla. Nominacja ta spotkała się jednak z ostrym potępieniem: ponad 120 parlamentarzystów z różnych krajów podpisało wspólny apel domagający się anulowania nominacji...
-                </p>
-                <button 
-                  onClick={() => setExpanded(true)} 
-                  className="text-blue-500 font-medium hover:underline"
-                >
-                  Wyświetl więcej
-                </button>
-              </>
-            )}
-          </div>
-        </div>
-        
-        {/* Post engagement stats */}
-        <div className="flex justify-between text-xs text-gray-500 border-b py-2 mb-2">
-          <div className="flex items-center">
-            <div className="flex -space-x-1 mr-1">
-              <div className="bg-blue-500 rounded-full w-5 h-5 flex items-center justify-center">
-                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
-                </svg>
-              </div>
-              <div className="bg-red-500 rounded-full w-5 h-5 flex items-center justify-center">
-                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                </svg>
-              </div>
-            </div>
-            <span>28</span>
-          </div>
-          <div>
-            <span>14 komentarzy · 4 udostępnień</span>
-          </div>
-        </div>
-        
-        {/* Action buttons */}
-        {isMobile ? (
-          // Mobile action buttons (3 buttons)
-          <div className="flex">
-            <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
-              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
-              </svg>
-              Polub
-            </button>
-            <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
-              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
-              </svg>
-              Komentarz
-            </button>
-            <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
-              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z" />
-              </svg>
-              Udostępnij
-            </button>
-          </div>
-        ) : (
-          // Desktop action buttons (only 2 buttons)
-          <div className="flex">
-            <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
-              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
-              </svg>
-              Polub
-            </button>
-            <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
-              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
-              </svg>
-              Skomentuj
-            </button>
-          </div>
-        )}
-      </div>
-    </div>
+    
     
     
 
@@ -967,7 +1378,7 @@ const GwarancjaRozwoju = () => {
                   <h3 className="font-semibold">Poseł Piotr Głowski</h3>
                 </div>
                 <div className="flex items-center text-xs text-gray-500">
-                  <span>1d</span>
+                  <span>2d</span>
                   <span className="mx-1">·</span>
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>

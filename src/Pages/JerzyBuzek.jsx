@@ -28,7 +28,7 @@ const JerzyBuzek = () => {
         setShowMiniHeader(false);
       }
 
-      if (!isMobile && window.scrollY > 3500) {
+      if (!isMobile && window.scrollY > 4300) {
         setIsVisible(true);
       }
       
@@ -37,13 +37,13 @@ const JerzyBuzek = () => {
       const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
     };
-    const postHeight = 300; // Average height of a post in pixels
+    const postHeight = 400; // Average height of a post in pixels
     const scrolledPosts = Math.floor(scrollPosition / postHeight);
     if (scrolledPosts !== postCount) {
       setPostCount(scrolledPosts);
       
       // Show modal after 4 posts on mobile
-      if (scrolledPosts >= 10 && isMobile && !showModal) {
+      if (scrolledPosts >= 9 && isMobile && !showModal) {
         setShowModal(true);
       }
     }

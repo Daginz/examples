@@ -28,7 +28,7 @@ const MaciejLasekKo = () => {
         setShowMiniHeader(false);
       }
 
-      if (!isMobile && window.scrollY > 2500) {
+      if (!isMobile && window.scrollY > 3600) {
         setIsVisible(true);
       }
       
@@ -37,13 +37,13 @@ const MaciejLasekKo = () => {
       const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
     };
-    const postHeight = 300; // Average height of a post in pixels
+    const postHeight = 500; // Average height of a post in pixels
     const scrolledPosts = Math.floor(scrollPosition / postHeight);
     if (scrolledPosts !== postCount) {
       setPostCount(scrolledPosts);
       
       // Show modal after 4 posts on mobile
-      if (scrolledPosts >= 10 && isMobile && !showModal) {
+      if (scrolledPosts >= 9 && isMobile && !showModal) {
         setShowModal(true);
       }
     }
@@ -385,6 +385,7 @@ sekretarz stanu w Ministerstwie Infrastruktury
         <div className="px-4 md:px-8 mt-2 max-w-5xl mx-auto bg-[#F0F2F5]">
           <div className="flex flex-col md:flex-row">
             <div className="md:w-1/3 m-2">
+            
               <div className="bg-white rounded-lg shadow p-4 mb-4">
                 <h2 className="text-xl font-bold mb-3">Prezentacja</h2>
                 <p className="text-center text-sm mb-6">
@@ -495,6 +496,675 @@ sekretarz stanu w Ministerstwie Infrastruktury
             <div className="md:w-2/3 m-2">
 
 
+            <div className="bg-white rounded-lg shadow mb-4 w-full">
+      <div className="p-4">
+        {/* Header with user info - FIXED LAYOUT */}
+        <div className="flex items-start mb-3">
+          <img 
+            src="/Assets/MaciejLasekKo/photo_2.jpg" 
+            alt="User" 
+            className="w-10 h-10 rounded-full mr-2" 
+          />
+          <div className="flex-grow">
+            <div className="flex justify-between items-start w-full">
+              <div>
+                <div className="flex items-center">
+                  <h3 className="font-semibold">Maciej Lasek</h3>
+                  <svg viewBox="0 0 12 13" width="16" height="16" title="Zweryfikowane konto" className="ml-1 flex-shrink-0 fill-[#1877F2]">
+                    <title>Zweryfikowane konto</title>
+                    <g fillRule="evenodd" transform="translate(-98 -917)">
+                      <path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path>
+                    </g>
+                  </svg>
+                </div>
+                <div className="flex items-center text-xs text-gray-500">
+                  <span>1d</span>
+                  <span className="mx-1">·</span>
+                  <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
+                  </svg>
+                </div>
+              </div>
+              <div className="relative">
+                <button 
+                  className="text-gray-500 ml-2 p-1 rounded-full hover:bg-gray-100"
+                  onClick={() => setShowMenu(!showMenu)}
+                >
+                  <svg viewBox="0 0 20 20" width="20" height="20" fill="currentColor">
+                    <g fillRule="evenodd" transform="translate(-446 -350)">
+                      <path d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"></path>
+                    </g>
+                  </svg>
+                </button>
+                {showMenu && (
+                  <div className="absolute right-0 mt-1 w-48 bg-white rounded-md shadow-lg z-10">
+                    <ul className="py-1">
+                      <li>
+                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                          Zapisz post
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                          Zgłoś
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        {isMobile && <hr className="mb-3" />}
+        
+        {/* Post content */}
+        <div className="mb-3 text-sm">
+          <div>
+            <p>
+              <span className="font-semibold text-blue-600">Rafał Trzaskowski</span> nie zwalnia tempa! Spotkania z mieszkańcami trwają, a kolejne miasta już czekają! To doskonała okazja, by porozmawiać o przyszłości Polski.
+            </p>
+            
+            <p className="mt-2">
+              <span className="mr-1">📍</span> Najbliższe spotkania:
+            </p>
+            
+            <p className="mt-1 ml-4">
+              <span className="mr-1">🔷</span> Radom – 25 marca
+            </p>
+            
+            <p className="mt-1 ml-4">
+              <span className="mr-1">🔷</span> Kutno – 27 marca
+            </p>
+            
+            <p className="mt-1 ml-4">
+              <span className="mr-1">🔷</span> Konin – 27 marca
+            </p>
+            
+            <p className="mt-1 ml-4">
+              <span className="mr-1">🔷</span> Słupca – 28 marca
+            </p>
+            
+            <p className="mt-1 ml-4">
+              <span className="mr-1">🔷</span> Gniezno – 28 marca
+            </p>
+            
+            <p className="mt-1 ml-4">
+              <span className="mr-1">🔷</span> Kościan – 28 marca
+            </p>
+            
+            <p className="mt-1 ml-4">
+              <span className="mr-1">🔷</span> Szamotuły – 29 marca
+            </p>
+            
+            <p className="mt-1 ml-4">
+              <span className="mr-1">🔷</span> Wolsztyn – 29 marca
+            </p>
+            
+            <p className="mt-1 ml-4">
+              <span className="mr-1">🔷</span> Leszno – 29 marca
+            </p>
+            
+            <p className="mt-2">
+              <span className="text-blue-600">#Trzaskowski2025</span>
+            </p>
+          </div>
+        </div>
+        
+        {/* Single post image */}
+        <div className="mb-3">
+          <img 
+            src="/Assets/MaciejLasekKo/theFirst_Post.jpg" 
+            alt="Spotkania Rafała Trzaskowskiego" 
+            className="w-full h-auto rounded-md"
+          />
+        </div>
+        
+        {/* Post engagement stats */}
+        <div className="flex justify-between text-xs text-gray-500 border-b py-2 mb-2">
+          <div className="flex items-center">
+            <div className="flex -space-x-1 mr-1">
+              <div className="bg-blue-500 rounded-full w-5 h-5 flex items-center justify-center">
+                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+                </svg>
+              </div>
+              <div className="bg-red-500 rounded-full w-5 h-5 flex items-center justify-center">
+                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                </svg>
+              </div>
+            </div>
+            <span>9</span>
+          </div>
+          <div>
+            <span>2 komentarze</span>
+          </div>
+        </div>
+        
+        {/* Action buttons */}
+        <div className="flex">
+          <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+            <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+            </svg>
+            Polub
+          </button>
+          <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+            <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
+            </svg>
+            Skomentuj
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div className="bg-white rounded-lg shadow mb-4 w-full">
+      <div className="p-4">
+        {/* Header with user info - FIXED LAYOUT */}
+        <div className="flex items-start mb-3">
+          <img 
+            src="/Assets/MaciejLasekKo/photo_2.jpg" 
+            alt="User" 
+            className="w-10 h-10 rounded-full mr-2" 
+          />
+          <div className="flex-grow">
+            <div className="flex justify-between items-start w-full">
+              <div>
+                <div className="flex items-center">
+                  <h3 className="font-semibold">Maciej Lasek</h3>
+                  <svg viewBox="0 0 12 13" width="16" height="16" title="Zweryfikowane konto" className="ml-1 flex-shrink-0 fill-[#1877F2]">
+                    <title>Zweryfikowane konto</title>
+                    <g fillRule="evenodd" transform="translate(-98 -917)">
+                      <path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path>
+                    </g>
+                  </svg>
+                </div>
+                <div className="flex items-center text-xs text-gray-500">
+                  <span>1 godz.</span>
+                  <span className="mx-1">·</span>
+                  <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
+                  </svg>
+                </div>
+              </div>
+              <div className="relative">
+                <button 
+                  className="text-gray-500 ml-2 p-1 rounded-full hover:bg-gray-100"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setShowMenu(!showMenu);
+                  }}
+                >
+                  <svg viewBox="0 0 20 20" width="20" height="20" fill="currentColor">
+                    <g fillRule="evenodd" transform="translate(-446 -350)">
+                      <path d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"></path>
+                    </g>
+                  </svg>
+                </button>
+                {showMenu && (
+                  <div className="absolute right-0 mt-1 w-48 bg-white rounded-md shadow-lg z-10">
+                    <ul className="py-1">
+                      <li>
+                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                          Zapisz post
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                          Zgłoś
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        {isMobile && <hr className="mb-3" />}
+        
+        {/* Post content - text only with links */}
+        <div className="mb-3 text-sm">
+          {!expanded ? (
+            <div>
+              <p>Kiedy sprawiedliwość dogania tych, którzy przez lata ukrywali się za głośnymi hasłami i miliardami, przypomina nam to, że świat nie jest już gotowy przymykać oczu na zagrożenia hybrydowe. Ruben Vardanyan, którego nazwisko pojawia się teraz w kontekście procesu sądowego w Baku, dla mnie nie jest jedynie postacią z wiadomości. To symbol tych zagrożeń hybrydowych, które my, jako Polacy, znamy bardzo dobrze...</p>
+              <button 
+                onClick={() => setExpanded(true)}
+                className="text-blue-500 font-medium text-sm mt-2"
+              >
+                Zobacz więcej
+              </button>
+            </div>
+          ) : (
+            <div>
+              <p>Kiedy sprawiedliwość dogania tych, którzy przez lata ukrywali się za głośnymi hasłami i miliardami, przypomina nam to, że świat nie jest już gotowy przymykać oczu na zagrożenia hybrydowe. Ruben Vardanyan, którego nazwisko pojawia się teraz w kontekście procesu sądowego w Baku, dla mnie nie jest jedynie postacią z wiadomości. To symbol tych zagrożeń hybrydowych, które my, jako Polacy, znamy bardzo dobrze. To człowiek, który, ukrywając się pod maską filantropa, w rzeczywistości pełnił rolę destabilizatora w regionie.</p>
+              
+              <p className="mt-2">W 2019 roku moi koledzy z Parlamentu Europejskiego po raz pierwszy podnieśli alarm – wtedy 22 deputowanych domagało się sankcji wobec tego "sukcesywnego biznesmena". Było widoczne to, czego inni woleli nie zauważać: za fasadą działalności charytatywnej i pięknych przemówień krył się gigantyczny mechanizm prania pieniędzy – 4,6 miliarda dolarów przez offshore'y w latach 2006-2013. Kiedy w 2022 roku Kongres USA i Ukraina również umieścili go na swoich listach, stało się jasne: to nie przypadek.</p>
+              
+              <p className="mt-2">Jednak prawdziwe oblicze Vardanyana ujawniło się, gdy nagle został "premierem" w Karabachu. Dlaczego odnoszący sukcesy finansista miałby zostać przywódcą nieuznawanej republiki? Odpowiedź jest prosta: zawsze był narzędziem Kremla. To on blokował pokojowe negocjacje między Armenią a Azerbejdżanem, forsując agendę korzystną dla Moskwy.</p>
+              
+              <p className="mt-2">I oto szczyt cynizmu: w kwietniu 2024 roku próbowano zgłosić go do Pokojowej Nagrody Nobla! Na szczęście 122 parlamentarzystów z różnych krajów, w tym moi koledzy z Litwy, Łotwy, Rumunii i Ukrainy, nie dopuścili do tego.</p>
+              
+              <p className="mt-2">Obserwując ten proces w Baku, myślę o tym, jak ważne jest, by nie dać się zwieść pięknym fasadom. Za "sukcesywnymi biznesmenami" i "rozjemcami" często kryją się ci, którzy podsycają wojny i konflikty w interesie Kremla. Dziś sprawiedliwość dosięgła Vardanyana. Jutro powinna dosięgnąć innych podobnych "operatorów" wojny hybrydowej przeciwko demokracji.</p>
+              
+              <p className="mt-2">Dlaczego to dotyczy Polski? Ponieważ znamy cenę takich schematów. Przeżyliśmy próby podziału, osłabienia, podporządkowania naszego kraju. Widzieliśmy, jak Moskwa wykorzystuje "szare strefy" i marionetkowych przywódców, by siać chaos i zdobywać dźwignie wpływu. Dlatego dziś nie możemy pozwolić, aby takie osoby jak Vardanyan kontynuowały swoją działalność bez konsekwencji.</p>
+              
+              <p className="mt-2">Proces w Baku to ważny krok. Ale to tylko część walki o sprawiedliwość. Musimy nadal wywierać presję na wszystkich powiązanych z przestępstwami Kremla, na wszystkich, którzy używają pieniędzy, władzy i wpływów do niszczenia pokoju i demokracji. Polska pozostaje i będzie pozostawać głosem domagającym się sprawiedliwości.</p>
+              
+              <p className="mt-2">Pamiętamy lekcje historii. Wiemy, co znaczy bronić swojej niepodległości. I nie pozwolimy, aby sabotażyści stabilności – kimkolwiek są i w jakichkolwiek krajach działają – pozostali bezkarni.</p>
+            </div>
+          )}
+        </div>
+        
+        {/* Post engagement stats */}
+        <div className="flex justify-between text-xs text-gray-500 border-b py-2 mb-2">
+          <div className="flex items-center">
+            <div className="flex -space-x-1 mr-1">
+              <div className="bg-red-500 rounded-full w-5 h-5 flex items-center justify-center">
+                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                </svg>
+              </div>
+              <div className="bg-blue-500 rounded-full w-5 h-5 flex items-center justify-center">
+                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+                </svg>
+              </div>
+            </div>
+            <span>19</span>
+          </div>
+          <div>
+            <span>11 komentarze · 4 udostępnień</span>
+          </div>
+        </div>
+        
+        {/* Action buttons - conditional rendering based on isMobile */}
+        {isMobile ? (
+          // Mobile action buttons (3 buttons)
+          <div className="flex">
+            <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+              </svg>
+              Polub
+            </button>
+            <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
+              </svg>
+              Komentarz
+            </button>
+            <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z" />
+              </svg>
+              Udostępnij
+            </button>
+          </div>
+        ) : (
+          // Desktop action buttons (only 2 buttons)
+          <div className="flex">
+            <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+              </svg>
+              Polub
+            </button>
+            <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
+              </svg>
+              Komentarz
+            </button>
+          </div>
+        )}
+      </div>
+    </div>
+
+
+    <div className="bg-white rounded-lg shadow mb-4 w-full">
+      {/* Original poster info */}
+      <div className="p-4 pb-2">
+        <div className="flex items-start">
+          <div className="w-10 h-10 rounded-full mr-2 overflow-hidden bg-blue-100 flex items-center justify-center">
+            <img 
+              src="/Assets/MaciejLasekKo/photo_2.jpg" 
+              alt="Maciej Lasek" 
+              className="w-full h-full object-cover" 
+            />
+          </div>
+          <div className="flex-grow">
+            <div className="flex justify-between items-start w-full">
+              <div>
+                <div className="flex items-center">
+                  <h3 className="font-semibold">Maciej Lasek</h3>
+                </div>
+                <div className="flex items-center text-xs text-gray-500">
+                  <span>2 godz.</span>
+                  <span className="mx-1">·</span>
+                  <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
+                  </svg>
+                </div>
+              </div>
+              <div className="relative">
+                <button 
+                  className="text-gray-500 ml-2 p-1 rounded-full hover:bg-gray-100"
+                  onClick={() => setShowMenu(!showMenu)}
+                >
+                  <svg viewBox="0 0 20 20" width="20" height="20" fill="currentColor">
+                    <g fillRule="evenodd" transform="translate(-446 -350)">
+                      <path d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"></path>
+                    </g>
+                  </svg>
+                </button>
+                {showMenu && (
+                  <div className="absolute right-0 mt-1 w-48 bg-white rounded-md shadow-lg z-10">
+                    <ul className="py-1">
+                      <li>
+                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                          Zapisz post
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                          Zgłoś
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Photo grid - layout matching the screenshots */}
+      <div className="grid grid-cols-4 gap-0.5 p-0.5">
+        {/* Left large photo - takes full height of first two rows */}
+        <div className="col-span-2 row-span-2 relative">
+          <img 
+            src="/Assets/MaciejLasekKo/SecondPost_photo.jpg" 
+            alt="Selfie z rodziną" 
+            className="w-full h-full object-cover"
+          />
+        </div>
+        
+        {/* Top right photo */}
+        <div className="col-span-2 relative">
+          <img 
+            src="/Assets/MaciejLasekKo/SecondPost_photo2.jpg" 
+            alt="Trzaskowski rozdaje upominki dzieciom" 
+            className="w-full h-full object-cover"
+          />
+        </div>
+        
+        {/* Middle right photo */}
+        <div className="col-span-2 relative">
+          <img 
+            src="/Assets/MaciejLasekKo/SecondPost_photo3.jpg" 
+            alt="Trzaskowski z megafonem" 
+            className="w-full h-full object-cover"
+          />
+        </div>
+        
+        {/* Bottom left large photo */}
+        <div className="col-span-2 relative">
+          <img 
+            src="/Assets/MaciejLasekKo/SecondPost_photo4.jpg" 
+            alt="Trzaskowski z polską flagą" 
+            className="w-full h-full object-cover"
+          />
+        </div>
+        
+        {/* Bottom right photo with +6 indicator */}
+        <div className="col-span-2 relative">
+          <img 
+            src="/Assets/MaciejLasekKo/SecondPost_photo5.jpg" 
+            alt="Dziecko z transparent" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center text-white font-bold text-2xl">
+            +6
+          </div>
+        </div>
+      </div>
+      
+      {/* Shared post container with border */}
+      <div className="mx-4 my-4 border border-gray-200 rounded-lg bg-gray-50">
+        {/* Shared post author */}
+        <div className="flex items-center p-4 pb-2">
+          <img 
+            src="/Assets/MaciejLasekKo/rafael.jpg" 
+            alt="Rafał Trzaskowski" 
+            className="w-8 h-8 rounded-full mr-2" 
+          />
+          <div>
+            <div className="flex items-center">
+              <span className="font-semibold">Rafał Trzaskowski</span>
+              <svg className="w-4 h-4 ml-1 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-2 15l-5-5 1.4-1.4 3.6 3.6 7.6-7.6L19 8l-9 9z" />
+              </svg>
+            </div>
+            <div className="text-xs text-gray-500">
+              <span>jest w miejscowości </span>
+              <span className="font-semibold">Złotów</span>
+              <span>.</span>
+            </div>
+            <div className="text-xs text-gray-500">
+              <span>19 godz.</span>
+              <span className="mx-1">·</span>
+              <svg className="w-3 h-3 inline" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        
+        {/* Shared post text content */}
+        <div className="text-sm p-4 pt-0">
+          <p>Od początku kampanii mówię bardzo wiele o bezpieczeństwie - o rozbudowie armii, o umacnianiu granicy. Ale bezpieczeństwo zaczyna się w każdej gminie. I w każdej rodzinie.</p>
+          
+          <p className="mt-2">Pokazał to głośny przykład kilkuletniego chłopca z okolic Zgierza, który w trosce o swojego małego brata zadzwonił pod 112 po pomoc.</p>
+          
+          <p className="mt-2">To dowód na to, jak ważna jest rozmowa i edukacja od najmłodszych lat. I cieszę się, że na spotkaniu w Złotowie tak licznie obecni byli także najmłodsi. To Wy jesteście przyszłością. To przede wszystkim dla Was i z Wami chcemy budować bezpieczną przyszłość Polski.</p>
+          
+          <p className="mt-2">Cała Polska naprzód! 🇵🇱</p>
+          
+          <p className="mt-2 text-blue-600">#Trzaskowski2025</p>
+        </div>
+      </div>
+      
+      {/* Post engagement stats */}
+      <div className="flex justify-between text-xs text-gray-500 border-b border-t py-2 px-4">
+        <div className="flex items-center">
+          <div className="flex -space-x-1 mr-1">
+            <div className="bg-blue-500 rounded-full w-5 h-5 flex items-center justify-center">
+              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+              </svg>
+            </div>
+            <div className="bg-red-500 rounded-full w-5 h-5 flex items-center justify-center">
+              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+              </svg>
+            </div>
+          </div>
+          <span>11</span>
+        </div>
+        <div>
+          <span>3 komentarze</span>
+        </div>
+      </div>
+      
+      {/* Action buttons */}
+      <div className="flex px-4 py-1">
+        <button className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+          <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+          </svg>
+          Polub
+        </button>
+        <button className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+          <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
+          </svg>
+          Skomentuj
+        </button>
+      </div>
+    </div>
+
+  
+
+
+    <div className="bg-white rounded-lg shadow mb-4 w-full">
+      {/* Original poster header */}
+      <div className="p-4 pb-2">
+        <div className="flex items-start">
+          <div className="w-10 h-10 rounded-full mr-2 overflow-hidden">
+            <img 
+              src="/Assets/MaciejLasekKo/photo_2.jpg" 
+              alt="Maciej Lasek" 
+              className="w-full h-full object-cover" 
+            />
+          </div>
+          <div className="flex-grow">
+            <div className="flex justify-between items-start w-full">
+              <div>
+                <div className="flex items-center">
+                  <h3 className="font-semibold">Maciej Lasek</h3>
+                </div>
+                <div className="flex items-center text-xs text-gray-500">
+                  <span>21 godz.</span>
+                  <span className="mx-1">·</span>
+                  <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
+                  </svg>
+                </div>
+              </div>
+              <div className="relative">
+                <button 
+                  className="text-gray-500 ml-2 p-1 rounded-full hover:bg-gray-100"
+                  onClick={() => setShowMenu(!showMenu)}
+                >
+                  <svg viewBox="0 0 20 20" width="20" height="20" fill="currentColor">
+                    <g fillRule="evenodd" transform="translate(-446 -350)">
+                      <path d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"></path>
+                    </g>
+                  </svg>
+                </button>
+                {showMenu && (
+                  <div className="absolute right-0 mt-1 w-48 bg-white rounded-md shadow-lg z-10">
+                    <ul className="py-1">
+                      <li>
+                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                          Zapisz post
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                          Zgłoś
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Shared post container with border and rounded corners */}
+      <div className="mx-4 mb-4 rounded-lg border border-gray-200 overflow-hidden">
+        {/* Shared post header */}
+        <div className="p-4">
+          <div className="flex items-start">
+            <div className="w-10 h-10 rounded-full mr-2 overflow-hidden">
+              <img 
+                src="/Assets/MaciejLasekKo/dnldTuskCom.jpg" 
+                alt="Donald Tusk" 
+                className="w-full h-full object-cover" 
+              />
+            </div>
+            <div className="flex-grow">
+              <div className="flex items-center">
+                <h3 className="font-semibold">Donald Tusk</h3>
+                <svg viewBox="0 0 12 13" width="16" height="16" title="Zweryfikowane konto" className="ml-1 flex-shrink-0 fill-[#1877F2]">
+                  <title>Zweryfikowane konto</title>
+                  <g fillRule="evenodd" transform="translate(-98 -917)">
+                    <path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path>
+                  </g>
+                </svg>
+              </div>
+              <div className="flex items-center text-xs text-gray-500">
+                <span>23 godz.</span>
+                <span className="mx-1">·</span>
+                <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          
+          {/* Shared post content */}
+          <div className="mt-3 text-sm">
+            <p>Komentatorzy, którzy uważają, że walka w obronie niezależności prokuratury dyskwalifikuje panią Wrzosek jako "politycznie zaangażowaną", imponowali powściągliwością, kiedy na prezesów sądów, trybunałów, banków, mediów i prokuratury PiS mianował radykalnie neutralnych fachowców.</p>
+          </div>
+        </div>
+      </div>
+      
+      {/* Post engagement stats */}
+      <div className="flex justify-between text-xs text-gray-500 border-b border-t py-2 mx-4 mb-2">
+        <div className="flex items-center">
+          <div className="flex -space-x-1 mr-1">
+            <div className="bg-blue-500 rounded-full w-5 h-5 flex items-center justify-center">
+              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+              </svg>
+            </div>
+            <div className="bg-red-500 rounded-full w-5 h-5 flex items-center justify-center">
+              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+              </svg>
+            </div>
+          </div>
+          <span>6</span>
+        </div>
+        <div>
+          <span>2 komentarze</span>
+        </div>
+      </div>
+      
+      {/* Action buttons */}
+      <div className="flex mx-4 pb-2 border-b">
+        <button className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+          <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+          </svg>
+          Polub
+        </button>
+        <button className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+          <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
+          </svg>
+          Skomentuj
+        </button>
+      </div>
+      
+      {/* Comments section */}
+      <div className="px-4 py-2">
+        <div className="text-sm text-gray-500 mb-3">Wyświetl więcej komentarzy</div>
+        
+        {/* First comment */}
+      
+      </div>
+    </div>
 
 
 
@@ -863,169 +1533,7 @@ sekretarz stanu w Ministerstwie Infrastruktury
 
 
 
-    <div className="bg-white rounded-lg shadow mb-4 w-full">
-      <div className="p-4">
-        {/* Header with user info - FIXED LAYOUT */}
-        <div className="flex items-start mb-3">
-          <img 
-            src="/Assets/MaciejLasekKo/photo_2.jpg" 
-            alt="User" 
-            className="w-10 h-10 rounded-full mr-2" 
-          />
-          <div className="flex-grow">
-            <div className="flex justify-between items-start w-full">
-              <div>
-                <div className="flex items-center">
-                  <h3 className="font-semibold">Maciej Lasek</h3>
-                  <svg viewBox="0 0 12 13" width="16" height="16" title="Zweryfikowane konto" className="ml-1 flex-shrink-0 fill-[#1877F2]">
-                    <title>Zweryfikowane konto</title>
-                    <g fillRule="evenodd" transform="translate(-98 -917)">
-                      <path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path>
-                    </g>
-                  </svg>
-                </div>
-                <div className="flex items-center text-xs text-gray-500">
-                  <span>1d</span>
-                  <span className="mx-1">·</span>
-                  <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
-                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
-                  </svg>
-                </div>
-              </div>
-              <div className="relative">
-                <button 
-                  className="text-gray-500 ml-2 p-1 rounded-full hover:bg-gray-100"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    setShowMenu(!showMenu);
-                  }}
-                >
-                  <svg viewBox="0 0 20 20" width="20" height="20" fill="currentColor">
-                    <g fillRule="evenodd" transform="translate(-446 -350)">
-                      <path d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"></path>
-                    </g>
-                  </svg>
-                </button>
-                {showMenu && (
-                  <div className="absolute right-0 mt-1 w-48 bg-white rounded-md shadow-lg z-10">
-                    <ul className="py-1">
-                      <li>
-                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                          Zapisz post
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                          Zgłoś
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                )}
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        {isMobile && <hr className="mb-3" />}
-        
-        {/* Post content - text only with links */}
-        <div className="mb-3 text-sm">
-          {!expanded ? (
-            <div>
-              <p>Kiedy sprawiedliwość dogania tych, którzy przez lata ukrywali się za głośnymi hasłami i miliardami, przypomina nam to, że świat nie jest już gotowy przymykać oczu na zagrożenia hybrydowe. Ruben Vardanyan, którego nazwisko pojawia się teraz w kontekście procesu sądowego w Baku, dla mnie nie jest jedynie postacią z wiadomości. To symbol tych zagrożeń hybrydowych, które my, jako Polacy, znamy bardzo dobrze...</p>
-              <button 
-                onClick={() => setExpanded(true)}
-                className="text-blue-500 font-medium text-sm mt-2"
-              >
-                Zobacz więcej
-              </button>
-            </div>
-          ) : (
-            <div>
-              <p>Kiedy sprawiedliwość dogania tych, którzy przez lata ukrywali się za głośnymi hasłami i miliardami, przypomina nam to, że świat nie jest już gotowy przymykać oczu na zagrożenia hybrydowe. Ruben Vardanyan, którego nazwisko pojawia się teraz w kontekście procesu sądowego w Baku, dla mnie nie jest jedynie postacią z wiadomości. To symbol tych zagrożeń hybrydowych, które my, jako Polacy, znamy bardzo dobrze. To człowiek, który, ukrywając się pod maską filantropa, w rzeczywistości pełnił rolę destabilizatora w regionie.</p>
-              
-              <p className="mt-2">W 2019 roku moi koledzy z Parlamentu Europejskiego po raz pierwszy podnieśli alarm – wtedy 22 deputowanych domagało się sankcji wobec tego "sukcesywnego biznesmena". Było widoczne to, czego inni woleli nie zauważać: za fasadą działalności charytatywnej i pięknych przemówień krył się gigantyczny mechanizm prania pieniędzy – 4,6 miliarda dolarów przez offshore'y w latach 2006-2013. Kiedy w 2022 roku Kongres USA i Ukraina również umieścili go na swoich listach, stało się jasne: to nie przypadek.</p>
-              
-              <p className="mt-2">Jednak prawdziwe oblicze Vardanyana ujawniło się, gdy nagle został "premierem" w Karabachu. Dlaczego odnoszący sukcesy finansista miałby zostać przywódcą nieuznawanej republiki? Odpowiedź jest prosta: zawsze był narzędziem Kremla. To on blokował pokojowe negocjacje między Armenią a Azerbejdżanem, forsując agendę korzystną dla Moskwy.</p>
-              
-              <p className="mt-2">I oto szczyt cynizmu: w kwietniu 2024 roku próbowano zgłosić go do Pokojowej Nagrody Nobla! Na szczęście 122 parlamentarzystów z różnych krajów, w tym moi koledzy z Litwy, Łotwy, Rumunii i Ukrainy, nie dopuścili do tego.</p>
-              
-              <p className="mt-2">Obserwując ten proces w Baku, myślę o tym, jak ważne jest, by nie dać się zwieść pięknym fasadom. Za "sukcesywnymi biznesmenami" i "rozjemcami" często kryją się ci, którzy podsycają wojny i konflikty w interesie Kremla. Dziś sprawiedliwość dosięgła Vardanyana. Jutro powinna dosięgnąć innych podobnych "operatorów" wojny hybrydowej przeciwko demokracji.</p>
-              
-              <p className="mt-2">Dlaczego to dotyczy Polski? Ponieważ znamy cenę takich schematów. Przeżyliśmy próby podziału, osłabienia, podporządkowania naszego kraju. Widzieliśmy, jak Moskwa wykorzystuje "szare strefy" i marionetkowych przywódców, by siać chaos i zdobywać dźwignie wpływu. Dlatego dziś nie możemy pozwolić, aby takie osoby jak Vardanyan kontynuowały swoją działalność bez konsekwencji.</p>
-              
-              <p className="mt-2">Proces w Baku to ważny krok. Ale to tylko część walki o sprawiedliwość. Musimy nadal wywierać presję na wszystkich powiązanych z przestępstwami Kremla, na wszystkich, którzy używają pieniędzy, władzy i wpływów do niszczenia pokoju i demokracji. Polska pozostaje i będzie pozostawać głosem domagającym się sprawiedliwości.</p>
-              
-              <p className="mt-2">Pamiętamy lekcje historii. Wiemy, co znaczy bronić swojej niepodległości. I nie pozwolimy, aby sabotażyści stabilności – kimkolwiek są i w jakichkolwiek krajach działają – pozostali bezkarni.</p>
-            </div>
-          )}
-        </div>
-        
-        {/* Post engagement stats */}
-        <div className="flex justify-between text-xs text-gray-500 border-b py-2 mb-2">
-          <div className="flex items-center">
-            <div className="flex -space-x-1 mr-1">
-              <div className="bg-red-500 rounded-full w-5 h-5 flex items-center justify-center">
-                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                </svg>
-              </div>
-              <div className="bg-blue-500 rounded-full w-5 h-5 flex items-center justify-center">
-                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
-                </svg>
-              </div>
-            </div>
-            <span>19</span>
-          </div>
-          <div>
-            <span>11 komentarze · 4 udostępnień</span>
-          </div>
-        </div>
-        
-        {/* Action buttons - conditional rendering based on isMobile */}
-        {isMobile ? (
-          // Mobile action buttons (3 buttons)
-          <div className="flex">
-            <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
-              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
-              </svg>
-              Polub
-            </button>
-            <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
-              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
-              </svg>
-              Komentarz
-            </button>
-            <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
-              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z" />
-              </svg>
-              Udostępnij
-            </button>
-          </div>
-        ) : (
-          // Desktop action buttons (only 2 buttons)
-          <div className="flex">
-            <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
-              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
-              </svg>
-              Polub
-            </button>
-            <button onClick={openModal} className="flex-1 py-1 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
-              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
-              </svg>
-              Komentarz
-            </button>
-          </div>
-        )}
-      </div>
-    </div>
+  
 
 
 
