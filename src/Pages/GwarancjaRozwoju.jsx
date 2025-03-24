@@ -476,6 +476,122 @@ const GwarancjaRozwoju = () => {
         <div className="flex items-start">
           <div className="w-10 h-10 rounded-full mr-2 overflow-hidden">
             <img 
+              src="/Assets/Gwarancja.rozwoju/photo_avatar.jpg"
+              alt="Poseł Piotr Głowski" 
+              className="w-full h-full object-cover" 
+            />
+          </div>
+          <div className="flex-grow">
+            <div className="flex justify-between items-start w-full">
+              <div>
+                <div className="flex items-center">
+                  <h3 className="font-semibold">Poseł Piotr Głowski</h3>
+                </div>
+                <div className="flex items-center text-xs text-gray-500">
+                  <span>2 godz.</span>
+                  <span className="mx-1">·</span>
+                  <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
+                  </svg>
+                </div>
+              </div>
+              <div className="relative">
+                <button 
+                  className="text-gray-500 ml-2 p-1 rounded-full hover:bg-gray-100"
+                  onClick={() => setShowMenu(!showMenu)}
+                >
+                  <svg viewBox="0 0 20 20" width="20" height="20" fill="currentColor">
+                    <g fillRule="evenodd" transform="translate(-446 -350)">
+                      <path d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"></path>
+                    </g>
+                  </svg>
+                </button>
+                {showMenu && (
+                  <div className="absolute right-0 mt-1 w-48 bg-white rounded-md shadow-lg z-10">
+                    <ul className="py-1">
+                      <li>
+                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                          Zapisz post
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                          Zgłoś
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Invitation image - single photo */}
+      <div>
+        <img 
+          src="/Assets/Gwarancja.rozwoju/photoLast.jpg" 
+          alt="Zaproszenie na spotkanie z Piotrem Głowskim i Rafałem Zdzierelą" 
+          className="w-full h-auto" 
+        />
+      </div>
+      
+      {/* Post engagement stats */}
+      <div className="flex justify-between text-xs text-gray-500 border-t py-2 px-4 mt-1 mb-2">
+        <div className="flex items-center">
+          <div className="flex -space-x-1 mr-1">
+            <div className="bg-blue-500 rounded-full w-5 h-5 flex items-center justify-center">
+              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+              </svg>
+            </div>
+          </div>
+          <span>26</span>
+        </div>
+        <div className="flex items-center">
+          <span className="flex items-center mr-2">
+            <span>2</span>
+            <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
+            </svg>
+          </span>
+          <span className="flex items-center">
+            <span>2</span>
+            <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z" />
+            </svg>
+          </span>
+        </div>
+      </div>
+      
+      {/* Action buttons */}
+      <div className="flex border-t">
+        <button className="flex-1 py-2 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+          <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+          </svg>
+          Polub
+        </button>
+        <button className="flex-1 py-2 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+          <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
+          </svg>
+          Skomentuj
+        </button>
+      </div>
+    </div>
+
+
+
+
+
+            <div className="bg-white rounded-lg shadow mb-4 w-full">
+      {/* Original poster header */}
+      <div className="p-4 pb-2">
+        <div className="flex items-start">
+          <div className="w-10 h-10 rounded-full mr-2 overflow-hidden">
+            <img 
               src="/Assets/Gwarancja.rozwoju/photo_avatar.jpg" 
               alt="Poseł Piotr Głowski" 
               className="w-full h-full object-cover" 
@@ -568,7 +684,7 @@ const GwarancjaRozwoju = () => {
               </svg>
             </div>
           </div>
-          <span>5</span>
+          <span>8</span>
         </div>
         <div>
           <span></span>
@@ -867,7 +983,7 @@ const GwarancjaRozwoju = () => {
               </svg>
             </div>
           </div>
-          <span>14</span>
+          <span>18</span>
         </div>
         <div className="flex items-center">
           <span className="mr-2">3 komentarze</span>
