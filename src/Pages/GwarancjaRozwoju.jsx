@@ -28,7 +28,7 @@ const GwarancjaRozwoju = () => {
         setShowMiniHeader(false);
       }
 
-      if (!isMobile && window.scrollY > 2700) {
+      if (!isMobile && window.scrollY > 3900) {
         setIsVisible(true);
       }
       
@@ -77,7 +77,7 @@ const GwarancjaRozwoju = () => {
   };
   const handleScroll = () => {
     // Show modal only on desktop when scrolled past 1200px
-    if (!isMobile && window.scrollY > 3500) {
+    if (!isMobile && window.scrollY > 3800) {
       setIsVisible(true);
     }
   };
