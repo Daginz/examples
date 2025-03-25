@@ -386,6 +386,13 @@ sekretarz stanu w Ministerstwie Infrastruktury
           <div className="flex flex-col md:flex-row">
             <div className="md:w-1/3 m-2">
             
+
+          
+            
+
+
+
+
               <div className="bg-white rounded-lg shadow p-4 mb-4">
                 <h2 className="text-xl font-bold mb-3">Prezentacja</h2>
                 <p className="text-center text-sm mb-6">
@@ -494,6 +501,163 @@ sekretarz stanu w Ministerstwie Infrastruktury
               </div>
             </div>
             <div className="md:w-2/3 m-2">
+
+            <div className="bg-white rounded-lg shadow mb-4 w-full">
+      {/* Original poster header */}
+      <div className="p-4 pb-2">
+        <div className="flex items-start">
+          <div className="w-10 h-10 rounded-full mr-2 overflow-hidden">
+            <img 
+              src="/Assets/MaciejLasekKo/photo_2.jpg" 
+              alt="Maciej Lasek" 
+              className="w-full h-full object-cover" 
+            />
+          </div>
+          <div className="flex-grow">
+            <div className="flex justify-between items-start w-full">
+              <div>
+                <div className="flex items-center">
+                  <h3 className="font-semibold">Maciej Lasek</h3>
+                </div>
+                <div className="flex items-center text-xs text-gray-500">
+                  <span>12 godz</span>
+                  <span className="mx-1">·</span>
+                  <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
+                  </svg>
+                </div>
+              </div>
+              <div className="relative">
+                <button 
+                  className="text-gray-500 ml-2 p-1 rounded-full hover:bg-gray-100"
+                  onClick={() => setShowMenu(!showMenu)}
+                >
+                  <svg viewBox="0 0 20 20" width="20" height="20" fill="currentColor">
+                    <g fillRule="evenodd" transform="translate(-446 -350)">
+                      <path d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"></path>
+                    </g>
+                  </svg>
+                </button>
+                {showMenu && (
+                  <div className="absolute right-0 mt-1 w-48 bg-white rounded-md shadow-lg z-10">
+                    <ul className="py-1">
+                      <li>
+                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                          Zapisz post
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                          Zgłoś
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Shared post container */}
+      <div className="mx-4 mb-4 rounded-lg border border-gray-200 overflow-hidden">
+        {/* Shared post header */}
+        <div className="p-4">
+          <div className="flex items-start">
+            <div className="w-10 h-10 rounded-full mr-2 overflow-hidden">
+              <img 
+                src="/Assets/MaciejLasekKo/dnldTuskCom.jpg" 
+                alt="Donald Tusk" 
+                className="w-full h-full object-cover" 
+              />
+            </div>
+            <div className="flex-grow">
+              <div className="flex items-center">
+                <h3 className="font-semibold">Donald Tusk</h3>
+                <svg className="w-4 h-4 ml-1 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-2 15l-5-5 1.4-1.4 3.6 3.6 7.6-7.6L19 8l-9 9z" />
+                </svg>
+              </div>
+              <div className="flex items-center text-xs text-gray-500">
+                <span>17 godz</span>
+                <span className="mx-1">·</span>
+                <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          
+          {/* Shared post content */}
+          <div className="mt-3">
+            {!expanded ? (
+              <div>
+                <p className="text-sm">
+                  Polska przedsiębiorczość to nasz skarb narodowy. Najwyższy czas uwolnić ją z gąszczu absurdalnych przepisów. Im prościej, tym lepiej. To będzie rok przełomu. Pi... 
+                  <button 
+                    onClick={() => setExpanded(true)}
+                    className="text-black font-medium text-sm ml-1"
+                  >
+                    Wyświetl więcej
+                  </button>
+                </p>
+              </div>
+            ) : (
+              <div>
+                <p className="text-sm">
+                  Polska przedsiębiorczość to nasz skarb narodowy. Najwyższy czas uwolnić ją z gąszczu absurdalnych przepisów. Im prościej, tym lepiej. To będzie rok przełomu. Pierwszy pakiet Brzoski przekazany do realizacji. Maczety w ruch.
+                </p>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+      
+
+
+      <div className="flex justify-between text-xs text-gray-500 border-b py-2 mb-2">
+          <div className="flex items-center">
+            <div className="flex -space-x-1 mr-1">
+              <div className="bg-red-500 rounded-full w-5 h-5 flex items-center justify-center">
+                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                </svg>
+              </div>
+              <div className="bg-blue-500 rounded-full w-5 h-5 flex items-center justify-center">
+                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+                </svg>
+              </div>
+            </div>
+            <span>19</span>
+          </div>
+          <div>
+            <span>11 komentarze · 4 udostępnień</span>
+          </div>
+        </div>
+
+      
+      {/* Action buttons */}
+      <div className="flex px-4 pb-3">
+        <button className="flex-1 py-2 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+          <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+          </svg>
+          Polub
+        </button>
+        <button className="flex-1 py-2 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+          <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
+          </svg>
+          Skomentuj
+        </button>
+      </div>
+    </div>
+
+
+
+
 
 
             <div className="bg-white rounded-lg shadow mb-4 w-full">
@@ -683,7 +847,7 @@ sekretarz stanu w Ministerstwie Infrastruktury
                   </svg>
                 </div>
                 <div className="flex items-center text-xs text-gray-500">
-                  <span>5 godz.</span>
+                  <span>1d</span>
                   <span className="mx-1">·</span>
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
@@ -844,7 +1008,7 @@ sekretarz stanu w Ministerstwie Infrastruktury
                   <h3 className="font-semibold">Maciej Lasek</h3>
                 </div>
                 <div className="flex items-center text-xs text-gray-500">
-                  <span>6 godz.</span>
+                  <span>1d</span>
                   <span className="mx-1">·</span>
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
@@ -957,7 +1121,7 @@ sekretarz stanu w Ministerstwie Infrastruktury
               <span>.</span>
             </div>
             <div className="text-xs text-gray-500">
-              <span>23 godz.</span>
+              <span>2d</span>
               <span className="mx-1">·</span>
               <svg className="w-3 h-3 inline" fill="currentColor" viewBox="0 0 16 16">
                 <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
@@ -1040,7 +1204,7 @@ sekretarz stanu w Ministerstwie Infrastruktury
                   <h3 className="font-semibold">Maciej Lasek</h3>
                 </div>
                 <div className="flex items-center text-xs text-gray-500">
-                  <span>1d</span>
+                  <span>2d</span>
                   <span className="mx-1">·</span>
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
@@ -1103,7 +1267,7 @@ sekretarz stanu w Ministerstwie Infrastruktury
                 </svg>
               </div>
               <div className="flex items-center text-xs text-gray-500">
-                <span>1d</span>
+                <span>2d</span>
                 <span className="mx-1">·</span>
                 <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                   <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
@@ -1188,7 +1352,7 @@ sekretarz stanu w Ministerstwie Infrastruktury
                   <h3 className="font-semibold">Maciej Lasek</h3>
                 </div>
                 <div className="flex items-center text-xs text-gray-500">
-                  <span>1d</span>
+                  <span>2d</span>
                   <span className="mx-1">·</span>
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
@@ -1263,7 +1427,7 @@ sekretarz stanu w Ministerstwie Infrastruktury
               </svg>
             </div>
             <div className="flex items-center text-xs text-gray-500">
-              <span>1d</span>
+              <span>2d</span>
               <span className="mx-1">·</span>
               <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                 <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
@@ -1369,7 +1533,7 @@ sekretarz stanu w Ministerstwie Infrastruktury
                   <h3 className="font-semibold">Maciej Lasek</h3>
                 </div>
                 <div className="flex items-center text-xs text-gray-500">
-                  <span>1d</span>
+                  <span>2d</span>
                   <span className="mx-1">·</span>
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
@@ -1450,7 +1614,7 @@ sekretarz stanu w Ministerstwie Infrastruktury
                 </svg>
               </div>
               <div className="text-xs text-gray-500">
-                1d · <svg className="w-3 h-3 inline" fill="currentColor" viewBox="0 0 16 16">
+                2d · <svg className="w-3 h-3 inline" fill="currentColor" viewBox="0 0 16 16">
                   <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
                 </svg>
               </div>
@@ -1554,7 +1718,7 @@ sekretarz stanu w Ministerstwie Infrastruktury
                   <h3 className="font-semibold">Maciej Lasek</h3>
                 </div>
                 <div className="flex items-center text-xs text-gray-500">
-                  <span>1d</span>
+                  <span>2d</span>
                   <span className="mx-1">·</span>
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
