@@ -502,6 +502,583 @@ sekretarz stanu w Ministerstwie Infrastruktury
             </div>
             <div className="md:w-2/3 m-2">
 
+
+            <div className="bg-white rounded-lg shadow mb-4 w-full">
+      {/* Original poster header */}
+      <div className="p-4 pb-2">
+        <div className="flex items-start">
+          <div className="w-10 h-10 rounded-full mr-2 overflow-hidden">
+            <img 
+              src="/Assets/MaciejLasekKo/photo_2.jpg" 
+              alt="Maciej Lasek" 
+              className="w-full h-full object-cover" 
+            />
+          </div>
+          <div className="flex-grow">
+            <div className="flex justify-between items-start w-full">
+              <div>
+                <div className="flex items-center">
+                  <h3 className="font-semibold">Maciej Lasek</h3>
+                </div>
+                <div className="flex items-center text-xs text-gray-500">
+                  <span>1d</span>
+                  <span className="mx-1">·</span>
+                  <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
+                  </svg>
+                </div>
+              </div>
+              <div className="relative">
+                <button 
+                  className="text-gray-500 ml-2 p-1 rounded-full hover:bg-gray-100"
+                  onClick={() => setShowMenu(!showMenu)}
+                >
+                  <svg viewBox="0 0 20 20" width="20" height="20" fill="currentColor">
+                    <g fillRule="evenodd" transform="translate(-446 -350)">
+                      <path d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"></path>
+                    </g>
+                  </svg>
+                </button>
+                {showMenu && (
+                  <div className="absolute right-0 mt-1 w-48 bg-white rounded-md shadow-lg z-10">
+                    <ul className="py-1">
+                      <li>
+                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                          Zapisz post
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                          Zgłoś
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Post content */}
+      <div className="px-4 pb-3">
+        <p className="mb-3">
+          <span className="text-blue-600 font-semibold">Rafał Trzaskowski</span> zdecydowanym liderem wyścigu o prezydenturę! Najświeższy sondaż nie pozostawia złudzeń – 39,9% Polaków chce Polski nowoczesnej, demokratycznej i proeuropejskiej! Rafał Trzaskowski to kandydat, który ma realną szansę na zwycięstwo już w pierwszej turze.
+        </p>
+        <p className="mb-3">
+          Polacy jasno pokazują, że nie chcą radykalizmu ani populizmu – wybierają odpowiedzialność, kompetencję i wizję przyszłości.
+        </p>
+        <p className="mb-3">
+          Każdy głos się liczy – łączmy siły i wygrajmy te wybory dla Polski!
+        </p>
+        <p className="mb-3">
+          <span className="text-blue-600 font-semibold">#Trzaskowski2025</span> <span className="text-blue-600 font-semibold">#CalaPolskaNaprzód</span> <span className="text-blue-600 font-semibold">Platforma Obywatelska</span>
+        </p>
+        
+        {/* Poll results image */}
+        <div className="rounded-lg overflow-hidden mb-1">
+          <img 
+            src="/Assets/MaciejLasekKo/lstpst.jpg" 
+            alt="Sondaż wyborczy - Trzaskowski 39,9%" 
+            className="w-full h-auto"
+          />
+        </div>
+      </div>
+      
+      {/* Engagement stats */}
+      <div className="flex justify-between text-xs text-gray-500 border-t py-2 px-4 mt-1 mb-2">
+        <div className="flex items-center">
+          <div className="flex -space-x-1 mr-1">
+            <div className="bg-blue-500 rounded-full w-5 h-5 flex items-center justify-center">
+              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+              </svg>
+            </div>
+            <div className="bg-yellow-500 rounded-full w-5 h-5 flex items-center justify-center">
+              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z" />
+              </svg>
+            </div>
+            <div className="bg-red-500 rounded-full w-5 h-5 flex items-center justify-center">
+              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+              </svg>
+            </div>
+          </div>
+          <span>50</span>
+        </div>
+        <div className="flex items-center">
+          <span className="flex items-center mr-2">
+            <span>20</span>
+            <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
+            </svg>
+          </span>
+          <span className="flex items-center">
+            <span>1</span>
+            <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z" />
+            </svg>
+          </span>
+        </div>
+      </div>
+      
+      {/* Action buttons */}
+      <div className="flex px-4 pb-3">
+        {isMobile ? (
+          <>
+            <button className="flex-1 py-2 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+              </svg>
+              Polub
+            </button>
+            <button className="flex-1 py-2 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
+              </svg>
+              Komentarz
+            </button>
+            <button className="flex-1 py-2 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z" />
+              </svg>
+              Udostępnij
+            </button>
+          </>
+        ) : (
+          <>
+            <button className="flex-1 py-2 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+              </svg>
+              Polub
+            </button>
+            <button className="flex-1 py-2 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
+              </svg>
+              Skomentuj
+            </button>
+          </>
+        )}
+      </div>
+    </div>
+
+
+
+
+
+            <div className="bg-white rounded-lg shadow mb-4 w-full">
+      {/* Original poster header */}
+      <div className="p-4 pb-2">
+        <div className="flex items-start">
+          <div className="w-10 h-10 rounded-full mr-2 overflow-hidden">
+            <img 
+              src="/Assets/MaciejLasekKo/photo_2.jpg" 
+              alt="Maciej Lasek" 
+              className="w-full h-full object-cover" 
+            />
+          </div>
+          <div className="flex-grow">
+            <div className="flex justify-between items-start w-full">
+              <div>
+                <div className="flex items-center">
+                  <h3 className="font-semibold">Maciej Lasek</h3>
+                </div>
+                <div className="flex items-center text-xs text-gray-500">
+                  <span>1d</span>
+                  <span className="mx-1">·</span>
+                  <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
+                  </svg>
+                </div>
+              </div>
+              <div className="relative">
+                <button 
+                  className="text-gray-500 ml-2 p-1 rounded-full hover:bg-gray-100"
+                  onClick={() => setShowMenu(!showMenu)}
+                >
+                  <svg viewBox="0 0 20 20" width="20" height="20" fill="currentColor">
+                    <g fillRule="evenodd" transform="translate(-446 -350)">
+                      <path d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"></path>
+                    </g>
+                  </svg>
+                </button>
+                {showMenu && (
+                  <div className="absolute right-0 mt-1 w-48 bg-white rounded-md shadow-lg z-10">
+                    <ul className="py-1">
+                      <li>
+                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                          Zapisz post
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                          Zgłoś
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Shared post container */}
+      <div className="mx-4 mb-4 rounded-lg border border-gray-200 overflow-hidden">
+        {/* Campaign poster image first */}
+        <div className="w-full">
+          <img 
+            src="/Assets/MaciejLasekKo/postforComAva.jpg" 
+            alt="CPK property acquisition announcement" 
+            className="w-full h-auto"
+          />
+        </div>
+        
+        {/* Shared post header and content below the image */}
+        <div className="p-4">
+          <div className="flex items-start">
+            <div className="w-10 h-10 rounded-full mr-2 overflow-hidden">
+              <img 
+                src="/Assets/MaciejLasekKo/comment_avatar.jpg" 
+                alt="Centralny Port Komunikacyjny" 
+                className="w-full h-full object-cover" 
+              />
+            </div>
+            <div className="flex-grow">
+              <div className="flex items-center">
+                <h3 className="font-semibold">Centralny Port Komunikacyjny</h3>
+                <svg className="w-4 h-4 ml-1 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-2 15l-5-5 1.4-1.4 3.6 3.6 7.6-7.6L19 8l-9 9z" />
+                </svg>
+              </div>
+              <div className="flex items-center text-xs text-gray-500">
+                <span>1d</span>
+                <span className="mx-1">·</span>
+                <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          
+          {/* Shared post content - CPK Property Announcement */}
+          <div className="mt-3">
+            {!expanded ? (
+              <div>
+                <p className="text-sm">
+                  🌳 Spółka <span className="text-blue-600 font-semibold">#CPK</span> kupiła pierwszą nieruchomość na trasie budowanej linii Kolei Dużych Prędkości, która połączy Warszawę, CPK i Łódź. 🚄<br />
+                  <br />
+                  Akt notarialny został podpisa... 
+                  <button 
+                    onClick={() => setExpanded(true)}
+                    className="text-black font-medium text-sm ml-1"
+                  >
+                    Wyświetl więcej
+                  </button>
+                </p>
+              </div>
+            ) : (
+              <div>
+                <p className="text-sm">
+                  🌳 Spółka <span className="text-blue-600 font-semibold">#CPK</span> kupiła pierwszą nieruchomość na trasie budowanej linii Kolei Dużych Prędkości, która połączy Warszawę, CPK i Łódź. 🚄<br />
+                  <br />
+                  Akt notarialny został podpisany z właścicielem działki, który przystąpił do Kolejowego Programu Dobrowolnych Nabyć <span className="text-blue-600 font-semibold">#KPDN</span>, przygotowanego przez spółkę CPK.<br />
+                  <br />
+                  Do KPDN zostało zakwalifikowanych 199 działek położonych między Warszawą i Łodzią. 🏞️ Właściciele niemal 190 z nich zgłosili chęć uczestnictwa w programie. Obecnie prowadzone są z nimi negocjacje, a protokoły uzgodnień podpisano dla 53 działek.<br />
+                  <br />
+                  ✅ Program KPDN zapewnia atrakcyjne warunki wykupu:<br />
+                  🔹 według wartości odtworzeniowej, bez uwzględniania stopnia zużycia nieruchomości,<br />
+                  🔹 możliwość powiększenia wyceny o 20% w przypadku gruntu oraz o 40% dla wszystkich tzw. naniesień (tj. domu, budynków gospodarczych, roślin uprawnych itp.).<br />
+                  <br />
+                  Zawsze wybierany jest wariant korzystniejszy dla właściciela. Właściciel nieruchomości zyskuje także dodatkowy czas na przeprowadzkę i możliwość dostosowania warunków sprzedaży do indywidualnych potrzeb.<br />
+                  <br />
+                  🌐 Więcej informacji ➡️ <span className="text-blue-600">https://www.cpk.pl/.../akt.../pierwszy-akt-notarialny-w-kpdn</span> ✅
+                </p>
+                <button 
+                  onClick={() => setExpanded(false)}
+                  className="text-black font-medium text-sm mt-2"
+                >
+                  Pokaż mniej
+                </button>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+      
+      {/* Engagement stats */}
+      <div className="flex justify-between text-xs text-gray-500 border-t py-2 px-4 mt-1 mb-2">
+        <div className="flex items-center">
+          <div className="flex -space-x-1 mr-1">
+            <div className="bg-blue-500 rounded-full w-5 h-5 flex items-center justify-center">
+              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+              </svg>
+            </div>
+            <div className="bg-red-500 rounded-full w-5 h-5 flex items-center justify-center">
+              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+              </svg>
+            </div>
+          </div>
+          <span>1</span>
+        </div>
+        <div className="flex items-center">
+          <span className="flex items-center mr-2">
+            <span>0</span>
+            <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
+            </svg>
+          </span>
+        </div>
+      </div>
+      
+      {/* Action buttons */}
+      <div className="flex px-4 pb-3">
+        {isMobile ? (
+          <>
+            <button className="flex-1 py-2 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+              </svg>
+              Polub
+            </button>
+            <button className="flex-1 py-2 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
+              </svg>
+              Komentarz
+            </button>
+            <button className="flex-1 py-2 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z" />
+              </svg>
+              Udostępnij
+            </button>
+          </>
+        ) : (
+          <>
+            <button className="flex-1 py-2 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+              </svg>
+              Polub
+            </button>
+            <button className="flex-1 py-2 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
+              </svg>
+              Skomentuj
+            </button>
+          </>
+        )}
+      </div>
+    </div>
+
+
+
+
+
+
+            <div className="bg-white rounded-lg shadow mb-4 w-full">
+      {/* Original poster header */}
+      <div className="p-4 pb-2">
+        <div className="flex items-start">
+          <div className="w-10 h-10 rounded-full mr-2 overflow-hidden">
+            <img 
+              src="/Assets/MaciejLasekKo/photo_2.jpg" 
+              alt="Maciej Lasek" 
+              className="w-full h-full object-cover" 
+            />
+          </div>
+          <div className="flex-grow">
+            <div className="flex justify-between items-start w-full">
+              <div>
+                <div className="flex items-center">
+                  <h3 className="font-semibold">Maciej Lasek</h3>
+                </div>
+                <div className="flex items-center text-xs text-gray-500">
+                  <span>1d</span>
+                  <span className="mx-1">·</span>
+                  <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
+                  </svg>
+                </div>
+              </div>
+              <div className="relative">
+                <button 
+                  className="text-gray-500 ml-2 p-1 rounded-full hover:bg-gray-100"
+                  onClick={() => setShowMenu(!showMenu)}
+                >
+                  <svg viewBox="0 0 20 20" width="20" height="20" fill="currentColor">
+                    <g fillRule="evenodd" transform="translate(-446 -350)">
+                      <path d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"></path>
+                    </g>
+                  </svg>
+                </button>
+                {showMenu && (
+                  <div className="absolute right-0 mt-1 w-48 bg-white rounded-md shadow-lg z-10">
+                    <ul className="py-1">
+                      <li>
+                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                          Zapisz post
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                          Zgłoś
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Post content */}
+      <div className="px-4 pb-2">
+        <p className="mb-2">Cała Polska naprzód! <span role="img" aria-label="polska flaga">🇵🇱</span></p>
+        <p className="mb-2 text-blue-600 font-semibold">#Trzaskowski2025</p>
+      </div>
+      
+      {/* Shared post container */}
+      <div className="mx-4 mb-4 rounded-lg border border-gray-200 overflow-hidden">
+        {/* Campaign poster image first */}
+        <div className="w-full">
+          <img 
+            src="/Assets/MaciejLasekKo/lastEdits1.jpg" 
+            alt="Trzaskowski campaign poster" 
+            className="w-full h-auto"
+          />
+        </div>
+        
+        {/* Shared post header and content below the image */}
+        <div className="p-4">
+          <div className="flex items-start">
+            <div className="w-10 h-10 rounded-full mr-2 overflow-hidden">
+              <img 
+                src="/Assets/MaciejLasekKo/rafael.jpg" 
+                alt="Rafał Trzaskowski" 
+                className="w-full h-full object-cover" 
+              />
+            </div>
+            <div className="flex-grow">
+              <div className="flex items-center">
+                <h3 className="font-semibold">Rafał Trzaskowski</h3>
+                <svg className="w-4 h-4 ml-1 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-2 15l-5-5 1.4-1.4 3.6 3.6 7.6-7.6L19 8l-9 9z" />
+                </svg>
+              </div>
+              <div className="flex items-center text-xs text-gray-500">
+                <span>1d</span>
+                <span className="mx-1">·</span>
+                <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          
+          {/* Shared post content - Campaign Event Post */}
+          <div className="mt-3">
+            <div>
+              <p className="text-sm">
+                Radom - widzimy się już dziś!<br />
+                Cała Polska naprzód! <span role="img" aria-label="polska flaga">🇵🇱</span><br />
+                <span className="text-blue-600 font-semibold">#Trzaskowski2025</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Engagement stats */}
+      <div className="flex justify-between text-xs text-gray-500 border-t py-2 px-4 mt-1 mb-2">
+        <div className="flex items-center">
+          <div className="flex -space-x-1 mr-1">
+            <div className="bg-blue-500 rounded-full w-5 h-5 flex items-center justify-center">
+              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+              </svg>
+            </div>
+            <div className="bg-red-500 rounded-full w-5 h-5 flex items-center justify-center">
+              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+              </svg>
+            </div>
+          </div>
+          <span>11</span>
+        </div>
+        <div className="flex items-center">
+          <span className="flex items-center mr-2">
+            <span>3</span>
+            <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
+            </svg>
+          </span>
+          <span className="flex items-center">
+            <span>2</span>
+            <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z" />
+            </svg>
+          </span>
+        </div>
+      </div>
+      
+      {/* Action buttons */}
+      <div className="flex px-4 pb-3">
+        {isMobile ? (
+          <>
+            <button className="flex-1 py-2 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+              </svg>
+              Polub
+            </button>
+            <button className="flex-1 py-2 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
+              </svg>
+              Komentarz
+            </button>
+            <button className="flex-1 py-2 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z" />
+              </svg>
+              Udostępnij
+            </button>
+          </>
+        ) : (
+          <>
+            <button className="flex-1 py-2 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+              </svg>
+              Polub
+            </button>
+            <button className="flex-1 py-2 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
+              </svg>
+              Skomentuj
+            </button>
+          </>
+        )}
+      </div>
+    </div>
+
+
+
+
+
             <div className="bg-white rounded-lg shadow mb-4 w-full">
       {/* Original poster header */}
       <div className="p-4 pb-2">
@@ -616,26 +1193,37 @@ sekretarz stanu w Ministerstwie Infrastruktury
       
 
 
-      <div className="flex justify-between text-xs text-gray-500 border-b py-2 mb-2">
-          <div className="flex items-center">
-            <div className="flex -space-x-1 mr-1">
-              <div className="bg-red-500 rounded-full w-5 h-5 flex items-center justify-center">
-                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                </svg>
-              </div>
-              <div className="bg-blue-500 rounded-full w-5 h-5 flex items-center justify-center">
-                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
-                </svg>
-              </div>
+      <div className="flex justify-between text-xs text-gray-500 border-t py-2 px-4 mt-1 mb-2">
+        <div className="flex items-center">
+          <div className="flex -space-x-1 mr-1">
+            <div className="bg-blue-500 rounded-full w-5 h-5 flex items-center justify-center">
+              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+              </svg>
             </div>
-            <span>19</span>
+            <div className="bg-red-500 rounded-full w-5 h-5 flex items-center justify-center">
+              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+              </svg>
+            </div>
           </div>
-          <div>
-            <span>11 komentarze · 4 udostępnień</span>
-          </div>
+          <span>6</span>
         </div>
+        <div className="flex items-center">
+          <span className="flex items-center mr-2">
+            <span>35</span>
+            <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
+            </svg>
+          </span>
+          <span className="flex items-center">
+            <span>22</span>
+            <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z" />
+            </svg>
+          </span>
+        </div>
+      </div>
 
       
       {/* Action buttons */}
@@ -786,26 +1374,37 @@ sekretarz stanu w Ministerstwie Infrastruktury
         </div>
         
         {/* Post engagement stats */}
-        <div className="flex justify-between text-xs text-gray-500 border-b py-2 mb-2">
-          <div className="flex items-center">
-            <div className="flex -space-x-1 mr-1">
-              <div className="bg-blue-500 rounded-full w-5 h-5 flex items-center justify-center">
-                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
-                </svg>
-              </div>
-              <div className="bg-red-500 rounded-full w-5 h-5 flex items-center justify-center">
-                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                </svg>
-              </div>
+        <div className="flex justify-between text-xs text-gray-500 border-t py-2 px-4 mt-1 mb-2">
+        <div className="flex items-center">
+          <div className="flex -space-x-1 mr-1">
+            <div className="bg-blue-500 rounded-full w-5 h-5 flex items-center justify-center">
+              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+              </svg>
             </div>
-            <span>9</span>
+            <div className="bg-red-500 rounded-full w-5 h-5 flex items-center justify-center">
+              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+              </svg>
+            </div>
           </div>
-          <div>
-            <span>2 komentarze</span>
-          </div>
+          <span>85</span>
         </div>
+        <div className="flex items-center">
+          <span className="flex items-center mr-2">
+            <span>35</span>
+            <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
+            </svg>
+          </span>
+          <span className="flex items-center">
+            <span>22</span>
+            <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z" />
+            </svg>
+          </span>
+        </div>
+      </div>
         
         {/* Action buttons */}
         <div className="flex">
@@ -925,26 +1524,37 @@ sekretarz stanu w Ministerstwie Infrastruktury
         </div>
         
         {/* Post engagement stats */}
-        <div className="flex justify-between text-xs text-gray-500 border-b py-2 mb-2">
-          <div className="flex items-center">
-            <div className="flex -space-x-1 mr-1">
-              <div className="bg-red-500 rounded-full w-5 h-5 flex items-center justify-center">
-                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                </svg>
-              </div>
-              <div className="bg-blue-500 rounded-full w-5 h-5 flex items-center justify-center">
-                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
-                </svg>
-              </div>
+        <div className="flex justify-between text-xs text-gray-500 border-t py-2 px-4 mt-1 mb-2">
+        <div className="flex items-center">
+          <div className="flex -space-x-1 mr-1">
+            <div className="bg-blue-500 rounded-full w-5 h-5 flex items-center justify-center">
+              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+              </svg>
             </div>
-            <span>19</span>
+            <div className="bg-red-500 rounded-full w-5 h-5 flex items-center justify-center">
+              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+              </svg>
+            </div>
           </div>
-          <div>
-            <span>11 komentarze · 4 udostępnień</span>
-          </div>
+          <span>24</span>
         </div>
+        <div className="flex items-center">
+          <span className="flex items-center mr-2">
+            <span>35</span>
+            <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
+            </svg>
+          </span>
+          <span className="flex items-center">
+            <span>22</span>
+            <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z" />
+            </svg>
+          </span>
+        </div>
+      </div>
         
         {/* Action buttons - conditional rendering based on isMobile */}
         {isMobile ? (
@@ -1145,7 +1755,7 @@ sekretarz stanu w Ministerstwie Infrastruktury
       </div>
       
       {/* Post engagement stats */}
-      <div className="flex justify-between text-xs text-gray-500 border-b border-t py-2 px-4">
+      <div className="flex justify-between text-xs text-gray-500 border-t py-2 px-4 mt-1 mb-2">
         <div className="flex items-center">
           <div className="flex -space-x-1 mr-1">
             <div className="bg-blue-500 rounded-full w-5 h-5 flex items-center justify-center">
@@ -1159,10 +1769,21 @@ sekretarz stanu w Ministerstwie Infrastruktury
               </svg>
             </div>
           </div>
-          <span>11</span>
+          <span>9</span>
         </div>
-        <div>
-          <span>3 komentarze</span>
+        <div className="flex items-center">
+          <span className="flex items-center mr-2">
+            <span>35</span>
+            <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
+            </svg>
+          </span>
+          <span className="flex items-center">
+            <span>22</span>
+            <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z" />
+            </svg>
+          </span>
         </div>
       </div>
       
@@ -1284,7 +1905,7 @@ sekretarz stanu w Ministerstwie Infrastruktury
       </div>
       
       {/* Post engagement stats */}
-      <div className="flex justify-between text-xs text-gray-500 border-b border-t py-2 mx-4 mb-2">
+      <div className="flex justify-between text-xs text-gray-500 border-t py-2 px-4 mt-1 mb-2">
         <div className="flex items-center">
           <div className="flex -space-x-1 mr-1">
             <div className="bg-blue-500 rounded-full w-5 h-5 flex items-center justify-center">
@@ -1298,10 +1919,21 @@ sekretarz stanu w Ministerstwie Infrastruktury
               </svg>
             </div>
           </div>
-          <span>6</span>
+          <span>21</span>
         </div>
-        <div>
-          <span>2 komentarze</span>
+        <div className="flex items-center">
+          <span className="flex items-center mr-2">
+            <span>35</span>
+            <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
+            </svg>
+          </span>
+          <span className="flex items-center">
+            <span>22</span>
+            <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z" />
+            </svg>
+          </span>
         </div>
       </div>
       
@@ -1450,7 +2082,7 @@ sekretarz stanu w Ministerstwie Infrastruktury
       </div>
       
       {/* Post engagement stats */}
-      <div className="flex justify-between text-xs text-gray-500 border-b border-t py-2 px-4 mx-4 mb-2">
+      <div className="flex justify-between text-xs text-gray-500 border-t py-2 px-4 mt-1 mb-2">
         <div className="flex items-center">
           <div className="flex -space-x-1 mr-1">
             <div className="bg-blue-500 rounded-full w-5 h-5 flex items-center justify-center">
@@ -1464,10 +2096,21 @@ sekretarz stanu w Ministerstwie Infrastruktury
               </svg>
             </div>
           </div>
-          <span>7</span>
+          <span>11</span>
         </div>
-        <div>
-          <span>1 komentarz</span>
+        <div className="flex items-center">
+          <span className="flex items-center mr-2">
+            <span>35</span>
+            <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
+            </svg>
+          </span>
+          <span className="flex items-center">
+            <span>22</span>
+            <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z" />
+            </svg>
+          </span>
         </div>
       </div>
       
@@ -1637,7 +2280,7 @@ sekretarz stanu w Ministerstwie Infrastruktury
       </div>
       
       {/* Post engagement stats */}
-      <div className="flex justify-between text-xs text-gray-500 border-b border-t py-2 px-4 mx-4 mb-2">
+      <div className="flex justify-between text-xs text-gray-500 border-t py-2 px-4 mt-1 mb-2">
         <div className="flex items-center">
           <div className="flex -space-x-1 mr-1">
             <div className="bg-blue-500 rounded-full w-5 h-5 flex items-center justify-center">
@@ -1645,11 +2288,27 @@ sekretarz stanu w Ministerstwie Infrastruktury
                 <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
               </svg>
             </div>
+            <div className="bg-red-500 rounded-full w-5 h-5 flex items-center justify-center">
+              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+              </svg>
+            </div>
           </div>
-          <span>5</span>
+          <span>21</span>
         </div>
-        <div>
-          <span className="opacity-0">0 komentarzy · 0 udostępnień</span>
+        <div className="flex items-center">
+          <span className="flex items-center mr-2">
+            <span>35</span>
+            <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
+            </svg>
+          </span>
+          <span className="flex items-center">
+            <span>22</span>
+            <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z" />
+            </svg>
+          </span>
         </div>
       </div>
       
@@ -1807,26 +2466,37 @@ sekretarz stanu w Ministerstwie Infrastruktury
         </div>
         
         {/* Post engagement stats */}
-        <div className="flex justify-between text-xs text-gray-500 border-b border-t py-2 mb-2">
-          <div className="flex items-center">
-            <div className="flex -space-x-1 mr-1">
-              <div className="bg-blue-500 rounded-full w-5 h-5 flex items-center justify-center">
-                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
-                </svg>
-              </div>
-              <div className="bg-red-500 rounded-full w-5 h-5 flex items-center justify-center">
-                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                </svg>
-              </div>
+        <div className="flex justify-between text-xs text-gray-500 border-t py-2 px-4 mt-1 mb-2">
+        <div className="flex items-center">
+          <div className="flex -space-x-1 mr-1">
+            <div className="bg-blue-500 rounded-full w-5 h-5 flex items-center justify-center">
+              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+              </svg>
             </div>
-            <span>7</span>
+            <div className="bg-red-500 rounded-full w-5 h-5 flex items-center justify-center">
+              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+              </svg>
+            </div>
           </div>
-          <div>
-            <span className="opacity-0">0 komentarzy · 0 udostępnień</span>
-          </div>
+          <span>19</span>
         </div>
+        <div className="flex items-center">
+          <span className="flex items-center mr-2">
+            <span>35</span>
+            <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
+            </svg>
+          </span>
+          <span className="flex items-center">
+            <span>22</span>
+            <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z" />
+            </svg>
+          </span>
+        </div>
+      </div>
         
         {/* Action buttons - more Facebook-like interface */}
         <div className="flex">
@@ -1948,31 +2618,37 @@ sekretarz stanu w Ministerstwie Infrastruktury
         </div>
         
         {/* Post engagement stats */}
-        <div className="flex justify-between text-xs text-gray-500 border-b border-t py-2 mb-2">
-          <div className="flex items-center">
-            <div className="flex -space-x-1 mr-1">
-              <div className="bg-blue-500 rounded-full w-5 h-5 flex items-center justify-center">
-                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
-                </svg>
-              </div>
-              <div className="bg-red-500 rounded-full w-5 h-5 flex items-center justify-center">
-                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                </svg>
-              </div>
-              <div className="bg-yellow-500 rounded-full w-5 h-5 flex items-center justify-center">
-                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z" />
-                </svg>
-              </div>
+        <div className="flex justify-between text-xs text-gray-500 border-t py-2 px-4 mt-1 mb-2">
+        <div className="flex items-center">
+          <div className="flex -space-x-1 mr-1">
+            <div className="bg-blue-500 rounded-full w-5 h-5 flex items-center justify-center">
+              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+              </svg>
             </div>
-            <span>39</span>
+            <div className="bg-red-500 rounded-full w-5 h-5 flex items-center justify-center">
+              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+              </svg>
+            </div>
           </div>
-          <div>
-            <span>9 komentarzy · 1 udostępnienie</span>
-          </div>
+          <span>64</span>
         </div>
+        <div className="flex items-center">
+          <span className="flex items-center mr-2">
+            <span>35</span>
+            <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
+            </svg>
+          </span>
+          <span className="flex items-center">
+            <span>22</span>
+            <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z" />
+            </svg>
+          </span>
+        </div>
+      </div>
         
         {/* Action buttons - conditional rendering based on isMobile */}
         {isMobile ? (
