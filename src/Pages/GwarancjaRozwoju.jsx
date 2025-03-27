@@ -470,7 +470,237 @@ const GwarancjaRozwoju = () => {
             </div>
             <div className="md:w-2/3 m-2">
 
-       
+            <div className="bg-white rounded-lg shadow mb-4 w-full">
+      {/* Header with user info */}
+      <div className="p-4 pb-2">
+        <div className="flex items-start">
+          <div className="w-10 h-10 rounded-full mr-2 overflow-hidden">
+            <img 
+              src="/Assets/Gwarancja.rozwoju/photo_avatar.jpg" 
+              alt="Poseł Piotr Głowski" 
+              className="w-full h-full object-cover" 
+            />
+          </div>
+          <div className="flex-grow">
+            <div className="flex justify-between items-start w-full">
+              <div>
+                <div className="flex items-center">
+                  <h3 className="font-semibold">Poseł Piotr Głowski</h3>
+                  <span className="text-gray-500 ml-2">is at</span>
+                  <span className="font-semibold ml-1">Miasto Piła</span>
+                  <span className="text-gray-500 ml-1">.</span>
+                </div>
+                <div className="flex items-center text-xs text-gray-500">
+                  <span>16h</span>
+                  <span className="mx-1">·</span>
+                  <span>Piła</span>
+                  <span className="mx-1">·</span>
+                  <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
+                  </svg>
+                </div>
+              </div>
+              <div className="relative">
+                <button 
+                  className="text-gray-500 ml-2 p-1 rounded-full hover:bg-gray-100"
+                  onClick={() => setShowMenu(!showMenu)}
+                >
+                  <svg viewBox="0 0 20 20" width="20" height="20" fill="currentColor">
+                    <g fillRule="evenodd" transform="translate(-446 -350)">
+                      <path d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"></path>
+                    </g>
+                  </svg>
+                </button>
+                {showMenu && (
+                  <div className="absolute right-0 mt-1 w-48 bg-white rounded-md shadow-lg z-10">
+                    <ul className="py-1">
+                      <li>
+                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                          Zapisz post
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                          Zgłoś
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Post content */}
+      <div className="px-4 pb-3">
+        <p className="mb-3">
+          Niezwykle ważna zmiana dla pacjentów w <span className="text-blue-600 font-semibold">Szpital Specjalistyczny w Pile im. Stanisława Staszica</span>!
+        </p>
+        
+        {!expanded ? (
+          <div>
+            <p className="mb-3">
+              W naszym pilskim szpitalu działa już nowoczesny rezonans magnetyczny Magnetom Sola, który skraca czas badania nawet o 48%! To oznacza szybszą diagnostykę, szczególnie dla pacjentów onkologicznych. Dzięki sztucznej inteligencji i innowacyjnemu oprogramowaniu lekarze mają dostęp do jeszcze dokładniejszych obrazów. Badania wykonywane są po wcześniejszej rejestracji – szczegóły kontakt... 
+              <button 
+                onClick={() => setExpanded(true)}
+                className="text-black font-medium text-sm ml-1"
+              >
+                Wyświetl więcej
+              </button>
+            </p>
+          </div>
+        ) : (
+          <div>
+            <p className="mb-3">
+              W naszym pilskim szpitalu działa już nowoczesny rezonans magnetyczny Magnetom Sola, który skraca czas badania nawet o 48%! To oznacza szybszą diagnostykę, szczególnie dla pacjentów onkologicznych. Dzięki sztucznej inteligencji i innowacyjnemu oprogramowaniu lekarze mają dostęp do jeszcze dokładniejszych obrazów. Badania wykonywane są po wcześniejszej rejestracji – szczegóły kontaktowe znajdziecie poniżej. Cieszę się, że pacjenci z naszego regionu mogą korzystać z tak nowoczesnej technologii!
+            </p>
+            <p className="mb-3">
+              Gratuluję władzom szpitala i Rafał Zdzierela, starosta pilski!
+            </p>
+            <button 
+              onClick={() => setExpanded(false)}
+              className="text-black font-medium text-sm mt-2"
+            >
+              Pokaż mniej
+            </button>
+          </div>
+        )}
+      </div>
+      
+      {/* Gallery photos */}
+      <div className="px-4 pb-3">
+        <div className="grid grid-cols-4 gap-0.5">
+          <div className="col-span-2 row-span-2">
+            <img 
+              src="/Assets/Gwarancja.rozwoju/medicine_1.jpg" 
+              alt="Rezonans magnetyczny Magnetom Sola" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="col-span-2">
+            <img 
+              src="/Assets/Gwarancja.rozwoju/medicine_2.jpg" 
+              alt="Lekarz przy konsoli rezonansu" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="col-span-1">
+            <img 
+              src="/Assets/Gwarancja.rozwoju/medicine_3.jpg" 
+              alt="Poczekalnia szpitalna" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="col-span-1">
+            <img 
+              src="/Assets/Gwarancja.rozwoju/medicine_4.jpg" 
+              alt="Stanowisko kontrolne rezonansu" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+      
+      {/* Shared post container */}
+      <div className="mx-4 mb-4 rounded-lg border border-gray-200 overflow-hidden">
+        <div className="p-4">
+          <div className="flex items-start">
+            <div className="w-10 h-10 rounded-full mr-2 overflow-hidden bg-blue-50 flex items-center justify-center">
+            <img 
+                src="/Assets/Gwarancja.rozwoju/photoLogoHeart.jpg" 
+                alt="InvestMap.pl" 
+                className="w-full h-full object-cover" 
+              />
+            </div>
+            <div className="flex-grow">
+              <div className="flex items-center">
+                <h3 className="font-semibold">Szpital Specjalistyczny w Pile im. Stanisława Staszica</h3>
+              </div>
+              <div className="flex items-center text-xs text-gray-500">
+                <span>1d</span>
+                <span className="mx-1">·</span>
+                <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          
+          {/* Hospital post content */}
+          <div className="mt-3">
+            <p className="text-sm">
+              <span className="text-red-600 font-bold">❗</span> Od kilku dni w naszym Szpitalu działa najnowszej generacji rezonans magnetyczny Magnetom Sola firmy Siemens o polu magnetycznym 1,5 T z dużym otworem gantry o ... <span className="font-semibold">Wyświetl więcej</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      {/* Engagement stats */}
+      <div className="flex justify-between text-xs text-gray-500 border-t py-2 px-4 mt-1 mb-2">
+        <div className="flex items-center">
+          <div className="flex -space-x-1 mr-1">
+            <div className="bg-blue-500 rounded-full w-5 h-5 flex items-center justify-center">
+              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+              </svg>
+            </div>
+            <div className="bg-red-500 rounded-full w-5 h-5 flex items-center justify-center">
+              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+              </svg>
+            </div>
+          </div>
+          <span>33</span>
+        </div>
+        <div className="flex items-center">
+          <span className="mr-2">0 komentarzy</span>
+        </div>
+      </div>
+      
+      {/* Action buttons */}
+      <div className="flex px-4 pb-3">
+        {isMobile ? (
+          <>
+            <button className="flex-1 py-2 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+              </svg>
+              Polub
+            </button>
+            <button className="flex-1 py-2 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
+              </svg>
+              Komentarz
+            </button>
+            <button className="flex-1 py-2 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z" />
+              </svg>
+              Udostępnij
+            </button>
+          </>
+        ) : (
+          <>
+            <button className="flex-1 py-2 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" />
+              </svg>
+              Polub
+            </button>
+            <button className="flex-1 py-2 text-gray-500 font-medium text-sm flex items-center justify-center hover:bg-gray-100 rounded">
+              <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z" />
+              </svg>
+              Skomentuj
+            </button>
+          </>
+        )}
+      </div>
+    </div>
+
 
 
 
